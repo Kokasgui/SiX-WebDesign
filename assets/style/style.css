@@ -30,5 +30,17 @@
 
 h1 {
   font-family: "Oxanium", sans-serif;
+  font-size: 36px;
   font-variation-settings: "wght" 400;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 24px;
+}
+
+strong {
+  font-weight: 700;
 }
