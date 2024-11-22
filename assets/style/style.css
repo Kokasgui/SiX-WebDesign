@@ -1,14 +1,6 @@
+/* === FONTES === */
+
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap");
-
-/* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 200 to 800 */
-
-/* .oxanium-wght {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: "wght";
-  font-style: normal;
-} */
 
 .oxygen-light {
   font-family: "Oxygen", sans-serif;
@@ -27,6 +19,15 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/* === COISAS GERAIS === */
+
+html {
+  --COLOR-PRI: #3453d6;
+  --COLOR-SEC: #e8622b;
+}
+
+/* === PARÁGRAFOS === */
 
 h1 {
   font-family: "Oxanium", sans-serif;
@@ -63,6 +64,7 @@ strong {
   line-height: auto;
 }
 
+/* isto serve para adicionar a palavra "Note: " antes do texto. pode-se tirar o texto "Note: " do HTML */
 .note::before {
   content: "Note: ";
   font-weight: 700;
