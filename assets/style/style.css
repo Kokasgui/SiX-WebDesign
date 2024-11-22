@@ -32,7 +32,19 @@ html {
 h1 {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 700;
+}
+
+h2 {
+  font-family: "Oxanium", sans-serif;
+  font-size: 32px;
+  font-variation-settings: "wght" 700;
+}
+
+h3 {
+  font-family: "Oxanium", sans-serif;
+  font-size: 20px;
+  font-variation-settings: "wght" 700;
 }
 
 p {
