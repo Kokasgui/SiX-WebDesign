@@ -1,7 +1,9 @@
+// Isto vai buscar o HTML de cada caixa para depois mostrar quando é preciso
 const textoEvents = document.getElementById("events-box").innerHTML;
 const textoResearch = document.getElementById("research-box").innerHTML;
 
 // console.log(textoEvents);
+// console.log(textoResearch);
 
 // Estado inicial para as caixas acordeão
 document.getElementById("events-box").innerHTML = "";
@@ -18,6 +20,7 @@ function changeEvents() {
   }
 }
 
+// // Muda a classe e mostra/esconde o texto de Research
 function changeResearch() {
   if (document.getElementById("research-box").className == "hidden") {
     document.getElementById("research-box").className = "showing";
