@@ -23,8 +23,8 @@
 /* === COISAS GERAIS === */
 
 html {
-  --primaryColor: #3453d6;
-  --secondaryColor: #e8622b;
+  --primaryColor: red;
+  --secondaryColor: red;
 }
 
 /* * {
