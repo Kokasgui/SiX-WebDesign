@@ -27,10 +27,6 @@ html {
   --secondaryColor: red;
 }
 
-/* * {
-  margin: 0;
-} */
-
 body {
   margin: 0 20px;
 }
@@ -73,6 +69,8 @@ p {
   line-height: 24px;
 }
 
+/* === COISAS ESPECÍFICAS === */
+
 strong {
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
@@ -92,6 +90,7 @@ strong {
   font-weight: 700;
 }
 
+/* Para fazer as caixinhas */
 section article {
   background-color: var(--secondaryColor);
   color: white;
@@ -99,17 +98,10 @@ section article {
   margin-bottom: 20px;
 }
 
-/* section article div {
-  display: none;
-} */
-
+/* Para fazer os botões */
 section article span {
   display: block;
   text-align: center;
   background-color: black;
   padding: 10px;
 }
-
-/* section article span:hover ~ div {
-  display: block;
-} */
