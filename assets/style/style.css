@@ -124,16 +124,18 @@ section article span {
 .circular_images img {
   height: 300px;
   height: 300px;
+  padding-bottom: 15px;
   border-radius: 50%;
 }
 
 .member {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   padding: 0;
 }
 .member-caption {
   font-weight: 700;
+  line-height: 0.5px;
 }
 
 nav {
