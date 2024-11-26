@@ -2,15 +2,18 @@
 const textoEvents = document.getElementById("events-box").innerHTML;
 const textoResearch = document.getElementById("research-box").innerHTML;
 const textoExploratory = document.getElementById("exploratory-box").innerHTML;
+const textoDevelopment = document.getElementById("development-box").innerHTML;
 
 // console.log(textoEvents);
 // console.log(textoResearch);
 // console.log(textoExploratory);
+// console.log(textoDevelopment);
 
 // Estado inicial para as caixas acordeão
 document.getElementById("events-box").innerHTML = "";
 document.getElementById("research-box").innerHTML = "";
 document.getElementById("exploratory-box").innerHTML = "";
+document.getElementById("development-box").innerHTML = "";
 
 // Muda a classe e mostra/esconde o texto de Events
 function changeEvents() {
@@ -42,5 +45,16 @@ function changeExploratory() {
   } else {
     document.getElementById("exploratory-box").className = "hidden";
     document.getElementById("exploratory-box").innerHTML = "";
+  }
+}
+
+// // Muda a classe e mostra/esconde o texto de Development
+function changeDevelopment() {
+  if (document.getElementById("development-box").className == "hidden") {
+    document.getElementById("development-box").className = "showing";
+    document.getElementById("development-box").innerHTML = textoDevelopment;
+  } else {
+    document.getElementById("development-box").className = "hidden";
+    document.getElementById("development-box").innerHTML = "";
   }
 }
