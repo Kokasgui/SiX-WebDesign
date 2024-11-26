@@ -31,6 +31,11 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+header p,
+main {
   margin: 0 20px;
 }
 
@@ -132,6 +137,73 @@ section article span {
 .member-caption {
   font-weight: 700;
   line-height: 0.5px;
+}
+
+nav {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100vw;
+  /* height: 55px; */
+  background-color: antiquewhite;
+}
+
+/* nav:hover {
+  height: 100vh;
+  width: 100vw;
+} */
+
+nav div:hover ul {
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+nav ul {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav > ul {
+  padding-right: 20px;
+}
+
+nav ul li {
+  margin-bottom: 18px;
+}
+
+::marker {
+  content: "";
+}
+
+nav ul a {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+}
+
+nav span#logo {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  background-color: red;
+  padding: 5px 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+nav div > i {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: calc(55px - 30px);
+  background-color: greenyellow;
+  padding: 15px 20px;
+  font-size: 24px;
 }
 
 /* Hero */
