@@ -1,3 +1,6 @@
+/* SiX Project | LDC | Web Design | FBAUP 2024/2025 */
+/* Beatriz Gonçalves | Guilherme Costa | Mariana Ferreira */
+
 /* === FONTES === */
 
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap");
@@ -28,8 +31,19 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+header p,
+main {
   margin: 0 20px;
 }
+/* 
+header {
+  position: fixed;
+  display: block;
+  background-color: yellow;
+} */
 
 /* === PARÁGRAFOS === */
 
@@ -44,10 +58,10 @@ h2 {
   font-family: "Oxanium", sans-serif;
   font-size: 32px;
   font-variation-settings: "wght" 700;
+
   color: var(--secondaryColor);
   margin: 0 0 0.5em;
 }
-
 
 h3 {
   font-family: "Oxanium", sans-serif;
@@ -111,15 +125,139 @@ section article span {
 .circular_images {
   display: block;
   width: 100%;
-  height: 100vh;
-
+  height: 100%;
   text-align: center;
 }
-
 .circular_images img {
   height: 300px;
   height: 300px;
+  padding-bottom: 15px;
   border-radius: 50%;
+}
+
+.member {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0;
+}
+.member-caption {
+  font-weight: 700;
+  line-height: 0.5px;
+}
+
+nav {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100vw;
+  background-color: yellow;
+}
+
+i.fa-xmark {
+  display: none;
+}
+
+nav i {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 20px;
+  text-align: center;
+  margin: 10px 10px 10px;
+  margin-left: calc(100% - 70px);
+  border-radius: 50px;
+  height: calc(55px - 30px);
+  background-color: greenyellow;
+  padding: 10px 12px;
+  font-size: 24px;
+}
+
+nav div:hover {
+  position: fixed;
+  display: block;
+  margin-top: 65px;
+  width: 100vw;
+  background-color: antiquewhite;
+}
+
+nav div:hover i.fa-bars {
+  display: none;
+}
+
+nav div:hover ~ i.fa-xmark {
+  display: block;
+  margin-left: calc(100% - 70px);
+}
+
+nav div:hover ul {
+  display: block;
+  position: relative;
+  top: 0;
+  margin-top: 0;
+}
+
+nav ul {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav > ul {
+  padding-right: 20px;
+}
+
+nav ul li {
+  margin-bottom: 18px;
+}
+
+::marker {
+  content: "";
+}
+
+nav ul a {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+}
+
+nav span#logo {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: red;
+  padding: 5px 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+nav div > i {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: calc(55px - 30px);
+  background-color: greenyellow;
+  padding: 15px 20px;
+  font-size: 24px;
+}
+
+/* Hero */
+
+.hero img {
+  position: relative;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 40vh;
+}
+.hero h2 {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  margin-left: 20px;
 }
 
 /* CAROUSEL */
