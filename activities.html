@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="SiX, drawing" />
-    <meta
-      name="description"
-      content="Reserach_publication page of SiX project"
-    />
+    <meta name="description" content="Activities about SiX project" />
     <title>Activities</title>
     <link rel="stylesheet" href="assets/style/style.css" />
     <!-- Isto define as cores da página -->
@@ -18,6 +15,7 @@
       }
     </style>
   </head>
+
   <body>
     <header>
       <!-- Insert nav  -->
@@ -44,10 +42,11 @@
           </ul>
         </ul>
       </nav>
+
       <!-- Hero Section -->
       <section>
-        <!-- Inset image -->
         <h1>Activities</h1>
+        <!-- Inset image -->
       </section>
     </header>
     <main>
@@ -61,7 +60,78 @@
           professionals, researchers, and students.
         </p>
       </section>
+      <!-- Secção 1_Boxes Section - 3 Articles-->
+      <section>
+        <article>
+          <h3>Events/Activities</h3>
+          <p>
+            SiX will host workshops and presentations for students, researchers,
+            and healthcare professionals. These events will focus on:
+          </p>
+          <div id="events-box" class="hidden">
+            <h4>Understanding LIS and its impact</h4>
+            <p>
+              Raising awareness of LIS and the challenges faced by patients and
+              their families.
+            </p>
+            <h4>Digital drawing as a communication tool</h4>
+            <p>
+              Exploring the potential of digital drawing to facilitate
+              communication and expression for LIS patients.
+            </p>
+            <h4>Designing accessible and inclusive technologies</h4>
+            <p>
+              Sharing insights into the design process and promoting the
+              development of technologies that meet the needs of people with
+              disabilities.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeEvents()">ABRE / FECHA</span>
+        </article>
+        <article>
+          <h3>Research/Publications</h3>
+          <p>
+            The SiX project will produce a variety of publications, including:
+          </p>
+          <div id="research-box" class="hidden">
+            <h4>Scientific papers</h4>
+            <p>
+              Published in peer-reviewed journals, disseminating the project's
+              findings and contributing to the scientific understanding of LIS
+              and assistive technologies.
+            </p>
+            <h4>Design guidelines and manuals</h4>
+            <p>
+              Providing practical guidance for designers and developers creating
+              communication tools for LIS patients.
+            </p>
+            <h4>White papers and reports</h4>
+            <p>
+              Documenting the project's methodology, results, and
+              recommendations.
+            </p>
+            <br />
+            <p>
+              These publications will bridge the gap between research and
+              practice, encouraging the development of innovative solutions that
+              improve the lives of LIS patients.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeResearch()">ABRE / FECHA</span>
+        </article>
+      </section>
+      <!-- Note Section -->
+      <section>
+        <p class="note">
+          This content was synthesized from the original project grant proposal
+          and two papers published by the research team. And generated and
+          edited on October 26, 2024, using NotebookLM by Google.
+        </p>
+      </section>
     </main>
     <footer></footer>
+    <script src="assets/script/script.js"></script>
   </body>
 </html>
