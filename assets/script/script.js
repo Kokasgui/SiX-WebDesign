@@ -3,17 +3,21 @@ const textoEvents = document.getElementById("events-box").innerHTML;
 const textoResearch = document.getElementById("research-box").innerHTML;
 const textoExploratory = document.getElementById("exploratory-box").innerHTML;
 const textoDevelopment = document.getElementById("development-box").innerHTML;
+const textoDissemination =
+  document.getElementById("dissemination-box").innerHTML;
 
 // console.log(textoEvents);
 // console.log(textoResearch);
 // console.log(textoExploratory);
 // console.log(textoDevelopment);
+// console.log(textoDissemination);
 
 // Estado inicial para as caixas acordeão
 document.getElementById("events-box").innerHTML = "";
 document.getElementById("research-box").innerHTML = "";
 document.getElementById("exploratory-box").innerHTML = "";
 document.getElementById("development-box").innerHTML = "";
+document.getElementById("dissemination-box").innerHTML = "";
 
 // Muda a classe e mostra/esconde o texto de Events
 function changeEvents() {
@@ -56,5 +60,16 @@ function changeDevelopment() {
   } else {
     document.getElementById("development-box").className = "hidden";
     document.getElementById("development-box").innerHTML = "";
+  }
+}
+
+// // Muda a classe e mostra/esconde o texto de Dissemination
+function changeDissemination() {
+  if (document.getElementById("dissemination-box").className == "hidden") {
+    document.getElementById("dissemination-box").className = "showing";
+    document.getElementById("dissemination-box").innerHTML = textoDissemination;
+  } else {
+    document.getElementById("dissemination-box").className = "hidden";
+    document.getElementById("dissemination-box").innerHTML = "";
   }
 }
