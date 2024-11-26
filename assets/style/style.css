@@ -178,7 +178,7 @@ nav ul li {
   content: "";
 }
 
-/* nav ul a {
+nav ul a {
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
 }
@@ -203,4 +203,4 @@ nav div > i {
   background-color: greenyellow;
   padding: 15px 20px;
   font-size: 24px;
-} */
+}
