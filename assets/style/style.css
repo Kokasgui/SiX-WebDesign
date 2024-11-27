@@ -38,6 +38,12 @@ header p,
 main {
   margin: 0 20px;
 }
+/* 
+header {
+  position: fixed;
+  display: block;
+  background-color: yellow;
+} */
 
 /* === PARÁGRAFOS === */
 
@@ -144,19 +150,50 @@ nav {
   display: block;
   top: 0;
   width: 100vw;
-  /* height: 55px; */
+  background-color: yellow;
+}
+
+i.fa-xmark {
+  display: none;
+}
+
+nav i {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 20px;
+  text-align: center;
+  margin: 10px 10px 10px;
+  margin-left: calc(100% - 70px);
+  border-radius: 50px;
+  height: calc(55px - 30px);
+  background-color: greenyellow;
+  padding: 10px 12px;
+  font-size: 24px;
+}
+
+nav div:hover {
+  position: fixed;
+  display: block;
+  margin-top: 65px;
+  width: 100vw;
   background-color: antiquewhite;
 }
 
-/* nav:hover {
-  height: 100vh;
-  width: 100vw;
-} */
+nav div:hover i.fa-bars {
+  display: none;
+}
+
+nav div:hover ~ i.fa-xmark {
+  display: block;
+  margin-left: calc(100% - 70px);
+}
 
 nav div:hover ul {
   display: block;
   position: relative;
   top: 0;
+  margin-top: 0;
 }
 
 nav ul {
@@ -188,6 +225,7 @@ nav span#logo {
   display: inline-block;
   position: fixed;
   top: 0;
+  z-index: 1;
   background-color: red;
   padding: 5px 20px;
   font-family: "Oxanium", sans-serif;
@@ -195,7 +233,7 @@ nav span#logo {
   font-size: 36px;
 }
 
-nav div > i {
+/* nav div > i {
   display: block;
   position: relative;
   top: 0;
@@ -204,7 +242,7 @@ nav div > i {
   background-color: greenyellow;
   padding: 15px 20px;
   font-size: 24px;
-}
+} */
 
 /* Hero */
 
@@ -222,4 +260,44 @@ nav div > i {
   top: 20%;
   margin-right: 40%;
   margin-left: 20px;
+}
+
+/* CAROUSEL */
+.carousel-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+.mySlides {
+   /* display: none; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.1);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
 }
