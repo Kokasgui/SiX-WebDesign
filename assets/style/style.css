@@ -277,7 +277,8 @@ nav span#logo {
 }
 
 /* CAROUSEL */
-.carousel-container {
+/* .carousel-container {
+  overflow: auto;
   max-width: 600px;
   position: relative;
   margin: auto;
@@ -287,13 +288,37 @@ nav span#logo {
   border-radius: 10px;
 }
 .mySlides {
-  /* display: none; */
   padding: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* CHATGPT */
+.carousel-container {
+  display: flex; /* Exibe os slides em linha */
+  overflow-x: auto; /* Permite o scroll horizontal */
+  scroll-behavior: smooth; /* Navegação suave ao scroll */
+  gap: 10px; /* Espaçamento entre os slides */
+  max-width: 100%; /* Define a largura máxima do carrossel */
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
 }
-.prev,
+
+.mySlides {
+  flex-shrink: 0; /* Impede que os slides encolham */
+  width: 300px; /* Largura de cada slide */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
+}
+
+/* .prev,
 .next {
   cursor: pointer;
   position: relative;
@@ -312,7 +337,29 @@ nav span#logo {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+} */
+
+.prev,
+.next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
