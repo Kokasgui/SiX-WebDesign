@@ -167,7 +167,7 @@ nav {
 }
 
 i.fa-xmark {
-  display: none;
+  display: block;
 }
 
 nav i {
@@ -177,14 +177,14 @@ nav i {
   width: 20px;
   text-align: center;
   margin: 10px 10px 10px;
-  margin-left: calc(100% - 70px);
+  margin-left: calc(100vw - 70px);
   border-radius: 50px;
   height: calc(55px - 30px);
   background-color: white;
   padding: 10px 12px;
   font-size: 24px;
 }
-
+/*
 nav div:hover {
   position: fixed;
   display: block;
@@ -203,8 +203,16 @@ nav div:hover ~ i.fa-xmark {
   display: block;
   margin-left: calc(100% - 70px);
 }
+*/
+nav#gostoso div {
+  height: 100vh;
+  background-color: white;
+  display: block;
+  position: fixed;
+  top: 0;
+}
 
-nav div:hover ul {
+nav#gostoso div ul {
   display: block;
   position: relative;
   margin-top: 40px;
