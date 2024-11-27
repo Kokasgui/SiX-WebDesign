@@ -189,8 +189,10 @@ nav div:hover {
   position: fixed;
   display: block;
   margin-top: 65px;
+  padding-top: 20px;
   width: 100vw;
   background-color: white;
+  background-image: none;
 }
 
 nav div:hover i.fa-bars {
@@ -205,6 +207,7 @@ nav div:hover ~ i.fa-xmark {
 nav div:hover ul {
   display: block;
   position: relative;
+  margin-top: 40px;
   top: 0;
   margin-top: 0;
 }
