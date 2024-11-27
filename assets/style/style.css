@@ -25,10 +25,10 @@
 
 /* === COISAS GERAIS === */
 
-html {
+/* html {
   --primaryColor: red;
   --secondaryColor: red;
-}
+} */
 
 body {
   margin: 0;
@@ -271,13 +271,14 @@ nav span#logo {
   border-radius: 10px;
 }
 .mySlides {
-   /* display: none; */
+  /* display: none; */
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: relative;
   top: 50%;
@@ -290,12 +291,13 @@ nav span#logo {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.2);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
