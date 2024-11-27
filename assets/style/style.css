@@ -122,6 +122,15 @@ section article span {
   padding: 10px;
 }
 
+/* Para abrir e fechar as caixas acordeão */
+section article .hidden {
+  display: none;
+}
+
+section article .showing {
+  display: block;
+}
+
 /* Para as imagens circulares no Members' Detail */
 .circular_images {
   display: block;
