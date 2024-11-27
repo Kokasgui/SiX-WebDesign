@@ -173,6 +173,7 @@ i.fa-xmark {
 nav i {
   display: block;
   position: relative;
+  cursor: pointer;
   top: 0;
   width: 20px;
   text-align: center;
