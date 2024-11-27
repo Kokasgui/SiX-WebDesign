@@ -43,7 +43,6 @@ header nav {
   position: fixed;
   display: block;
   z-index: 20;
-  background-color: yellow;
 }
 
 /* === PARÁGRAFOS === */
@@ -59,7 +58,6 @@ h2 {
   font-family: "Oxanium", sans-serif;
   font-size: 32px;
   font-variation-settings: "wght" 700;
-
   color: var(--secondaryColor);
   margin: 0 0 0.5em;
 }
@@ -146,12 +144,17 @@ section article span {
   line-height: 0.5px;
 }
 
+/* Nav */
 nav {
   position: fixed;
   display: block;
   top: 0;
   width: 100vw;
-  background-color: yellow;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(200, 200, 200, 0.6)
+  );
 }
 
 i.fa-xmark {
@@ -168,7 +171,7 @@ nav i {
   margin-left: calc(100% - 70px);
   border-radius: 50px;
   height: calc(55px - 30px);
-  background-color: greenyellow;
+  background-color: white;
   padding: 10px 12px;
   font-size: 24px;
 }
@@ -178,7 +181,7 @@ nav div:hover {
   display: block;
   margin-top: 65px;
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 nav div:hover i.fa-bars {
@@ -250,7 +253,8 @@ nav span#logo {
 .hero img {
   position: relative;
   display: block;
-  margin-top: 60px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   width: 100%;
   height: 40vh;
 }
@@ -258,7 +262,7 @@ nav span#logo {
 .hero h2 {
   display: block;
   position: absolute;
-  top: 20%;
+  top: 18%;
   margin-right: 40%;
   margin-left: 20px;
 }
