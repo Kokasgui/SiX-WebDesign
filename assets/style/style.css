@@ -247,28 +247,14 @@ nav ul a {
 }
 
 /* SiX */
-nav span#logo {
+nav img {
   display: inline-block;
   position: fixed;
-  top: 0;
-  z-index: 1;
-  background-color: red;
-  padding: 5px 20px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
+  top: 5px;
+  margin-left: 20px;
+  width: 70px;
+  height: auto;
 }
-
-/* nav div > i {
-  display: block;
-  position: relative;
-  top: 0;
-  right: 0;
-  height: calc(55px - 30px);
-  background-color: greenyellow;
-  padding: 15px 20px;
-  font-size: 24px;
-} */
 
 /* Hero */
 
@@ -378,8 +364,8 @@ nav span#logo {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.feature_main{
-position: relative;
+.feature_main {
+  position: relative;
   max-width: 100%; /* Maximum width */
   margin: 0 auto; /* Center it */
 }
@@ -387,9 +373,9 @@ position: relative;
 .feature_main img {
   width: 100%;
   vertical-align: middle;
- }
+}
 
-.feature_main .content_main{
+.feature_main .content_main {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   /* background: rgb(0, 0, 0); Fallback color */
