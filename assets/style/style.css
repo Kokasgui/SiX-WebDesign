@@ -237,6 +237,20 @@ nav ul a {
   height: auto;
 }
 
+/* FOOTER */
+footer{
+  background-color: var(--primaryColor);
+}
+
+footer img {
+width: 80px;
+}
+
+.logo_flex_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Opção - Nave Hover  */
 /*
 nav div:hover {
