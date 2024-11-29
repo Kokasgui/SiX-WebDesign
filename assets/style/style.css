@@ -269,6 +269,15 @@ nav div:hover ~ i.fa-xmark {
   height: 40vh;
 }
 
+.hero_research_detail{
+ position: relative;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 40vh;
+}
+
 .hero h2 {
   display: block;
   position: absolute;
