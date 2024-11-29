@@ -238,15 +238,15 @@ nav ul a {
 }
 
 /* FOOTER */
-footer{
+footer {
   background-color: var(--primaryColor);
 }
 
 footer img {
-width: 80px;
+  width: 80px;
 }
 
-.logo_flex_container{
+.logo_flex_container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -283,8 +283,8 @@ nav div:hover ~ i.fa-xmark {
   height: 40vh;
 }
 
-.hero_research_detail{
- position: relative;
+.hero_research_detail {
+  position: relative;
   display: block;
   margin-top: 0px;
   margin-bottom: 30px;
