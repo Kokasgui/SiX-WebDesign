@@ -25,11 +25,7 @@
 
 /* === COISAS GERAIS === */
 
-/* html {
-  --primaryColor: red;
-  --secondaryColor: red;
-} */
-
+html,
 body {
   margin: 0;
 }
@@ -158,7 +154,8 @@ nav {
   position: fixed;
   display: block;
   top: 0;
-  width: 100vw;
+  right: 0;
+  width: 100%;
   background-image: linear-gradient(
     to right,
     rgba(59, 59, 59, 0.6),
@@ -170,23 +167,26 @@ i.fa-xmark {
   display: block;
 }
 
-nav i {
+nav .nav_button {
   display: block;
   position: relative;
+  box-shadow: 0 0 10px #00000044;
   cursor: pointer;
   top: 0;
   width: 20px;
   text-align: center;
-  margin: 10px 10px 10px;
-  margin-left: calc(100vw - 70px);
+  margin: 10px;
+  margin-left: calc(100% - 55px);
   border-radius: 50px;
   height: calc(55px - 30px);
   background-color: white;
+  color: black;
   padding: 10px 12px;
   font-size: 24px;
 }
 
 nav#nav_page div {
+  width: 100%;
   height: 100vh;
   background-color: white;
   display: block;
@@ -197,12 +197,10 @@ nav#nav_page div {
 nav#nav_page div ul {
   display: block;
   position: relative;
-  margin-top: 40px;
-  top: 0;
   margin-top: 0;
 }
 
-nav ul {
+nav#nav_page ul {
   display: none;
   position: relative;
   padding-left: 20px;
@@ -210,11 +208,11 @@ nav ul {
   text-transform: uppercase;
 }
 
-nav > ul {
+nav#nav_page > ul {
   padding-right: 20px;
 }
 
-nav ul li {
+nav#nav_page ul li {
   margin-bottom: 18px;
 }
 
@@ -222,7 +220,7 @@ nav ul li {
   content: "";
 }
 
-nav ul a {
+nav#nav_page ul a {
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
 }
@@ -231,7 +229,7 @@ nav ul a {
 .nav_logo {
   display: block;
   position: fixed;
-  top: 5px;
+  top: 2px;
   margin-left: 20px;
   width: 70px;
   height: auto;
@@ -243,8 +241,8 @@ footer {
 }
 
 footer img {
-width: 80px;
-margin: 10px;
+  width: 80px;
+  margin: 10px;
 }
 
 .logo_flex_container {
