@@ -156,11 +156,7 @@ nav {
   top: 0;
   right: 0;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(59, 59, 59, 0.6),
-    rgba(200, 200, 200, 0.6)
-  );
+  background-image: linear-gradient(to right, #cccccc, #ffffff00);
 }
 
 i.fa-xmark {
