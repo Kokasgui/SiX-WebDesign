@@ -126,17 +126,28 @@ section article .showing {
 }
 
 /* Para os acordeões feitos com tag <detail> no html */
-details {
+
+/* details {
+  background-color: var(--secondaryColor);
+  color: white;
   border: 1px solid #aaa;
   border-radius: 4px;
-  padding: 0.5em 0.5em 0;
+  margin-bottom: 40px;
+  padding: 0.5em 0.5em 0.5em;
 }
 
-summary {
+
+details h2 {
+  color: white;
+} */
+
+
+/* summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
+
 
 details[open] {
   padding: 0.5em;
@@ -145,7 +156,150 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
+} */
+
+/* TESTE BOTÃO */
+/* .accordion-button {
+  background-color: #4CAF50; Cor do fundo
+  color: white; Cor do texto
+  padding: 10px 20px; Espaciamento interno
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; Espaço à direita do botão
+  transition: background-color 0.3s ease; Transição suave para a cor
 }
+
+.accordion-button:hover {
+  background-color: #45a049; Cor ao passar o mouse
+}
+
+details[open] .accordion-button {
+  background-color: #f44336; Cor de fundo quando o menu está aberto
+}
+
+details[open] .accordion-button:hover {
+  background-color: #e53935; Cor ao passar o mouse quando aberto
+} */
+
+/* FIM TESTE BOTAO */
+
+/* TESTE 2 BOTÃO */
+
+details {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+summary {
+  display: block;
+}
+
+#accordion-toggle {
+  display: none; Esconde o input
+}
+
+.accordion-button {
+  background-color:var(--secondaryColor); 
+  color: white; Cor do texto
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; 
+   transition: background-color 0.3s ease; 
+   /* Transição suave para a cor */
+   display: inline-block; 
+   /* O botão fica ao lado do texto */
+} 
+
+Estilo do botão ao passar o mouse
+.accordion-button:hover {
+  background-color: white;
+   /* Cor ao passar o mouse */
+  color: var(--secondaryColor);
+  border: var(--secondaryColor);
+}
+
+details[open] .accordion-button {
+  background-color: #f44336; 
+  /* Cor de fundo quando o menu está aberto */
+}
+
+details[open] .accordion-button:hover {
+  background-color: #e53935;
+   /* Cor ao passar o mouse quando aberto */
+}
+
+/* Exibe o conteúdo do <details> quando o input for marcado */
+#accordion-toggle:checked + details {
+  display: block;
+}
+
+/* TESTE 3 BOTÃO  */
+/* details {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+summary {
+  display: block;
+  cursor: default; Remove o comportamento padrão de clique do summary
+}
+
+.accordion-button {
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: white;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+}
+
+details[open] .accordion-button {
+  background-color: #f44336;
+}
+
+details[open] .accordion-button:hover {
+  background-color: #e53935;
+}
+
+Remove o comportamento padrão do summary para permitir que só o botão funcione
+summary::-webkit-details-marker {
+  display: none;
+}
+
+Evitar que toda a área do summary seja clicável
+summary {
+  pointer-events: none;
+}
+
+.accordion-button {
+  pointer-events: auto;
+} */
+
+/* FIM DO TESTE 3 */
+
+
+
 
 
 /* Para as imagens circulares no Members' Detail */
