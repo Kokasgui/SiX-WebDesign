@@ -200,12 +200,12 @@ summary {
 }
 
 #accordion-toggle {
-  display: none; Esconde o input
+  display: none; /* Esconde o input */
 }
 
 .accordion-button {
   background-color:var(--secondaryColor); 
-  color: white; Cor do texto
+  color: white; /* Cor do texto */
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
@@ -249,13 +249,13 @@ details[open] .accordion-button:hover {
   padding: 10px;
   width: 80%;
   margin: 20px auto;
-}
+} */
 
-summary {
+/* summary {
   display: block;
-  cursor: default; Remove o comportamento padrão de clique do summary
-}
-
+  cursor: default; /* Remove o comportamento padrão de clique do summary */
+/* } 
+/* 
 .accordion-button {
   background-color: var(--secondaryColor);
   color: white;
@@ -280,21 +280,21 @@ details[open] .accordion-button {
 
 details[open] .accordion-button:hover {
   background-color: #e53935;
-}
+} 
 
-Remove o comportamento padrão do summary para permitir que só o botão funcione
-summary::-webkit-details-marker {
+Remove o comportamento padrão do summary para permitir que só o botão funcione */
+/* summary::-webkit-details-marker {
   display: none;
-}
-
-Evitar que toda a área do summary seja clicável
-summary {
-  pointer-events: none;
-}
-
-.accordion-button {
-  pointer-events: auto;
 } */
+
+/* Evitar que toda a área do summary seja clicável */
+/* summary {
+  pointer-events: none;
+} /* */
+
+/* .accordion-button {
+  pointer-events: auto;
+} */ */
 
 /* FIM DO TESTE 3 */
 
