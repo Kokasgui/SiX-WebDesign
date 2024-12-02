@@ -195,6 +195,16 @@ details {
   width: 80%;
   margin: 20px auto;
 }
+
+details .fa-chevron-down {
+  transition: linear;
+  transition-duration: 0.2s
+}
+
+details[open] .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+
 summary {
   display: block;
 }
@@ -218,7 +228,7 @@ summary {
    /* O botão fica ao lado do texto */
 } 
 
-Estilo do botão ao passar o mouse
+/* Estilo do botão ao passar o mouse */
 .accordion-button:hover {
   background-color: white;
    /* Cor ao passar o mouse */
@@ -294,7 +304,7 @@ Remove o comportamento padrão do summary para permitir que só o botão funcion
 
 /* .accordion-button {
   pointer-events: auto;
-} */ */
+} */
 
 /* FIM DO TESTE 3 */
 
