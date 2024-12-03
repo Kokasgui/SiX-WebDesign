@@ -126,7 +126,7 @@ section article .showing {
 }
 
 /* BLOCOS INFORMATIVOS_RESEARCH DETAIL */
-.bloco_informativo{
+.bloco_informativo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,17 +136,17 @@ section article .showing {
   background-color: #f9f9f9; */
 }
 
-.bloco_informativo article{
+.bloco_informativo article {
   padding: 0;
-  border-radius:8px ;
+  border-radius: 8px;
 }
-.bloco_informativo figure{
+.bloco_informativo figure {
   margin: 0;
   width: 100%;
   text-align: center;
 }
 
-.bloco_informativo figure img{
+.bloco_informativo figure img {
   width: 100%;
   /* max-width: 400px; */
   height: auto;
@@ -154,10 +154,10 @@ section article .showing {
   margin: 0;
 }
 
-.bloco_informativo figure figcaption{
+.bloco_informativo figure figcaption {
   position: relative;
-  padding: 10px;;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255,0,0,0));
+  padding: 10px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
   font-family: "Oxygen", sans-serif;
   font-size: 14px;
   line-height: auto;
@@ -181,8 +181,6 @@ section article .showing {
   text-align: left;
   font-family: "Oxygen", sans-serif;
 }
-
-
 
 /* Para os acordeões feitos com tag <detail> no html */
 
@@ -547,15 +545,16 @@ nav div:hover ~ i.fa-xmark {
 
 /* CHATGPT */
 .carousel-container {
+  position: relative;
   display: flex; /* Exibe os slides em linha */
   overflow-x: auto; /* Permite o scroll horizontal */
   scroll-behavior: smooth; /* Navegação suave ao scroll */
-  gap: 20px; /* Espaçamento entre os slides */
+  gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
-  position: relative;
+  height: 380px;
   margin: auto;
   margin-bottom: 20px;
-  padding: 20px 40px;
+  padding: 0px;
   background-color: #f4f4f4;
   border-radius: 10px;
   scrollbar-width: none;
@@ -564,7 +563,7 @@ nav div:hover ~ i.fa-xmark {
 .carousel-container p {
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
-  margin-right: 50px;
+  margin-right: 60px;
   color: white;
   /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
 }
@@ -574,12 +573,35 @@ nav div:hover ~ i.fa-xmark {
   font-size: 13px;
 }
 
+.carrossel_button {
+  position: relative;
+  display: block;
+  margin-left: calc(100% - 60px);
+  top: -50px;
+  box-shadow: 0 0 10px #00000044;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+
+/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao (dizer ao Gui para aplicar no icon da nav) */
+.carrossel_button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
   width: 300px; /* Largura de cada slide */
+
   padding: 20px;
-  background: radial-gradient(ellipse at top, #6e1358, transparent),
-    radial-gradient(ellipse at bottom, var(--secondaryColor), transparent);
+  background: radial-gradient(ellipse at top left, #6e1358, transparent),
+    radial-gradient(ellipse at bottom right, var(--secondaryColor), #6e1358);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
 }
@@ -587,7 +609,7 @@ nav div:hover ~ i.fa-xmark {
 .prev,
 .next {
   position: absolute;
-  top: -250px;
+  top: -220px;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
