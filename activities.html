@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="SiX, drawing" />
+    <meta name="description" content="Activities about SiX project" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- Isto define as cores da página -->
+    <style>
+      html {
+        --primaryColor: #612a9c;
+        --secondaryColor: #558528;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="SiX, drawing">
-  <meta name="description" content="Activities about SiX project">
-  <title>Activities</title>
-  <link rel="stylesheet" href="assets/style/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  <!-- Isto define as cores da página -->
-  <style>
-    html {
-      --primaryColor: #612a9c;
-      --secondaryColor: #558528;
-    }
-  </style>
-</head>
+  <body>
+    <header>
+      <!-- Insert nav  -->
+      <nav>
+        <a href="index.html" class="nav_logo">
+          <img src="assets/images/SiX.svg" alt="SiX logo"
+        /></a>
+        <a href="nav.html" class="nav_button">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </nav>
 
-<body>
-  <header>
-    <!-- Insert nav  -->
-    <nav>
-      <a href="index.html" class="nav_logo"> <img src="assets/images/SiX.svg" alt="SiX logo"></a>
-      <a href="nav.html" class="nav_button">
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <!-- <i class="fa-solid fa-xmark"></i> -->
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <a href="index.html"><img src="assets/images/heros/linhas-3_crop.jpg" alt="Linhas"></a>
-      <h2>SiX: ACTIVITIES OVERVIEW</h2>
-    </section>
-  </header>
-  <main>
-    <!-- Secção 1_INTRODUCTION -->
-    <section>
-      <p>
-        The SiX Research Project is dedicated to enhancing communication and
-        accessibility for individuals with Locked-in Syndrome (LIS). Through
-        collaborative efforts, the project explores digital drawing as a
-        communication tool, involving patients, caregivers, healthcare
-        professionals, researchers, and students.
-      </p>
-    </section>
-    <!-- Secção 2_BOXES SECTION - 3 Articles-->
-    <section>
-      <article>
-        <!-- BOX 1_Exploratory Box -->
-        <h3>Exploratory phase</h3>
+      <!-- Hero Section -->
+      <section class="hero">
+        <a href="index.html"
+          ><img src="assets/images/heros/linhas-3_crop.jpg" alt="Linhas"
+        /></a>
+        <h2>SiX: ACTIVITIES OVERVIEW</h2>
+      </section>
+    </header>
+    <main>
+      <!-- Secção 1_INTRODUCTION -->
+      <section>
         <p>
-          Led by Bruno Giesteira, this phase focuses on understanding the
-          needs of individuals with LIS and their caregivers. Key activities
-          include:
+          The SiX Research Project is dedicated to enhancing communication and
+          accessibility for individuals with Locked-in Syndrome (LIS). Through
+          collaborative efforts, the project explores digital drawing as a
+          communication tool, involving patients, caregivers, healthcare
+          professionals, researchers, and students.
         </p>
-        <div id="exploratory-box" class="hidden">
-          <h4>Observational Fieldwork</h4>
+      </section>
+      <!-- Secção 2_BOXES SECTION - 3 Articles-->
+      <section>
+        <article>
+          <!-- BOX 1_Exploratory Box -->
+          <h3>Exploratory phase</h3>
           <p>
-            Researchers, under the guidance of therapist Filipe Gonçalves,
-            will observe patients in therapeutic settings at APELA (Portuguese
-            Association for Amyotrophic Lateral Sclerosis), focusing on
-            cognitive, motor, and social interactions.
+            Led by Bruno Giesteira, this phase focuses on understanding the
+            needs of individuals with LIS and their caregivers. Key activities
+            include:
           </p>
-          <h4>Stakeholder Workshops</h4>
+          <div id="exploratory-box" class="hidden">
+            <h4>Observational Fieldwork</h4>
+            <p>
+              Researchers, under the guidance of therapist Filipe Gonçalves,
+              will observe patients in therapeutic settings at APELA (Portuguese
+              Association for Amyotrophic Lateral Sclerosis), focusing on
+              cognitive, motor, and social interactions.
+            </p>
+            <h4>Stakeholder Workshops</h4>
+            <p>
+              These sessions will gather insights from caregivers and therapists
+              involved in LIS care, promoting knowledge exchange.
+            </p>
+            <h4>User Interviews</h4>
+            <p>
+              Ethnographic interviews and shadow observations will explore the
+              daily routines and challenges of LIS patients.
+            </p>
+            <h4>Preliminary Drawing Activities</h4>
+            <p>
+              Pilot drawing sessions will investigate how drawing can act as a
+              communication medium in immersive digital settings, exploring
+              themes like distant memory and spatial memory.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeExploratory()">ABRE / FECHA</span>
+        </article>
+        <!-- BOX 2_Development Box -->
+        <article>
+          <h3>Development and Testing Phase</h3>
           <p>
-            These sessions will gather insights from caregivers and therapists
-            involved in LIS care, promoting knowledge exchange.
+            This phase, led by Pedro Amado, aims to design and test a prototype
+            system using digital drawing to translate minimal movements into
+            digital commands. Key tasks include:
           </p>
-          <h4>User Interviews</h4>
+          <div id="development-box" class="hidden">
+            <h4>Persona Development</h4>
+            <p>
+              Personas representing LIS users are created to refine design
+              focus.
+            </p>
+            <h4>Co-Design Workshops</h4>
+            <p>
+              Stakeholders collaboratively refine the prototypes using an agile
+              methodology, ensuring real-world relevance.
+            </p>
+            <h4>Prototype Refinement</h4>
+            <p>
+              The team will develop multiple iterations, focusing on user
+              feedback and usability.
+            </p>
+            <h4>Usability Testing</h4>
+            <p>
+              Comprehensive testing with end-users to optimize functionality.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeDevelopment()">ABRE / FECHA</span>
+        </article>
+        <!-- BOX 3_Dissemination Box -->
+        <article>
+          <h3>Dissemination Phase</h3>
           <p>
-            Ethnographic interviews and shadow observations will explore the
-            daily routines and challenges of LIS patients.
+            Coordinated by Cláudia Lima, this phase focuses on sharing project
+            results widely:
           </p>
-          <h4>Preliminary Drawing Activities</h4>
-          <p>
-            Pilot drawing sessions will investigate how drawing can act as a
-            communication medium in immersive digital settings, exploring
-            themes like distant memory and spatial memory.
-          </p>
-          <a href="">READ MORE</a>
-        </div>
-        <span onclick="changeExploratory()">ABRE / FECHA</span>
-      </article>
-      <!-- BOX 2_Development Box -->
-      <article>
-        <h3>Development and Testing Phase</h3>
-        <p>
-          This phase, led by Pedro Amado, aims to design and test a prototype
-          system using digital drawing to translate minimal movements into
-          digital commands. Key tasks include:
-        </p>
-        <div id="development-box" class="hidden">
-          <h4>Persona Development</h4>
-          <p>
-            Personas representing LIS users are created to refine design
-            focus.
-          </p>
-          <h4>Co-Design Workshops</h4>
-          <p>
-            Stakeholders collaboratively refine the prototypes using an agile
-            methodology, ensuring real-world relevance.
-          </p>
-          <h4>Prototype Refinement</h4>
-          <p>
-            The team will develop multiple iterations, focusing on user
-            feedback and usability.
-          </p>
-          <h4>Usability Testing</h4>
-          <p>
-            Comprehensive testing with end-users to optimize functionality.
-          </p>
-          <a href="">READ MORE</a>
-        </div>
-        <span onclick="changeDevelopment()">ABRE / FECHA</span>
-      </article>
-      <!-- BOX 3_Dissemination Box -->
-      <article>
-        <h3>Dissemination Phase</h3>
-        <p>
-          Coordinated by Cláudia Lima, this phase focuses on sharing project
-          results widely:
-        </p>
-        <div id="dissemination-box" class="hidden">
-          <h4>Publications and Conferences</h4>
-          <p>
-            The team will publish findings in international journals and
-            present them at conferences related to health, interaction design,
-            and digital drawing.
-          </p>
-          <h4>Online Platform</h4>
-          <p>
-            A dedicated platform will offer open access to project outputs
-            like frameworks, guidelines, and software
-          </p>
-          <h4>Final Seminar</h4>
-          <p>
-            A closing event will showcase findings and provide workshops with
-            graduate students to encourage knowledge transfer.
-          </p>
-          <a href="">READ MORE</a>
-        </div>
-        <span onclick="changeDissemination()">ABRE / FECHA</span>
-      </article>
-    </section>
-  </main>
-  <footer></footer>
-  <script src="assets/script/script.js"></script>
-</body>
-
+          <div id="dissemination-box" class="hidden">
+            <h4>Publications and Conferences</h4>
+            <p>
+              The team will publish findings in international journals and
+              present them at conferences related to health, interaction design,
+              and digital drawing.
+            </p>
+            <h4>Online Platform</h4>
+            <p>
+              A dedicated platform will offer open access to project outputs
+              like frameworks, guidelines, and software
+            </p>
+            <h4>Final Seminar</h4>
+            <p>
+              A closing event will showcase findings and provide workshops with
+              graduate students to encourage knowledge transfer.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeDissemination()">ABRE / FECHA</span>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/script/script.js"></script>
+  </body>
 </html>
