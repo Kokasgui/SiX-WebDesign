@@ -322,8 +322,8 @@ details[open] .accordion-button:hover {
 /* summary {
   display: block;
   cursor: default; /* Remove o comportamento padrão de clique do summary */
-/* } 
-/* 
+/* }
+/*
 .accordion-button {
   background-color: var(--secondaryColor);
   color: white;
@@ -348,7 +348,7 @@ details[open] .accordion-button {
 
 details[open] .accordion-button:hover {
   background-color: #e53935;
-} 
+}
 
 Remove o comportamento padrão do summary para permitir que só o botão funcione */
 /* summary::-webkit-details-marker {
@@ -572,23 +572,24 @@ nav div:hover ~ i.fa-xmark {
 
 .prev,
 .next {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  position: absolute;
+  top: -200px;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 24px;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
-}
-
-.prev {
-  left: 10px;
 }
 
 .next {
-  right: 10px;
+  right: -20px;
+}
+.prev {
+  left: -20px;
+}
+.button_box {
+  position: relative;
 }
 
 .prev:hover,
