@@ -125,6 +125,65 @@ section article .showing {
   display: block;
 }
 
+/* BLOCOS INFORMATIVOS_RESEARCH DETAIL */
+.bloco_informativo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9; */
+}
+
+.bloco_informativo article{
+  padding: 0;
+  border-radius:8px ;
+}
+.bloco_informativo figure{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bloco_informativo figure img{
+  width: 100%;
+  /* max-width: 400px; */
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.bloco_informativo figure figcaption{
+  position: relative;
+  padding: 10px;;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255,0,0,0));
+  font-family: "Oxygen", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+}
+
+.bloco_informativo h2 {
+  color: white;
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.bloco_informativo p {
+  margin: 10px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  font-family: "Oxygen", sans-serif;
+}
+
+
+
 /* Para os acordeões feitos com tag <detail> no html */
 
 /* details {
