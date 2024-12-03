@@ -62,7 +62,7 @@ h3 {
   font-family: "Oxanium", sans-serif;
   font-size: 20px;
   font-variation-settings: "wght" 700;
-  margin: 0;
+  margin: 0 0 0.5em;
 }
 
 h4 {
@@ -550,22 +550,36 @@ nav div:hover ~ i.fa-xmark {
   display: flex; /* Exibe os slides em linha */
   overflow-x: auto; /* Permite o scroll horizontal */
   scroll-behavior: smooth; /* Navegação suave ao scroll */
-  gap: 10px; /* Espaçamento entre os slides */
+  gap: 20px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
   position: relative;
   margin: auto;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
   background-color: #f4f4f4;
   border-radius: 10px;
   scrollbar-width: none;
+}
+
+.carousel-container p {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  margin-right: 50px;
+  color: white;
+  /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
+}
+
+/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
+.carousel-container p:nth-child(2) {
+  font-size: 13px;
 }
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
   width: 300px; /* Largura de cada slide */
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
+  background: radial-gradient(ellipse at top, #6e1358, transparent),
+    radial-gradient(ellipse at bottom, var(--secondaryColor), transparent);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
 }
@@ -573,7 +587,7 @@ nav div:hover ~ i.fa-xmark {
 .prev,
 .next {
   position: absolute;
-  top: -200px;
+  top: -250px;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
