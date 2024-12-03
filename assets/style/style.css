@@ -141,7 +141,6 @@ details h2 {
   color: white;
 } */
 
-
 /* summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
@@ -198,7 +197,7 @@ details {
 
 details .fa-chevron-down {
   transition: linear;
-  transition-duration: 0.2s
+  transition-duration: 0.2s;
 }
 
 details[open] .fa-chevron-down {
@@ -214,36 +213,36 @@ summary {
 }
 
 .accordion-button {
-  background-color:var(--secondaryColor); 
+  background-color: var(--secondaryColor);
   color: white; /* Cor do texto */
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin-right: 10px; 
-   transition: background-color 0.3s ease; 
-   /* Transição suave para a cor */
-   display: inline-block; 
-   /* O botão fica ao lado do texto */
-} 
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  /* Transição suave para a cor */
+  display: inline-block;
+  /* O botão fica ao lado do texto */
+}
 
 /* Estilo do botão ao passar o mouse */
 .accordion-button:hover {
   background-color: white;
-   /* Cor ao passar o mouse */
+  /* Cor ao passar o mouse */
   color: var(--secondaryColor);
   border: var(--secondaryColor);
 }
 
 details[open] .accordion-button {
-  background-color: #f44336; 
+  background-color: #f44336;
   /* Cor de fundo quando o menu está aberto */
 }
 
 details[open] .accordion-button:hover {
   background-color: #e53935;
-   /* Cor ao passar o mouse quando aberto */
+  /* Cor ao passar o mouse quando aberto */
 }
 
 /* Exibe o conteúdo do <details> quando o input for marcado */
@@ -307,10 +306,6 @@ Remove o comportamento padrão do summary para permitir que só o botão funcion
 } */
 
 /* FIM DO TESTE 3 */
-
-
-
-
 
 /* Para as imagens circulares no Members' Detail */
 .circular_images {
@@ -427,12 +422,19 @@ footer img {
   width: 80px;
   margin: 10px;
 }
+footer p {
+  display: block;
+  position: relative;
+  padding: 0px 40px 20px 40px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 14px;
+}
 
 .logo_flex_container {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 40px 20px 0px 20px;
 }
 
 /* Opção - Nave Hover  */

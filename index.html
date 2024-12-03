@@ -1,140 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="SiX, drawing" />
+    <meta name="description" content="Web page about SiX project" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- Isto define as cores da página -->
+    <style>
+      html {
+        --primaryColor: #3453d6;
+        --secondaryColor: #e8622b;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="SiX, drawing" />
-  <meta name="description" content="Web page about SiX project" />
-  <title>Home page</title>
-  <link rel="stylesheet" href="assets/style/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-  <!-- Isto define as cores da página -->
-  <style>
-    html {
-      --primaryColor: #3453d6;
-      --secondaryColor: #e8622b;
-    }
-  </style>
-</head>
+  <body>
+    <header>
+      <!-- Insert nav  -->
+      <nav>
+        <a href="index.html" class="nav_logo"
+          ><img src="assets/images/SiX.svg" alt="SiX logo"
+        /></a>
+        <a href="nav.html" class="nav_button">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
 
-<body>
-  <header>
-    <!-- Insert nav  -->
-    <nav>
-      <a href="index.html" class="nav_logo"><img src="assets/images/SiX.svg" alt="SiX logo" /></a>
-      <a href="nav.html" class="nav_button">
-        <i class="fa-solid fa-bars"></i>
-      </a>
-    </nav>
+      <!-- Hero Section -->
 
-    <!-- Hero Section -->
-
-    <div id="feature_main">
-      <img src="assets/images/heros/linhas-2.jpg" alt="Morgan O'Hara" id="img1">
-      <div id="content_main">
-        <p>
-          SiX is a research project that explores how digital drawing can help
-          patients with Locked-in Syndrome (LIS) reconnect socially and
-          express themselves. The project uses the human body as an interface,
-          converting minimal physical movements into drawing commands. This
-          approach recognizes that creative expression is a fundamental human
-          need, particularly important for those with severe motor
-          impairments.
-        </p>
+      <div id="feature_main">
+        <img
+          src="assets/images/heros/linhas-2.jpg"
+          alt="Morgan O'Hara"
+          id="img1"
+        />
+        <div id="content_main">
+          <p>
+            SiX is a research project that explores how digital drawing can help
+            patients with Locked-in Syndrome (LIS) reconnect socially and
+            express themselves. The project uses the human body as an interface,
+            converting minimal physical movements into drawing commands. This
+            approach recognizes that creative expression is a fundamental human
+            need, particularly important for those with severe motor
+            impairments.
+          </p>
+        </div>
+        <img src="assets/images/SiX.svg" alt="SiX logo" id="img2" />
       </div>
-      <img src="assets/images/SiX.svg" alt="SiX logo" id="img2">
-    </div>
-
-  </header>
-  <main>
-    <!-- Output Section - 2 Articles-->
-    <section>
-      <h2>Outputs</h2>
-      <article>
-        <h3>Events/Activities</h3>
-        <p>
-          SiX will host workshops and presentations for students, researchers,
-          and healthcare professionals. These events will focus on:
+    </header>
+    <main>
+      <!-- Output Section - 2 Articles-->
+      <section>
+        <h2>Outputs</h2>
+        <article>
+          <h3>Events/Activities</h3>
+          <p>
+            SiX will host workshops and presentations for students, researchers,
+            and healthcare professionals. These events will focus on:
+          </p>
+          <div id="events-box" class="hidden">
+            <h4>Understanding LIS and its impact</h4>
+            <p>
+              Raising awareness of LIS and the challenges faced by patients and
+              their families.
+            </p>
+            <h4>Digital drawing as a communication tool</h4>
+            <p>
+              Exploring the potential of digital drawing to facilitate
+              communication and expression for LIS patients.
+            </p>
+            <h4>Designing accessible and inclusive technologies</h4>
+            <p>
+              Sharing insights into the design process and promoting the
+              development of technologies that meet the needs of people with
+              disabilities.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeEvents()">ABRE / FECHA</span>
+        </article>
+        <article>
+          <h3>Research/Publications</h3>
+          <p>
+            The SiX project will produce a variety of publications, including:
+          </p>
+          <div id="research-box" class="hidden">
+            <h4>Scientific papers</h4>
+            <p>
+              Published in peer-reviewed journals, disseminating the project's
+              findings and contributing to the scientific understanding of LIS
+              and assistive technologies.
+            </p>
+            <h4>Design guidelines and manuals</h4>
+            <p>
+              Providing practical guidance for designers and developers creating
+              communication tools for LIS patients.
+            </p>
+            <h4>White papers and reports</h4>
+            <p>
+              Documenting the project's methodology, results, and
+              recommendations.
+            </p>
+            <br />
+            <p>
+              These publications will bridge the gap between research and
+              practice, encouraging the development of innovative solutions that
+              improve the lives of LIS patients.
+            </p>
+            <a href="">READ MORE</a>
+          </div>
+          <span onclick="changeResearch()">ABRE / FECHA</span>
+        </article>
+      </section>
+      <!-- Note Section -->
+      <section>
+        <p class="note">
+          This content was synthesized from the original project grant proposal
+          and two papers published by the research team. And generated and
+          edited on October 26, 2024, using NotebookLM by Google.
         </p>
-        <div id="events-box" class="hidden">
-          <h4>Understanding LIS and its impact</h4>
-          <p>
-            Raising awareness of LIS and the challenges faced by patients and
-            their families.
-          </p>
-          <h4>Digital drawing as a communication tool</h4>
-          <p>
-            Exploring the potential of digital drawing to facilitate
-            communication and expression for LIS patients.
-          </p>
-          <h4>Designing accessible and inclusive technologies</h4>
-          <p>
-            Sharing insights into the design process and promoting the
-            development of technologies that meet the needs of people with
-            disabilities.
-          </p>
-          <a href="">READ MORE</a>
-        </div>
-        <span onclick="changeEvents()">ABRE / FECHA</span>
-      </article>
-      <article>
-        <h3>Research/Publications</h3>
-        <p>
-          The SiX project will produce a variety of publications, including:
-        </p>
-        <div id="research-box" class="hidden">
-          <h4>Scientific papers</h4>
-          <p>
-            Published in peer-reviewed journals, disseminating the project's
-            findings and contributing to the scientific understanding of LIS
-            and assistive technologies.
-          </p>
-          <h4>Design guidelines and manuals</h4>
-          <p>
-            Providing practical guidance for designers and developers creating
-            communication tools for LIS patients.
-          </p>
-          <h4>White papers and reports</h4>
-          <p>
-            Documenting the project's methodology, results, and
-            recommendations.
-          </p>
-          <br />
-          <p>
-            These publications will bridge the gap between research and
-            practice, encouraging the development of innovative solutions that
-            improve the lives of LIS patients.
-          </p>
-          <a href="">READ MORE</a>
-        </div>
-        <span onclick="changeResearch()">ABRE / FECHA</span>
-      </article>
-    </section>
-    <!-- Note Section -->
-    <section>
-      <p class="note">
-        This content was synthesized from the original project grant proposal
-        and two papers published by the research team. And generated and
-        edited on October 26, 2024, using NotebookLM by Google.
+      </section>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="logo_flex_container">
+        <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
+        <img
+          src="assets/images/footer/lusofona.svg"
+          alt="Universidade Lusófona Logo"
+        />
+        <img src="assets/images/footer/i2ads-white.svg" alt="i2ADS Logo" />
+        <img src="assets/images/footer/id+white-alt.svg" alt="ID+ Logo" />
+        <img src="assets/images/footer/apela 25.png" alt="APELA Logo" />
+        <img src="assets/images/footer/aditgames.png" alt="ADITGameS Logo" />
+        <img src="assets/images/footer/i3s.png" alt="i3S Logo" />
+        <img
+          src="assets/images/footer/fraunhofer.svg"
+          alt="Fraunhofer Portugal Logo"
+        />
+        <img src="assets/images/footer/fct-white.svg" alt="FCT Logo" />
+      </div>
+      <p>
+        Project 2022.08322.PTDC funded by national funds through the FCT-
+        Fundação para a Ciência e a Tecnologia, I.P.DOI
+        10.54499/2022.08322.PTDC.
       </p>
-    </section>
-  </main>
-  <!-- FOOTER SECTION -->
-  <footer>
-    <div class="logo_flex_container">
-      <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
-      <img src="assets/images/footer/lusofona.svg" alt="Universidade Lusófona Logo" />
-      <img src="assets/images/footer/i2ads-white.svg" alt="i2ADS Logo" />
-      <img src="assets/images/footer/id+white-alt.svg" alt="ID+ Logo" />
-      <img src="assets/images/footer/apela 25.png" alt="APELA Logo" />
-      <img src="assets/images/footer/aditgames.png" alt="ADITGameS Logo" />
-      <img src="assets/images/footer/i3s.png" alt="i3S Logo" />
-      <img src="assets/images/footer/fraunhofer.svg" alt="Fraunhofer Portugal Logo" />
-      <img src="assets/images/footer/fct-white.svg" alt="FCT Logo" />
-    </div>
-  </footer>
-  <script src="assets/script/script.js"></script>
-</body>
-
+    </footer>
+    <script src="assets/script/script.js"></script>
+  </body>
 </html>
