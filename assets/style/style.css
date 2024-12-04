@@ -185,6 +185,59 @@ section article .showing {
 
 /* === FIM/BLOCOS INFORMATIVOS_Research Detail === */
 
+/* LISTA_GOALS */
+.lista_goals{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* ESPAÇO ENTRE AS CAIXAS */
+  gap:20px;
+  margin:0 auto;
+  /* max-width: 600px; */
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.lista_goals ul{
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+}
+
+.lista_goals li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;;
+  margin-bottom: 20px; 
+  /* padding: 15px;  */
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.lista_goals h3 {
+  margin: 0 0 10px; 
+  font-size: 2rem;
+  color: var(--secondaryColor); 
+}
+
+.lista_goals p {
+  margin: 0 10px 10px; 
+  font-size: 1.5rem;
+  color: var(--secondaryColor); 
+  line-height: 2rem;
+}
+
 /* === INÍCIO/TESTE 2 BOTÃO === */
 
 details {
