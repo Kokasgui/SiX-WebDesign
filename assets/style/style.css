@@ -41,13 +41,6 @@ header nav {
   z-index: 20;
 }
 
-footer p,
-footer p a {
-  color: white;
-  font-family: "Oxanium", sans-serif;
-  font-size: 13px;
-}
-
 /* === PARÁGRAFOS === */
 
 h1 {
@@ -381,10 +374,15 @@ footer img {
 footer p {
   display: block;
   position: relative;
-  padding: 0px 40px 20px 40px;
+  font-family: "Oxanium", sans-serif;
+  padding: 0px 20px 20px;
   margin-bottom: 0;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+footer p a {
+  color: white;
 }
 
 .logo_flex_container {
