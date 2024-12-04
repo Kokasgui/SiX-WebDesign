@@ -125,7 +125,8 @@ section article .showing {
   display: block;
 }
 
-/* BLOCOS INFORMATIVOS_RESEARCH DETAIL */
+/* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
+
 .bloco_informativo {
   display: flex;
   flex-direction: column;
@@ -182,66 +183,9 @@ section article .showing {
   font-family: "Oxygen", sans-serif;
 }
 
-/* Para os acordeões feitos com tag <detail> no html */
+/* === FIM/BLOCOS INFORMATIVOS_Research Detail === */
 
-/* details {
-  background-color: var(--secondaryColor);
-  color: white;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  margin-bottom: 40px;
-  padding: 0.5em 0.5em 0.5em;
-}
-
-
-details h2 {
-  color: white;
-} */
-
-/* summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-}
-
-
-details[open] {
-  padding: 0.5em;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
-} */
-
-/* TESTE BOTÃO */
-/* .accordion-button {
-  background-color: #4CAF50; Cor do fundo
-  color: white; Cor do texto
-  padding: 10px 20px; Espaciamento interno
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px; Espaço à direita do botão
-  transition: background-color 0.3s ease; Transição suave para a cor
-}
-
-.accordion-button:hover {
-  background-color: #45a049; Cor ao passar o mouse
-}
-
-details[open] .accordion-button {
-  background-color: #f44336; Cor de fundo quando o menu está aberto
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935; Cor ao passar o mouse quando aberto
-} */
-
-/* FIM TESTE BOTAO */
-
-/* TESTE 2 BOTÃO */
+/* === INÍCIO/TESTE 2 BOTÃO === */
 
 details {
   font-family: Arial, sans-serif;
@@ -307,64 +251,10 @@ details[open] .accordion-button:hover {
   display: block;
 }
 
-/* TESTE 3 BOTÃO  */
-/* details {
-  font-family: Arial, sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  width: 80%;
-  margin: 20px auto;
-} */
+/* === FIM/TESTE 2 BOTÃO === */
 
-/* summary {
-  display: block;
-  cursor: default; /* Remove o comportamento padrão de clique do summary */
-/* }
-/*
-.accordion-button {
-  background-color: var(--secondaryColor);
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-}
+/* === IMAGENS CIRCULARES_Members' Detail === */
 
-.accordion-button:hover {
-  background-color: white;
-  color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-}
-
-details[open] .accordion-button {
-  background-color: #f44336;
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-}
-
-Remove o comportamento padrão do summary para permitir que só o botão funcione */
-/* summary::-webkit-details-marker {
-  display: none;
-} */
-
-/* Evitar que toda a área do summary seja clicável */
-/* summary {
-  pointer-events: none;
-} /* */
-
-/* .accordion-button {
-  pointer-events: auto;
-} */
-
-/* FIM DO TESTE 3 */
-
-/* Para as imagens circulares no Members' Detail */
 .circular_images {
   display: block;
   width: 100%;
@@ -388,7 +278,7 @@ Remove o comportamento padrão do summary para permitir que só o botão funcion
   line-height: 0.5px;
 }
 
-/* Nav */
+/* === NAV ÍNICIO === */
 nav {
   position: fixed;
   display: block;
@@ -460,7 +350,7 @@ nav#nav_page ul a {
   font-weight: 700;
 }
 
-/* SiX */
+/* SiX LOGO */
 .nav_logo {
   display: block;
   position: fixed;
@@ -470,7 +360,9 @@ nav#nav_page ul a {
   height: auto;
 }
 
-/* FOOTER */
+/* === NAV FIM === */
+
+/* === FOOTER === */
 footer {
   background-color: var(--primaryColor);
 }
@@ -494,29 +386,7 @@ footer p {
   padding: 40px 20px 0px 20px;
 }
 
-/* Opção - Nave Hover  */
-/*
-nav div:hover {
-  position: fixed;
-  display: block;
-  margin-top: 65px;
-  padding-top: 20px;
-  width: 100vw;
-  background-color: white;
-  background-image: none;
-}
-
-nav div:hover i.fa-bars {
-  display: none;
-}
-
-nav div:hover ~ i.fa-xmark {
-  display: block;
-  margin-left: calc(100% - 70px);
-}
-*/
-
-/* Hero */
+/* === HERO === */
 
 .hero img {
   position: relative;
@@ -535,15 +405,16 @@ nav div:hover ~ i.fa-xmark {
   height: 40vh;
 }
 
-.hero h2 {
+.hero h1 {
   display: block;
   position: absolute;
-  top: 18%;
-  margin-right: 40%;
+  top: 15%;
+  margin-right: 20%;
   margin-left: 20px;
+  color: var(--secondaryColor);
 }
 
-/* CHATGPT */
+/* === INICIO CARROSEL_CHATGPT === */
 .carousel-container {
   position: relative;
   display: flex; /* Exibe os slides em linha */
@@ -551,7 +422,7 @@ nav div:hover ~ i.fa-xmark {
   scroll-behavior: smooth; /* Navegação suave ao scroll */
   gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
-  height: 380px;
+  height: 340px;
   margin: auto;
   margin-bottom: 20px;
   padding: 0px;
@@ -560,25 +431,13 @@ nav div:hover ~ i.fa-xmark {
   scrollbar-width: none;
 }
 
-.carousel-container p {
-  font-family: "Oxanium", sans-serif;
-  font-weight: 700;
-  margin-right: 60px;
-  color: white;
-  /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
-}
-
-/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
-.carousel-container p:nth-child(2) {
-  font-size: 13px;
-}
-
+/* ICON CARROSEL  */
+/* a "caixa" que envolve o icon */
 .carrossel_button {
   position: relative;
   display: block;
   margin-left: calc(100% - 60px);
-  top: -50px;
-  box-shadow: 0 0 10px #00000044;
+  top: -60px;
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -587,7 +446,7 @@ nav div:hover ~ i.fa-xmark {
   color: black;
 }
 
-/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao (dizer ao Gui para aplicar no icon da nav) */
+/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) (dizer ao Gui para aplicar no icon da nav) */
 .carrossel_button i {
   position: absolute;
   top: 50%;
@@ -597,13 +456,37 @@ nav div:hover ~ i.fa-xmark {
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
-  width: 300px; /* Largura de cada slide */
-
+  width: 350px; /* Largura de cada slide */
   padding: 20px;
-  background: radial-gradient(ellipse at top left, #6e1358, transparent),
-    radial-gradient(ellipse at bottom right, var(--secondaryColor), #6e1358);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background: radial-gradient(
+      ellipse at top left,
+      var(--primaryColor),
+      transparent
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      var(--secondaryColor),
+      var(--primaryColor)
+    );
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
+}
+
+/* TRATAMENTO DE TEXTO CARROSEL */
+.mySlides h2 {
+  color: white;
+}
+.mySlides p {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  margin-right: 60px;
+  color: white;
+  /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
+}
+/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
+.mySlides p:nth-child(2) {
+  font-size: 14px;
+  padding-top: 20px;
 }
 
 .prev,
@@ -633,7 +516,9 @@ nav div:hover ~ i.fa-xmark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Main Page Feature */
+/* === FIM CARROSEL_CHATGPT === */
+
+/* === MAIN PAGE FEATURE === */
 
 #feature_main {
   position: relative;
@@ -670,3 +555,147 @@ nav div:hover ~ i.fa-xmark {
   font-size: 18px;
   line-height: 28px;
 }
+
+/* Zonas comentadas/ Rascunhos de coisas */
+
+/* Opção - Nave Hover  */
+/*
+nav div:hover {
+  position: fixed;
+  display: block;
+  margin-top: 65px;
+  padding-top: 20px;
+  width: 100vw;
+  background-color: white;
+  background-image: none;
+}
+
+nav div:hover i.fa-bars {
+  display: none;
+}
+
+nav div:hover ~ i.fa-xmark {
+  display: block;
+  margin-left: calc(100% - 70px);
+}
+*/
+
+/* ------------------------------------------------- */
+
+/* TESTE 3 BOTÃO  */
+/* details {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+} */
+
+/* summary {
+  display: block;
+  cursor: default; /* Remove o comportamento padrão de clique do summary */
+/* }
+/*
+.accordion-button {
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: white;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+}
+
+details[open] .accordion-button {
+  background-color: #f44336;
+}
+
+details[open] .accordion-button:hover {
+  background-color: #e53935;
+}
+
+Remove o comportamento padrão do summary para permitir que só o botão funcione */
+/* summary::-webkit-details-marker {
+  display: none;
+} */
+
+/* Evitar que toda a área do summary seja clicável */
+/* summary {
+  pointer-events: none;
+} /* */
+
+/* .accordion-button {
+  pointer-events: auto;
+} */
+
+/* FIM DO TESTE 3 */
+
+/* ------------------------------------------------- */
+
+/* Para os acordeões feitos com tag <detail> no html */
+
+/* details {
+  background-color: var(--secondaryColor);
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 0.5em 0.5em 0.5em;
+}
+
+
+details h2 {
+  color: white;
+} */
+
+/* summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+} */
+
+/* TESTE BOTÃO */
+/* .accordion-button {
+  background-color: #4CAF50; Cor do fundo
+  color: white; Cor do texto
+  padding: 10px 20px; Espaciamento interno
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; Espaço à direita do botão
+  transition: background-color 0.3s ease; Transição suave para a cor
+}
+
+.accordion-button:hover {
+  background-color: #45a049; Cor ao passar o mouse
+}
+
+details[open] .accordion-button {
+  background-color: #f44336; Cor de fundo quando o menu está aberto
+}
+
+details[open] .accordion-button:hover {
+  background-color: #e53935; Cor ao passar o mouse quando aberto
+} */
+
+/* FIM TESTE BOTAO */
