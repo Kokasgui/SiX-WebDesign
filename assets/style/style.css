@@ -259,8 +259,9 @@ details {
   font-family: Arial, sans-serif;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
-  width: 80%;
+  padding: 20px;
+  width: 90%;
+  text-wrap: pretty;
   margin: 20px auto;
 }
 
@@ -547,11 +548,10 @@ footer p a {
   scroll-behavior: smooth; /* Navegação suave ao scroll */
   gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
-  height: 340px;
   margin: auto;
   margin-bottom: 20px;
   padding: 0px;
-  background-color: #f4f4f4;
+  background-color: none;
   scrollbar-width: none;
 }
 
@@ -560,8 +560,8 @@ footer p a {
 .carrossel_button {
   position: relative;
   display: block;
-  margin-left: calc(100% - 60px);
-  top: -60px;
+  margin-left: calc(100% - 90px);
+  top: -5%;
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -580,9 +580,8 @@ footer p a {
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
-  width: 350px; /* Largura de cada slide */
+  max-width: 90%; /* Largura de cada slide */
   padding: 20px;
-  margin: 0 auto;
   background: radial-gradient(
       ellipse at top left,
       var(--primaryColor),
@@ -603,14 +602,15 @@ footer p a {
 .mySlides p {
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
-  margin-right: 60px;
+
   color: white;
   /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
 }
 /* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
 .mySlides p:nth-child(2) {
   font-size: 14px;
-  padding-top: 20px;
+  font-weight: 500;
+  padding-right: 10px;
 }
 
 .prev,
