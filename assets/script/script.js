@@ -2,8 +2,11 @@
 function changeEvents() {
   if (document.getElementById("events-box").className == "hidden") {
     document.getElementById("events-box").className = "showing";
+    document.querySelector(".fa-chevron-down").classList.add("open");
   } else {
     document.getElementById("events-box").className = "hidden";
+    document.querySelector(".fa-chevron-down").classList.remove("open");
+
   }
 }
 

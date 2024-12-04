@@ -109,12 +109,12 @@ section article {
 }
 
 /* Para fazer os botões */
-section article span {
+/* section article span {
   display: block;
   text-align: center;
   background-color: black;
   padding: 10px;
-}
+} */
 
 /* Para abrir e fechar as caixas acordeão */
 section article .hidden {
@@ -123,6 +123,21 @@ section article .hidden {
 
 section article .showing {
   display: block;
+}
+
+/* ROTAÇÃO DO BOTÃO */
+/* section article .showing i{
+  rotate: 180deg;
+} */
+
+/* ESTADO INICIAL DO ÍCONE */
+.fa-chevron-down {
+  cursor: pointer; /* Indica que é clicável */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave à rotação */
+}
+/* ÍCONE COM ACORDEÃO ABERTO */
+.fa-chevron-down.open {
+  transform: rotate(180deg); /* Rotaciona o ícone */
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
@@ -316,8 +331,10 @@ details[open] .accordion-button:hover {
   text-align: center;
 }
 .circular_images img {
-  height: 300px;
-  height: 300px;
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+  max-height: 100%;
   padding-bottom: 15px;
   border-radius: 50%;
 }
@@ -329,7 +346,6 @@ details[open] .accordion-button:hover {
 }
 .member-caption {
   font-weight: 700;
-  line-height: 0.5px;
 }
 
 /* === NAV ÍNICIO === */
@@ -488,6 +504,7 @@ footer p a {
   width: 140%;
   height: 100%;
   object-fit: cover;
+  object-position: 10% center;
 }
 
 .hero_research_detail::after {
