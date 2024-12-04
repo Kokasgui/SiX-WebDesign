@@ -109,12 +109,12 @@ section article {
 }
 
 /* Para fazer os botões */
-section article span {
+/* section article span {
   display: block;
   text-align: center;
   background-color: black;
   padding: 10px;
-}
+} */
 
 /* Para abrir e fechar as caixas acordeão */
 section article .hidden {
@@ -123,6 +123,21 @@ section article .hidden {
 
 section article .showing {
   display: block;
+}
+
+/* ROTAÇÃO DO BOTÃO */
+/* section article .showing i{
+  rotate: 180deg;
+} */
+
+/* ESTADO INICIAL DO ÍCONE */
+.fa-chevron-down {
+  cursor: pointer; /* Indica que é clicável */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave à rotação */
+}
+/* ÍCONE COM ACORDEÃO ABERTO */
+.fa-chevron-down.open {
+  transform: rotate(180deg); /* Rotaciona o ícone */
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
