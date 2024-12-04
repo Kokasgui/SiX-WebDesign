@@ -422,7 +422,7 @@ footer p {
   scroll-behavior: smooth; /* Navegação suave ao scroll */
   gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
-  height: 380px;
+  height: 340px;
   margin: auto;
   margin-bottom: 20px;
   padding: 0px;
@@ -437,7 +437,7 @@ footer p {
   position: relative;
   display: block;
   margin-left: calc(100% - 60px);
-  top: -50px;
+  top: -60px;
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -456,11 +456,19 @@ footer p {
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
-  width: 300px; /* Largura de cada slide */
+  width: 350px; /* Largura de cada slide */
   padding: 20px;
-  background: radial-gradient(ellipse at top left, #6e1358, transparent),
-    radial-gradient(ellipse at bottom right, var(--secondaryColor), #6e1358);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background: radial-gradient(
+      ellipse at top left,
+      var(--primaryColor),
+      transparent
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      var(--secondaryColor),
+      var(--primaryColor)
+    );
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
 }
 
@@ -478,6 +486,7 @@ footer p {
 /* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
 .mySlides p:nth-child(2) {
   font-size: 14px;
+  padding-top: 20px;
 }
 
 .prev,
