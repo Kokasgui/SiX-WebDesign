@@ -535,12 +535,13 @@ nav div:hover ~ i.fa-xmark {
   height: 40vh;
 }
 
-.hero h2 {
+.hero h1 {
   display: block;
   position: absolute;
-  top: 18%;
-  margin-right: 40%;
+  top: 15%;
+  margin-right: 20%;
   margin-left: 20px;
+  color: var(--secondaryColor);
 }
 
 /* CHATGPT */
@@ -568,17 +569,21 @@ nav div:hover ~ i.fa-xmark {
   /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
 }
 
-/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
-.carousel-container p:nth-child(2) {
-  font-size: 13px;
+.carousel-container h2 {
+  color: white;
 }
 
+/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
+.carousel-container p:nth-child(2) {
+  font-size: 14px;
+}
+
+/* a "caixa" que envolve o icon */
 .carrossel_button {
   position: relative;
   display: block;
   margin-left: calc(100% - 60px);
   top: -50px;
-  box-shadow: 0 0 10px #00000044;
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -587,7 +592,7 @@ nav div:hover ~ i.fa-xmark {
   color: black;
 }
 
-/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao (dizer ao Gui para aplicar no icon da nav) */
+/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) (dizer ao Gui para aplicar no icon da nav) */
 .carrossel_button i {
   position: absolute;
   top: 50%;
@@ -598,7 +603,6 @@ nav div:hover ~ i.fa-xmark {
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
   width: 300px; /* Largura de cada slide */
-
   padding: 20px;
   background: radial-gradient(ellipse at top left, #6e1358, transparent),
     radial-gradient(ellipse at bottom right, var(--secondaryColor), #6e1358);
