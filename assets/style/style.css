@@ -520,17 +520,18 @@ footer p a {
 
 /* === MAIN PAGE ANIMATION */
 /* This is the DIV where the animation/transfomtion will take place */
-#trnsf {
+#animation {
   position: absolute;
   display: block;
   z-index: 1;
-  max-width: 100%;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   mix-blend-mode: color-burn;
+  overflow: hidden;
 }
 
 /* target the image inside the transfrom div box */
-#trnsf img {
+#animation img {
   animation-name: zigzag;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -543,7 +544,7 @@ footer p a {
 /* Neste caso possui 5 momentos do transladar do objeto */
 @keyframes zigzag {
   0% {
-    translate: -500px;
+    translate: -100%;
   }
 
   25% {
@@ -551,7 +552,7 @@ footer p a {
   }
 
   50% {
-    translate: 0px 200px;
+    translate: -100px 200px;
   }
 
   75% {
@@ -559,7 +560,7 @@ footer p a {
   }
 
   100% {
-    translate: -500px 450px;
+    translate: -100% 450px;
   }
 }
 
