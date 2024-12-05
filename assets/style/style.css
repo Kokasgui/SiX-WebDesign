@@ -540,6 +540,7 @@ footer p a {
 }
 
 /* Define o comportamente especifico da animação */
+/* Neste caso possui 5 momentos do transladar do objeto */
 @keyframes zigzag {
   0% {
     translate: -500px;
