@@ -480,6 +480,88 @@ footer p a {
   color: var(--secondaryColor);
 }
 
+/* === MAIN PAGE FEATURE === */
+
+#feature_main {
+  position: relative;
+  display: block;
+}
+
+#img1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+#img2 {
+  position: absolute;
+  transform-origin: center center;
+  top: calc(-30vw + 25vh);
+  transform: scale(50%);
+  opacity: 0.3;
+}
+
+#content_main {
+  display: block;
+  position: relative; /* Position the background text */
+  background: rgba(52, 83, 214, 0.8);
+  z-index: 1;
+  color: white;
+  width: calc(100% - 40px); /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+#content_main p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* === MAIN PAGE ANIMATION */
+/* This is the DIV where the animation/transfomtion will take place */
+#trnsf {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  max-width: 100%;
+  height: 300px;
+  mix-blend-mode: color-burn;
+}
+
+/* target the image inside the transfrom div box */
+#trnsf img {
+  animation-name: zigzag;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  height: 300px;
+}
+
+/* Define o comportamente especifico da animação */
+@keyframes zigzag {
+  0% {
+    translate: -500px;
+  }
+
+  25% {
+    translate: 300px 100px;
+  }
+
+  50% {
+    translate: 0px 200px;
+  }
+
+  75% {
+    translate: 300px 300px;
+  }
+
+  100% {
+    translate: -500px 450px;
+  }
+}
+
 /* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
 .hero_research_detail {
   position: relative;
@@ -639,44 +721,6 @@ footer p a {
 }
 
 /* === FIM CARROSEL_CHATGPT === */
-
-/* === MAIN PAGE FEATURE === */
-
-#feature_main {
-  position: relative;
-  display: block;
-}
-
-#img1 {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 400px;
-}
-
-#img2 {
-  position: absolute;
-  transform-origin: center center;
-  top: calc(-30vw + 25vh);
-  transform: scale(50%);
-  opacity: 0.3;
-}
-
-#content_main {
-  display: block;
-  position: relative; /* Position the background text */
-  background: rgba(52, 83, 214, 0.8);
-  z-index: 1;
-  color: white;
-  width: calc(100% - 40px); /* Full width */
-  padding: 20px; /* Some padding */
-}
-
-#content_main p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-}
 
 /* Zonas comentadas/ Rascunhos de coisas */
 
