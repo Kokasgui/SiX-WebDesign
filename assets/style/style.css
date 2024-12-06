@@ -597,9 +597,6 @@ footer p a {
   gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
   margin: auto;
-  margin-bottom: 20px;
-  padding: 0px;
-  background-color: none;
   scrollbar-width: none;
 }
 
@@ -628,7 +625,7 @@ footer p a {
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
-  max-width: 90%; /* Largura de cada slide */
+  max-width: calc(100% - 40px); /* Largura de cada slide */
   padding: 20px;
   background: radial-gradient(
       ellipse at top left,
@@ -654,17 +651,20 @@ footer p a {
   color: white;
   /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
 }
-/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
+
 .mySlides p:nth-child(2) {
   font-size: 14px;
   font-weight: 500;
   padding-right: 10px;
 }
 
+.button_box {
+  padding-bottom: 30px;
+}
+
 .prev,
 .next {
   position: absolute;
-  top: -220px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -674,13 +674,10 @@ footer p a {
 }
 
 .next {
-  right: -20px;
+  right: 20px;
 }
 .prev {
-  left: -20px;
-}
-.button_box {
-  position: relative;
+  left: 20px;
 }
 
 .prev:hover,
