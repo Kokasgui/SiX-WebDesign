@@ -108,6 +108,14 @@ section article {
   margin-bottom: 40px;
 }
 
+article {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start;
+  position: relative; 
+  padding: 20px; 
+}
+
 /* Para abrir e fechar as caixas acordeão */
 section article .hidden {
   display: none;
@@ -121,20 +129,21 @@ section article .showing {
 .fa-chevron-down {
   cursor: pointer; 
   transition: transform 0.3s ease; 
-  /* BOTÃO CONTIDO NUM CÍRCULO, styling do botão*/
-  /* border-style: solid; */
-  padding: 15px;
+  padding: 12px;
+  border-style: solid;
+  border-color: white;
   border-radius: 100%;
   align-items: center;
-  background-color: rgba(255,190,129, 0.8);
-  color: var(--secondaryColor);
-  font-size: 20px;
+  font-size: 25px;
 
-  /* CENTRALIZAR O BOTÃO */
-  position: absolute;
-  left: 45%;
+  /* POSICIONAR BOTÃO
+  position: flex;
+  flex-direction: column;
+  column-gap: 50px;
+  left: 45%; */
   
 }
+
 /* ÍCONE COM ACORDEÃO ABERTO */
 .fa-chevron-down.open {
   transform: rotate(180deg); 
