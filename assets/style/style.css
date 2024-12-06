@@ -259,10 +259,10 @@ details {
   font-family: Arial, sans-serif;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 20px;
-  width: 90%;
+  width: 100%;
   text-wrap: pretty;
   margin: 20px auto;
+  background-color: var(--secondaryColor);
 }
 
 details .fa-chevron-down {
@@ -276,6 +276,12 @@ details[open] .fa-chevron-down {
 
 summary {
   display: block;
+  padding: 20px;
+  color: white;
+}
+
+summary h2 {
+  color: white;
 }
 
 #accordion-toggle {
