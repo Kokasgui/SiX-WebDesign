@@ -100,6 +100,20 @@ strong {
   font-weight: 700;
 }
 
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+figcaption {
+  color: white;
+  z-index: 1;
+  font-family: "Oxygen", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+}
+
 /* Para fazer as caixinhas */
 section article {
   background-color: var(--secondaryColor);
@@ -146,7 +160,7 @@ section article .showing {
 
 /* ÍCONE COM ACORDEÃO ABERTO */
 .fa-chevron-down.open {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
@@ -154,53 +168,35 @@ section article .showing {
 .bloco_informativo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  /* border: 1px solid #ddd;
+  padding: 0 0 20px;
   border-radius: 8px;
-  background-color: #f9f9f9; */
-}
-
-.bloco_informativo article {
-  padding: 0;
-  border-radius: 8px;
-}
-.bloco_informativo figure {
-  margin: 0;
-  width: 100%;
-  text-align: center;
 }
 
 .bloco_informativo figure img {
   width: 100%;
-  /* max-width: 400px; */
   height: auto;
   display: block;
   margin: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .bloco_informativo figure figcaption {
   position: relative;
   padding: 10px;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-  font-family: "Oxygen", sans-serif;
-  font-size: 14px;
-  line-height: auto;
+  text-align: center;
 }
 
 .bloco_informativo h2 {
   color: white;
-  margin-top: 20px;
   font-size: 24px;
   text-align: left;
-  padding-left: 20px;
-  margin-left: 10px;
+  padding: 20px 20px 0;
   font-family: "Oxygen", sans-serif;
 }
 
 .bloco_informativo p {
-  margin: 10px;
-  padding: 20px;
+  margin: 0 20px;
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
@@ -268,10 +264,10 @@ details {
   font-family: Arial, sans-serif;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 20px;
-  width: 90%;
+  width: 100%;
   text-wrap: pretty;
   margin: 20px auto;
+  background-color: var(--secondaryColor);
 }
 
 details .fa-chevron-down {
@@ -285,6 +281,12 @@ details[open] .fa-chevron-down {
 
 summary {
   display: block;
+  padding: 20px;
+  color: white;
+}
+
+summary h2 {
+  color: white;
 }
 
 #accordion-toggle {
@@ -306,54 +308,43 @@ summary {
   /* O botão fica ao lado do texto */
 }
 
-/* Estilo do botão ao passar o mouse */
-.accordion-button:hover {
-  background-color: white;
-  /* Cor ao passar o mouse */
-  color: var(--secondaryColor);
-  border: var(--secondaryColor);
-}
-
-details[open] .accordion-button {
+details[open] {
   background-color: #f44336;
   /* Cor de fundo quando o menu está aberto */
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-  /* Cor ao passar o mouse quando aberto */
-}
-
-/* Exibe o conteúdo do <details> quando o input for marcado */
-#accordion-toggle:checked + details {
-  display: block;
 }
 
 /* === FIM/TESTE 2 BOTÃO === */
 
 /* === IMAGENS CIRCULARES_Members' Detail === */
 
-.circular_images {
+/* .circular_images {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
+} */
+.member {
+  margin: 0 0 50px 0;
+  padding: 0;
 }
-.circular_images img {
+
+.member img {
+  position: relative;
+  display: block;
   height: auto;
-  width: 300px;
-  max-width: 100%;
-  max-height: 100%;
-  padding-bottom: 15px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   border-radius: 50%;
 }
 
-.member {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding: 0;
+.member figcaption {
+  color: black;
+  text-align: center;
 }
-.member-caption {
+
+.member figcaption .member-caption {
   font-weight: 700;
 }
 
@@ -485,7 +476,7 @@ footer p a {
 }
 
 .hero h1,
-.hero_research_detail figcaption:first-of-type {
+.hero figcaption:first-of-type {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
   font-variation-settings: "wght" 700;
@@ -497,7 +488,7 @@ footer p a {
   color: var(--secondaryColor);
 }
 
-.hero_research_detail figcaption:first-of-type {
+.hero figcaption:first-of-type {
   color: white;
 }
 
@@ -588,25 +579,14 @@ footer p a {
 /* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
 .hero_research_detail {
   position: relative;
-  display: block;
+  /* display: block;
   margin: 0;
-  width: 100%;
+  width: 100%; */
   height: 60vh;
   overflow: hidden;
 }
 
-.hero_research_detail figure {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 10% center;
-  margin: 0%;
-}
-
 .hero_research_detail img {
-  position: absolute;
-  width: 140%;
   height: 100%;
   object-fit: cover;
   object-position: 10% center;
@@ -620,18 +600,12 @@ footer p a {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-  pointer-events: none;
 }
 
 .hero_research_detail figcaption {
   position: absolute;
   margin: 0 20% 30px 20px;
   bottom: 0;
-  color: white;
-  z-index: 1;
-  font-family: "Oxygen", sans-serif;
-  font-size: 14px;
-  line-height: auto;
 }
 
 /* === INICIO CARROSEL_CHATGPT === */
@@ -887,4 +861,3 @@ details[open] .accordion-button:hover {
   background-color: black;
   padding: 10px;
 } */
-
