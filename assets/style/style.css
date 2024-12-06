@@ -100,21 +100,27 @@ strong {
   font-weight: 700;
 }
 
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+figcaption {
+  color: white;
+  z-index: 1;
+  font-family: "Oxygen", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+}
+
 /* Para fazer as caixinhas */
 section article {
   background-color: var(--secondaryColor);
   color: white;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-
-/* Para fazer os botões */
-/* section article span {
-  display: block;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-} */
 
 /* Para abrir e fechar as caixas acordeão */
 section article .hidden {
@@ -125,19 +131,27 @@ section article .showing {
   display: block;
 }
 
-/* ROTAÇÃO DO BOTÃO */
-/* section article .showing i{
-  rotate: 180deg;
-} */
-
-/* ESTADO INICIAL DO ÍCONE */
+/* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
 .fa-chevron-down {
-  cursor: pointer; /* Indica que é clicável */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave à rotação */
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+  /* BOTÃO CONTIDO NUM CÍRCULO, styling do botão*/
+  /* border-style: solid; */
+  padding: 15px;
+  border-radius: 100%;
+  align-items: center;
+  background-color: rgba(255,190,129, 0.8);
+  color: var(--secondaryColor);
+  font-size: 20px;
+
+  /* CENTRALIZAR O BOTÃO */
+  position: absolute;
+  left: 45%;
+  
 }
 /* ÍCONE COM ACORDEÃO ABERTO */
 .fa-chevron-down.open {
-  transform: rotate(180deg); /* Rotaciona o ícone */
+  transform: rotate(180deg); 
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
@@ -156,11 +170,11 @@ section article .showing {
   padding: 0;
   border-radius: 8px;
 }
-.bloco_informativo figure {
+/* .bloco_informativo figure {
   margin: 0;
   width: 100%;
   text-align: center;
-}
+} */
 
 .bloco_informativo figure img {
   width: 100%;
@@ -174,9 +188,7 @@ section article .showing {
   position: relative;
   padding: 10px;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-  font-family: "Oxygen", sans-serif;
-  font-size: 14px;
-  line-height: auto;
+  text-align: center;
 }
 
 .bloco_informativo h2 {
@@ -482,7 +494,7 @@ footer p a {
 }
 
 .hero h1,
-.hero_research_detail figcaption:first-of-type {
+.hero figcaption:first-of-type {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
   font-variation-settings: "wght" 700;
@@ -494,7 +506,7 @@ footer p a {
   color: var(--secondaryColor);
 }
 
-.hero_research_detail figcaption:first-of-type {
+.hero figcaption:first-of-type {
   color: white;
 }
 
@@ -585,25 +597,14 @@ footer p a {
 /* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
 .hero_research_detail {
   position: relative;
-  display: block;
+  /* display: block;
   margin: 0;
-  width: 100%;
+  width: 100%; */
   height: 60vh;
   overflow: hidden;
 }
 
-.hero_research_detail figure {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 10% center;
-  margin: 0%;
-}
-
 .hero_research_detail img {
-  position: absolute;
-  width: 140%;
   height: 100%;
   object-fit: cover;
   object-position: 10% center;
@@ -617,18 +618,12 @@ footer p a {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-  pointer-events: none;
 }
 
 .hero_research_detail figcaption {
   position: absolute;
   margin: 0 20% 30px 20px;
   bottom: 0;
-  color: white;
-  z-index: 1;
-  font-family: "Oxygen", sans-serif;
-  font-size: 14px;
-  line-height: auto;
 }
 
 /* === INICIO CARROSEL_CHATGPT === */
@@ -876,3 +871,12 @@ details[open] .accordion-button:hover {
 } */
 
 /* FIM TESTE BOTAO */
+
+/* Para fazer os botões */
+/* section article span {
+  display: block;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+} */
+
