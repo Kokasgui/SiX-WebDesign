@@ -264,17 +264,26 @@ section article .showing {
   line-height: 2rem;
 }
 
-/* === INÍCIO/TESTE 2 BOTÃO === */
+/* === DETAILS BOX_About === */
 
 details {
-  font-family: Arial, sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   width: 100%;
-  text-wrap: pretty;
-  margin: 20px auto;
+  padding: 20px;
+  margin: 40px -20px;
   background-color: var(--secondaryColor);
+  display: block;
+  color: white;
 }
+
+summary h2 {
+  color: white;
+}
+
+/* Eliminar
+details [open] {
+  background-color: red;
+  padding: 20px;
+} */
 
 details .fa-chevron-down {
   transition: linear;
@@ -285,39 +294,22 @@ details[open] .fa-chevron-down {
   transform: rotate(-180deg);
 }
 
-summary {
-  display: block;
-  padding: 20px;
-  color: white;
-}
-
-summary h2 {
-  color: white;
-}
-
 #accordion-toggle {
   display: none; /* Esconde o input */
 }
 
+/* ELIMINAR 
 .accordion-button {
-  background-color: var(--secondaryColor);
-  color: white; /* Cor do texto */
-  padding: 10px 10px;
-  border: none;
+  background-color: ;
+  padding: 30px 30px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
   margin-right: 10px;
   transition: background-color 0.3s ease;
-  /* Transição suave para a cor */
+  Transição suave para a cor
   display: inline-block;
-  /* O botão fica ao lado do texto */
-}
-
-details[open] {
-  background-color: #f44336;
-  /* Cor de fundo quando o menu está aberto */
-}
+  /* O botão fica ao lado do texto 
+} */
 
 /* === FIM/TESTE 2 BOTÃO === */
 
