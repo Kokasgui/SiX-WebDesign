@@ -133,25 +133,24 @@ section article .showing {
 
 /* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
 .fa-chevron-down {
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
   /* BOTÃO CONTIDO NUM CÍRCULO, styling do botão*/
   /* border-style: solid; */
   padding: 15px;
   border-radius: 100%;
   align-items: center;
-  background-color: rgba(255,190,129, 0.8);
+  background-color: rgba(255, 190, 129, 0.8);
   color: var(--secondaryColor);
   font-size: 20px;
 
   /* CENTRALIZAR O BOTÃO */
   position: absolute;
   left: 45%;
-  
 }
 /* ÍCONE COM ACORDEÃO ABERTO */
 .fa-chevron-down.open {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
@@ -159,29 +158,16 @@ section article .showing {
 .bloco_informativo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  /* border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9; */
-}
-
-.bloco_informativo article {
-  padding: 0;
+  padding: 0 0 20px;
   border-radius: 8px;
 }
-/* .bloco_informativo figure {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-} */
 
 .bloco_informativo figure img {
   width: 100%;
-  /* max-width: 400px; */
   height: auto;
   display: block;
   margin: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .bloco_informativo figure figcaption {
@@ -193,17 +179,14 @@ section article .showing {
 
 .bloco_informativo h2 {
   color: white;
-  margin-top: 20px;
   font-size: 24px;
   text-align: left;
-  padding-left: 20px;
-  margin-left: 10px;
+  padding: 20px 20px 0;
   font-family: "Oxygen", sans-serif;
 }
 
 .bloco_informativo p {
-  margin: 10px;
-  padding: 20px;
+  margin: 0 20px;
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
@@ -873,4 +856,3 @@ details[open] .accordion-button:hover {
   background-color: black;
   padding: 10px;
 } */
-
