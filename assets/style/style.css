@@ -163,6 +163,27 @@ section article .showing {
   transform: rotate(180deg);
 }
 
+
+/* BOTÃO READ MORE */
+.read_more_button{
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  padding:10px 20px ;
+  color: var(--secondaryColor);
+  font: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* COMPORTAMENTO COM HOVER */
+.read_more_button:hover {
+  /* background-color: rgb(254, 174, 124);  */
+  color: var(--primaryColor); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
 .bloco_informativo {
