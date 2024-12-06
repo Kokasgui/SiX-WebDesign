@@ -438,8 +438,7 @@ footer {
 }
 
 footer img {
-  width: 80px;
-  margin: 10px;
+  width: 100%;
 }
 footer p {
   display: block;
@@ -458,7 +457,12 @@ footer p a {
 .logo_flex_container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 40px 20px 0px 20px;
+  column-gap: 30px;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
 }
 
 /* === HERO === */
@@ -527,7 +531,7 @@ footer p a {
 }
 
 /* === MAIN PAGE ANIMATION */
-/* This is the DIV where the animation/transfomtion will take place */
+/* "Caixa" onde se insere a animação */
 #animation {
   position: absolute;
   display: block;
