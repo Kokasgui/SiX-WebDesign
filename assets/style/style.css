@@ -133,25 +133,24 @@ section article .showing {
 
 /* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
 .fa-chevron-down {
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
   /* BOTÃO CONTIDO NUM CÍRCULO, styling do botão*/
   /* border-style: solid; */
   padding: 15px;
   border-radius: 100%;
   align-items: center;
-  background-color: rgba(255,190,129, 0.8);
+  background-color: rgba(255, 190, 129, 0.8);
   color: var(--secondaryColor);
   font-size: 20px;
 
   /* CENTRALIZAR O BOTÃO */
   position: absolute;
   left: 45%;
-  
 }
 /* ÍCONE COM ACORDEÃO ABERTO */
 .fa-chevron-down.open {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
@@ -315,27 +314,9 @@ summary h2 {
   /* O botão fica ao lado do texto */
 }
 
-/* Estilo do botão ao passar o mouse */
-.accordion-button:hover {
-  background-color: white;
-  /* Cor ao passar o mouse */
-  color: var(--secondaryColor);
-  border: var(--secondaryColor);
-}
-
-details[open] .accordion-button {
+details[open] {
   background-color: #f44336;
   /* Cor de fundo quando o menu está aberto */
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-  /* Cor ao passar o mouse quando aberto */
-}
-
-/* Exibe o conteúdo do <details> quando o input for marcado */
-#accordion-toggle:checked + details {
-  display: block;
 }
 
 /* === FIM/TESTE 2 BOTÃO === */
@@ -879,4 +860,3 @@ details[open] .accordion-button:hover {
   background-color: black;
   padding: 10px;
 } */
-
