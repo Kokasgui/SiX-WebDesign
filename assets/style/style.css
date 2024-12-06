@@ -254,10 +254,10 @@ details {
   font-family: Arial, sans-serif;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 20px;
-  width: 90%;
+  width: 100%;
   text-wrap: pretty;
   margin: 20px auto;
+  background-color: var(--secondaryColor);
 }
 
 details .fa-chevron-down {
@@ -271,6 +271,12 @@ details[open] .fa-chevron-down {
 
 summary {
   display: block;
+  padding: 20px;
+  color: white;
+}
+
+summary h2 {
+  color: white;
 }
 
 #accordion-toggle {
@@ -292,27 +298,9 @@ summary {
   /* O botão fica ao lado do texto */
 }
 
-/* Estilo do botão ao passar o mouse */
-.accordion-button:hover {
-  background-color: white;
-  /* Cor ao passar o mouse */
-  color: var(--secondaryColor);
-  border: var(--secondaryColor);
-}
-
-details[open] .accordion-button {
+details[open] {
   background-color: #f44336;
   /* Cor de fundo quando o menu está aberto */
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-  /* Cor ao passar o mouse quando aberto */
-}
-
-/* Exibe o conteúdo do <details> quando o input for marcado */
-#accordion-toggle:checked + details {
-  display: block;
 }
 
 /* === FIM/TESTE 2 BOTÃO === */
