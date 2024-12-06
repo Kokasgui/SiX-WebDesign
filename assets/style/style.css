@@ -124,10 +124,10 @@ section article {
 
 article {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: flex-start;
-  position: relative; 
-  padding: 20px; 
+  position: relative;
+  padding: 20px;
 }
 
 /* Para abrir e fechar as caixas acordeão */
@@ -141,8 +141,8 @@ section article .showing {
 
 /* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
 .fa-chevron-down {
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
   padding: 12px;
   border-style: solid;
   border-color: white;
@@ -155,7 +155,6 @@ section article .showing {
   flex-direction: column;
   column-gap: 50px;
   left: 45%; */
-  
 }
 
 /* ÍCONE COM ACORDEÃO ABERTO */
@@ -286,19 +285,23 @@ details {
   padding: 20px;
   margin: 40px -20px;
   background-color: var(--secondaryColor);
+  text-wrap: pretty;
   display: block;
   color: white;
+}
+
+details[open] > summary:nth-child(2) p,
+h3 {
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 40px;
 }
 
 summary h2 {
   color: white;
 }
-
-/* Eliminar
-details [open] {
-  background-color: red;
-  padding: 20px;
-} */
 
 details .fa-chevron-down {
   transition: linear;
@@ -312,21 +315,6 @@ details[open] .fa-chevron-down {
 #accordion-toggle {
   display: none; /* Esconde o input */
 }
-
-/* ELIMINAR 
-.accordion-button {
-  background-color: ;
-  padding: 30px 30px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-  Transição suave para a cor
-  display: inline-block;
-  /* O botão fica ao lado do texto 
-} */
-
-/* === FIM/TESTE 2 BOTÃO === */
 
 /* === IMAGENS CIRCULARES_Members' Detail === */
 
