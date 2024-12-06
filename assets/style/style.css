@@ -344,7 +344,7 @@ details[open] {
   text-align: center;
 }
 
-.member figcaption .member-caption {
+.member figcaption p:first-of-type {
   font-weight: 700;
 }
 
