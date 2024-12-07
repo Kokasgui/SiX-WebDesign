@@ -127,7 +127,7 @@ section article {
   background-color: var(--secondaryColor);
   color: white;
   padding: 20px;
-  margin-bottom: 40px;
+  margin: 0 -20px 40px;
 }
 
 section article div:first-of-type {
@@ -218,6 +218,7 @@ section article .showing {
   display: flex;
   flex-direction: column;
   padding: 0 0 20px;
+  margin: 0 0 40px;
   border-radius: 8px;
 }
 
