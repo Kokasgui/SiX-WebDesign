@@ -38,6 +38,7 @@
     line-height: 28px;
   }
 
+  /* ===== HERO ===== */
   .hero {
     position: relative;
     height: calc(450px + 10vw);
@@ -50,11 +51,11 @@
     text-transform: uppercase;
   }
 
-  .hero .teste {
+  .hero .hero-text {
     margin: 0 calc((100% - 900px) / 2);
   }
 
-  .hero h1.teste {
+  .hero h1.hero-text {
     margin-bottom: 10%;
   }
 
@@ -65,6 +66,8 @@
   .subtitle {
     font-size: 76px;
   }
+
+  /* Fim do hero */
 
   h2 {
     font-size: 64px;
