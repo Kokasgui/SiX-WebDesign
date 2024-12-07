@@ -141,7 +141,7 @@ article .article-float {
 article {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  row-gap: 20px;
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
@@ -167,12 +167,6 @@ section article .showing {
   border-radius: 100%;
   align-items: center;
   font-size: 25px;
-
-  /* POSICIONAR BOTÃO
-  position: flex;
-  flex-direction: column;
-  column-gap: 50px;
-  left: 45%; */
 }
 
 /* ÍCONE COM ACORDEÃO ABERTO */
