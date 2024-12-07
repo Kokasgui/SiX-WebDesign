@@ -68,7 +68,7 @@ h2 {
 
 h3 {
   font-family: "Oxanium", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-variation-settings: "wght" 700;
   margin: 0 0 0.5em;
 }
@@ -241,7 +241,7 @@ section article .showing {
   color: white;
   font-size: 24px;
   text-align: left;
-  padding: 20px 20px 0;
+  padding: 0 20px;
   font-family: "Oxygen", sans-serif;
 }
 
