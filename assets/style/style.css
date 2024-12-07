@@ -507,30 +507,64 @@ footer p a {
 
 /* === HERO === */
 
+.hero {
+  position: relative;
+  height: calc(60vh + 10vw);
+  overflow: hidden;
+}
+
 .hero img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% center;
+}
+
+/* .hero img {
   user-select: none;
   position: relative;
   display: block;
   margin-top: 0px;
   width: 100%;
   height: 40vh;
+} */
+
+.teste {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  z-index: 50;
+  margin: 0 20% 30px 20px;
 }
 
-.hero h1,
-.hero figcaption:first-of-type {
+.hero h1 {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
   font-variation-settings: "wght" 700;
-  top: 0;
-  margin: calc(20% + 5vw) 20% 20px 20px;
   z-index: 1;
   display: block;
-  position: absolute;
   color: var(--secondaryColor);
 }
 
-.hero figcaption:first-of-type {
+.hero .teste h1 {
   color: white;
+}
+
+.teste figcaption {
+  position: relative;
+  margin: 30px 0 0;
+  bottom: 0;
+}
+
+/* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
+
+.hero-grad::after {
+  content: ""; /* Necessário para criar o gradiente como camada adicional */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
 }
 
 /* === MAIN PAGE FEATURE === */
@@ -617,35 +651,6 @@ footer p a {
   100% {
     translate: -100% 450px;
   }
-}
-
-/* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
-.hero_research_detail {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-}
-
-.hero_research_detail img {
-  height: 100%;
-  object-fit: cover;
-  object-position: 10% center;
-}
-
-.hero_research_detail::after {
-  content: ""; /* Necessário para criar o gradiente como camada adicional */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-}
-
-.hero_research_detail figcaption {
-  position: absolute;
-  margin: 0 20% 30px 20px;
-  bottom: 0;
 }
 
 /* === INICIO CARROSEL_CHATGPT === */
@@ -737,98 +742,3 @@ footer p a {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-/* === FIM CARROSEL_CHATGPT === */
-
-/* Zonas comentadas/ Rascunhos de coisas */
-
-/* Opção - Nave Hover  */
-/*
-nav div:hover {
-  position: fixed;
-  display: block;
-  margin-top: 65px;
-  padding-top: 20px;
-  width: 100vw;
-  background-color: white;
-  background-image: none;
-}
-
-nav div:hover i.fa-bars {
-  display: none;
-}
-
-nav div:hover ~ i.fa-xmark {
-  display: block;
-  margin-left: calc(100% - 70px);
-}
-*/
-
-/* ------------------------------------------------- */
-
-/* Para os acordeões feitos com tag <detail> no html */
-
-/* details {
-  background-color: var(--secondaryColor);
-  color: white;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  margin-bottom: 40px;
-  padding: 0.5em 0.5em 0.5em;
-}
-
-
-details h2 {
-  color: white;
-} */
-
-/* summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-}
-
-
-details[open] {
-  padding: 0.5em;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
-} */
-
-/* TESTE BOTÃO */
-/* .accordion-button {
-  background-color: #4CAF50; Cor do fundo
-  color: white; Cor do texto
-  padding: 10px 20px; Espaciamento interno
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px; Espaço à direita do botão
-  transition: background-color 0.3s ease; Transição suave para a cor
-}
-
-.accordion-button:hover {
-  background-color: #45a049; Cor ao passar o mouse
-}
-
-details[open] .accordion-button {
-  background-color: #f44336; Cor de fundo quando o menu está aberto
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935; Cor ao passar o mouse quando aberto
-} */
-
-/* FIM TESTE BOTAO */
-
-/* Para fazer os botões */
-/* section article span {
-  display: block;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-} */
