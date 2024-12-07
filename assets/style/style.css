@@ -193,19 +193,6 @@ section article .showing {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* .read_more_button {
-  display: inline-block;
-  text-decoration: none;
-  background: white;
-  padding: 10px 20px;
-  color: var(--secondaryColor);
-  font-size: 20px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
 /* COMPORTAMENTO COM HOVER */
 .read_more_button:hover {
   /* background-color: rgb(254, 174, 124);  */
@@ -514,19 +501,11 @@ footer p a {
 }
 
 .hero img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 10% center;
 }
-
-/* .hero img {
-  user-select: none;
-  position: relative;
-  display: block;
-  margin-top: 0px;
-  width: 100%;
-  height: 40vh;
-} */
 
 .teste {
   position: absolute;
@@ -540,18 +519,25 @@ footer p a {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
   font-variation-settings: "wght" 700;
+  bottom: 0;
+  margin-bottom: 20%;
   z-index: 1;
   display: block;
   color: var(--secondaryColor);
+  text-transform: uppercase;
 }
 
 .hero .teste h1 {
   color: white;
 }
 
+.subtitle {
+  font-size: 28px;
+}
+
 .teste figcaption {
   position: relative;
-  margin: 30px 0 0;
+  margin: -30px 0 0;
   bottom: 0;
 }
 

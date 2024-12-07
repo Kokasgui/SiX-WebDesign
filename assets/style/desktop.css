@@ -1,5 +1,5 @@
 /* DESKTOP AAAAAAAAAAAA */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .desktop {
     display: block;
   }
@@ -9,7 +9,7 @@
   }
 
   main {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
@@ -38,9 +38,32 @@
     line-height: 28px;
   }
 
+  .hero {
+    position: relative;
+    height: calc(450px + 10vw);
+    overflow: hidden;
+  }
+
   .hero h1 {
     font-size: 96px;
-    line-height: 120px;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+
+  .hero .teste {
+    margin: 0 calc((100% - 900px) / 2);
+  }
+
+  .hero h1.teste {
+    margin-bottom: 10%;
+  }
+
+  .hero figcaption {
+    margin: -170px 0 20px;
+  }
+
+  .subtitle {
+    font-size: 76px;
   }
 
   h2 {
