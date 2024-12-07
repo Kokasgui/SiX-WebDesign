@@ -180,6 +180,26 @@ section article .showing {
   transform: rotate(180deg);
 }
 
+/* BOTÃO READ MORE */
+.read_more_button {
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  padding: 10px 20px;
+  color: var(--secondaryColor);
+  font: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* COMPORTAMENTO COM HOVER */
+.read_more_button:hover {
+  /* background-color: rgb(254, 174, 124);  */
+  color: var(--primaryColor);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
 .bloco_informativo {
@@ -231,7 +251,6 @@ section article .showing {
   /* ESPAÇO ENTRE AS CAIXAS */
   gap: 20px;
   margin: 0 auto;
-  /* max-width: 600px; */
   min-height: 60vh;
   padding: 20px;
 }
@@ -278,23 +297,30 @@ section article .showing {
 /* === DETAILS BOX_About === */
 
 details {
+  display: block;
   width: 100%;
   padding: 20px;
-  margin: 40px -20px;
+  margin: 0 -20px;
   background-color: var(--secondaryColor);
-  display: block;
+  text-wrap: pretty;
   color: white;
+}
+details:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+details[open] > summary:nth-child(2) p,
+h3 {
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 40px;
 }
 
 summary h2 {
   color: white;
 }
-
-/* Eliminar
-details [open] {
-  background-color: red;
-  padding: 20px;
-} */
 
 details .fa-chevron-down {
   transition: linear;
@@ -309,29 +335,15 @@ details[open] .fa-chevron-down {
   display: none; /* Esconde o input */
 }
 
-/* ELIMINAR 
-.accordion-button {
-  background-color: ;
-  padding: 30px 30px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-  Transição suave para a cor
-  display: inline-block;
-  /* O botão fica ao lado do texto 
-} */
+/* === DETAILS IMGS_About === */
 
-/* === FIM/TESTE 2 BOTÃO === */
+.details_img {
+  display: block;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+}
 
 /* === IMAGENS CIRCULARES_Members' Detail === */
-
-/* .circular_images {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-} */
 .member {
   margin: 0 0 50px 0;
   padding: 0;
@@ -588,9 +600,6 @@ footer p a {
 /* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
 .hero_research_detail {
   position: relative;
-  /* display: block;
-  margin: 0;
-  width: 100%; */
   height: 60vh;
   overflow: hidden;
 }
@@ -626,9 +635,6 @@ footer p a {
   gap: 40px; /* Espaçamento entre os slides */
   max-width: 100%; /* Define a largura máxima do carrossel */
   margin: auto;
-  margin-bottom: 20px;
-  padding: 0px;
-  background-color: none;
   scrollbar-width: none;
 }
 
@@ -637,8 +643,8 @@ footer p a {
 .carrossel_button {
   position: relative;
   display: block;
-  margin-left: calc(100% - 90px);
-  top: -5%;
+  margin-left: calc(100% - 80px);
+  top: 0;
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -657,7 +663,7 @@ footer p a {
 
 .mySlides {
   flex-shrink: 0; /* Impede que os slides encolham */
-  max-width: 90%; /* Largura de cada slide */
+  max-width: calc(100% - 40px); /* Largura de cada slide */
   padding: 20px;
   background: radial-gradient(
       ellipse at top left,
@@ -683,7 +689,7 @@ footer p a {
   color: white;
   /* text-wrap: pretty; ---> Descobri que isto impede viúvas! Mt engraçado */
 }
-/* Uso so atributo Second child para diferenciar paragrafos sem ter de recorrer à atribuição de uma class */
+
 .mySlides p:nth-child(2) {
   font-size: 14px;
   font-weight: 500;
@@ -693,8 +699,7 @@ footer p a {
 .prev,
 .next {
   position: absolute;
-  top: -220px;
-  z-index: 1;
+  transform: translateY(-100%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 24px;
@@ -703,13 +708,7 @@ footer p a {
 }
 
 .next {
-  right: -20px;
-}
-.prev {
-  left: -20px;
-}
-.button_box {
-  position: relative;
+  right: 20px;
 }
 
 .prev:hover,
@@ -742,65 +741,6 @@ nav div:hover ~ i.fa-xmark {
   margin-left: calc(100% - 70px);
 }
 */
-
-/* ------------------------------------------------- */
-
-/* TESTE 3 BOTÃO  */
-/* details {
-  font-family: Arial, sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  width: 80%;
-  margin: 20px auto;
-} */
-
-/* summary {
-  display: block;
-  cursor: default; /* Remove o comportamento padrão de clique do summary */
-/* }
-/*
-.accordion-button {
-  background-color: var(--secondaryColor);
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.accordion-button:hover {
-  background-color: white;
-  color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-}
-
-details[open] .accordion-button {
-  background-color: #f44336;
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-}
-
-Remove o comportamento padrão do summary para permitir que só o botão funcione */
-/* summary::-webkit-details-marker {
-  display: none;
-} */
-
-/* Evitar que toda a área do summary seja clicável */
-/* summary {
-  pointer-events: none;
-} /* */
-
-/* .accordion-button {
-  pointer-events: auto;
-} */
-
-/* FIM DO TESTE 3 */
 
 /* ------------------------------------------------- */
 
