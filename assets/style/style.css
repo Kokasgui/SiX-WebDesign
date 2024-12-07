@@ -334,7 +334,7 @@ details[open] > summary:nth-child(2) p {
 }
 
 hr {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 summary h2 {
