@@ -233,7 +233,6 @@ section article .showing {
   /* ESPAÇO ENTRE AS CAIXAS */
   gap: 20px;
   margin: 0 auto;
-  /* max-width: 600px; */
   min-height: 60vh;
   padding: 20px;
 }
@@ -280,13 +279,16 @@ section article .showing {
 /* === DETAILS BOX_About === */
 
 details {
+  display: block;
   width: 100%;
   padding: 20px;
-  margin: 40px -20px;
+  margin: 0 -20px;
   background-color: var(--secondaryColor);
   text-wrap: pretty;
-  display: block;
   color: white;
+}
+details:nth-child(6) {
+  margin-bottom: 40px;
 }
 
 details[open] > summary:nth-child(2) p,
@@ -315,14 +317,15 @@ details[open] .fa-chevron-down {
   display: none; /* Esconde o input */
 }
 
-/* === IMAGENS CIRCULARES_Members' Detail === */
+/* === DETAILS IMGS_About === */
 
-/* .circular_images {
+.details_img {
   display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-} */
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+}
+
+/* === IMAGENS CIRCULARES_Members' Detail === */
 .member {
   margin: 0 0 50px 0;
   padding: 0;
@@ -579,9 +582,6 @@ footer p a {
 /* === HERO ESPECÍFICA DO RESEARCH DETAIL ===*/
 .hero_research_detail {
   position: relative;
-  /* display: block;
-  margin: 0;
-  width: 100%; */
   height: 60vh;
   overflow: hidden;
 }
@@ -678,14 +678,10 @@ footer p a {
   padding-right: 10px;
 }
 
-.button_box {
-  padding-bottom: 30px;
-}
-
 .prev,
 .next {
   position: absolute;
-  z-index: 1;
+  transform: translateY(-100%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 24px;
@@ -695,9 +691,6 @@ footer p a {
 
 .next {
   right: 20px;
-}
-.prev {
-  left: 20px;
 }
 
 .prev:hover,
@@ -730,65 +723,6 @@ nav div:hover ~ i.fa-xmark {
   margin-left: calc(100% - 70px);
 }
 */
-
-/* ------------------------------------------------- */
-
-/* TESTE 3 BOTÃO  */
-/* details {
-  font-family: Arial, sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  width: 80%;
-  margin: 20px auto;
-} */
-
-/* summary {
-  display: block;
-  cursor: default; /* Remove o comportamento padrão de clique do summary */
-/* }
-/*
-.accordion-button {
-  background-color: var(--secondaryColor);
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.accordion-button:hover {
-  background-color: white;
-  color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-}
-
-details[open] .accordion-button {
-  background-color: #f44336;
-}
-
-details[open] .accordion-button:hover {
-  background-color: #e53935;
-}
-
-Remove o comportamento padrão do summary para permitir que só o botão funcione */
-/* summary::-webkit-details-marker {
-  display: none;
-} */
-
-/* Evitar que toda a área do summary seja clicável */
-/* summary {
-  pointer-events: none;
-} /* */
-
-/* .accordion-button {
-  pointer-events: auto;
-} */
-
-/* FIM DO TESTE 3 */
 
 /* ------------------------------------------------- */
 
