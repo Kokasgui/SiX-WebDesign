@@ -1,5 +1,6 @@
 /* DESKTOP AAAAAAAAAAAA */
 @media screen and (min-width: 1000px) {
+  /* Limpar badalhoquices */
   .desktop {
     display: block;
   }
@@ -7,6 +8,7 @@
   .mobile {
     display: none;
   }
+  /* Fim das badalhoquices */
 
   main {
     max-width: 900px;
@@ -28,6 +30,8 @@
     width: 70%;
   }
 
+  /* COISAS ESPECÍFICAS */
+
   p {
     font-size: 22px;
     line-height: 34px;
@@ -38,7 +42,7 @@
     line-height: 28px;
   }
 
-  /* ===== HERO ===== */
+  /* === HERO === */
   .hero {
     position: relative;
     height: calc(450px + 10vw);
@@ -67,8 +71,9 @@
     font-size: 76px;
   }
 
-  /* Fim do hero */
+  /* === HERO FIM === */
 
+  /* === PARÁGRAFOS === */
   h2 {
     font-size: 64px;
     /* line-height: 80px; */
@@ -93,7 +98,7 @@
     display: block;
   }
 
-  /* FOOTER */
+  /* === FOOTER === */
 
   footer div.logo_flex_container {
     position: relative;
