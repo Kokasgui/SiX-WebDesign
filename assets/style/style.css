@@ -41,6 +41,14 @@ header nav {
   z-index: 20;
 }
 
+.desktop {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* === PARÁGRAFOS === */
 
 h1 {
@@ -123,7 +131,7 @@ section article {
 }
 
 section article div:first-of-type {
-  /* width: 30%; */
+  width: 100%;
   position: relative;
 }
 
@@ -132,16 +140,10 @@ section article div:nth-of-type(2) {
   position: relative;
 }
 
-article .article-float {
-  position: relative;
-  display: block;
-  float: left;
-}
-
 article {
   display: flex;
-  flex-direction: row;
-  row-gap: 20px;
+  flex-direction: column;
+  gap: 20px;
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
@@ -162,6 +164,7 @@ section article .showing {
   cursor: pointer;
   transition: transform 0.3s ease;
   padding: 12px;
+  float: right;
   border-style: solid;
   border-color: white;
   border-radius: 100%;
@@ -176,17 +179,32 @@ section article .showing {
 
 /* BOTÃO READ MORE */
 .read_more_button {
+  position: relative;
+  display: inline-block;
+  /* margin: 0 auto; */
+  background: white;
+  padding: 10px 20px;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .read_more_button {
   display: inline-block;
   text-decoration: none;
   background: white;
   padding: 10px 20px;
   color: var(--secondaryColor);
-  font: 20px;
+  font-size: 20px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* COMPORTAMENTO COM HOVER */
 .read_more_button:hover {
@@ -301,19 +319,6 @@ details {
 }
 details:nth-child(6) {
   margin-bottom: 40px;
-}
-
-.read_more_button {
-  display: inline-block;
-  text-decoration: none;
-  background: white;
-  padding: 10px 20px;
-  color: var(--secondaryColor);
-  font: 20px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* COMPORTAMENTO COM HOVER */
@@ -502,6 +507,7 @@ footer p a {
 /* === HERO === */
 
 .hero img {
+  user-select: none;
   position: relative;
   display: block;
   margin-top: 0px;
@@ -567,6 +573,7 @@ footer p a {
 /* === MAIN PAGE ANIMATION */
 /* "Caixa" onde se insere a animação */
 #animation {
+  user-select: none;
   position: absolute;
   display: block;
   z-index: 1;
@@ -578,6 +585,7 @@ footer p a {
 
 /* target the image inside the transfrom div box */
 #animation img {
+  user-select: none;
   animation-name: zigzag;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
