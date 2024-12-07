@@ -1,3 +1,91 @@
 /* DESKTOP AAAAAAAAAAAA */
-@media screen {
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  section article {
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+
+  section article .desktop div:first-of-type {
+    width: 30%;
+  }
+
+  section article .desktop div:nth-last-of-type(2) {
+    width: 70%;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .note {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .hero h1 {
+    font-size: 96px;
+    line-height: 120px;
+  }
+
+  h2 {
+    font-size: 64px;
+    /* line-height: 80px; */
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  h4 {
+    font-size: 30px;
+    /* line-height: 38px; */
+  }
+
+  #content_main {
+    display: none;
+  }
+
+  #content_main_desktop {
+    position: relative;
+    display: block;
+  }
+
+  /* FOOTER */
+
+  footer div.logo_flex_container {
+    position: relative;
+    display: flex;
+    padding: 20px 20px 0;
+  }
+
+  footer .logo_flex_container img {
+    width: 80px;
+  }
+
+  /* article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    padding: 20px;
+  } */
 }
