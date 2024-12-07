@@ -122,12 +122,30 @@ section article {
   margin-bottom: 40px;
 }
 
+section article div:first-of-type {
+  /* width: 30%; */
+  position: relative;
+}
+
+section article div:nth-of-type(2) {
+  /* width: 70%; */
+  position: relative;
+}
+
+article .article-float {
+  position: relative;
+  display: block;
+  float: left;
+}
+
 article {
   display: flex;
-  justify-content: flex-end; 
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: flex-end;
   align-items: flex-start;
-  position: relative; 
-  padding: 20px; 
+  position: relative;
+  padding: 20px;
 }
 
 /* Para abrir e fechar as caixas acordeão */
@@ -141,8 +159,8 @@ section article .showing {
 
 /* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
 .fa-chevron-down {
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
   padding: 12px;
   border-style: solid;
   border-color: white;
@@ -155,7 +173,6 @@ section article .showing {
   flex-direction: column;
   column-gap: 50px;
   left: 45%; */
-  
 }
 
 /* ÍCONE COM ACORDEÃO ABERTO */

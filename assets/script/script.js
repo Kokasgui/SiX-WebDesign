@@ -1,49 +1,34 @@
-// Muda a classe e mostra/esconde o texto de Events
-function changeEvents() {
-  if (document.getElementById("events-box").className == "hidden") {
-    document.getElementById("events-box").className = "showing";
-    document.querySelector(".fa-chevron-down").classList.add("open");
-  } else {
-    document.getElementById("events-box").className = "hidden";
-    document.querySelector(".fa-chevron-down").classList.remove("open");
+// Muda a classe e mostra/esconde o texto dos acordeões. Gerado por CHATGPT
+document.addEventListener("DOMContentLoaded", function () {
+  // Encontrar todas as setas e adicionar o ouvinte de evento de clique
+  document.querySelectorAll(".fa-chevron-down").forEach(function (arrow) {
+    arrow.addEventListener("click", openCloseArticle);
+  });
+});
 
-  }
-}
+function openCloseArticle(event) {
+  // Encontrar o elemento que disparou o evento (a seta)
+  let arrow = event.target;
 
-// Muda a classe e mostra/esconde o texto de Research
-function changeResearch() {
-  if (document.getElementById("research-box").className == "hidden") {
-    document.getElementById("research-box").className = "showing";
-  } else {
-    document.getElementById("research-box").className = "hidden";
-  }
-}
+  // Obter o elemento pai da seta clicada
+  let parent = arrow.closest("article"); // Agora pegamos o artigo como pai
 
-// Muda a classe e mostra/esconde o texto de Exploratory
-function changeExploratory() {
-  if (document.getElementById("exploratory-box").className == "hidden") {
-    document.getElementById("exploratory-box").className = "showing";
-  } else {
-    document.getElementById("exploratory-box").className = "hidden";
-  }
-}
+  // Encontrar todos os filhos do elemento pai com as classes "hidden" ou "showing"
+  let filhos = parent.querySelectorAll(".hidden, .showing");
+  let setinhas = parent.querySelector(".fa-chevron-down");
 
-// Muda a classe e mostra/esconde o texto de Development
-function changeDevelopment() {
-  if (document.getElementById("development-box").className == "hidden") {
-    document.getElementById("development-box").className = "showing";
-  } else {
-    document.getElementById("development-box").className = "hidden";
-  }
-}
-
-// Muda a classe e mostra/esconde o texto de Dissemination
-function changeDissemination() {
-  if (document.getElementById("dissemination-box").className == "hidden") {
-    document.getElementById("dissemination-box").className = "showing";
-  } else {
-    document.getElementById("dissemination-box").className = "hidden";
-  }
+  // Alternar as classes de todos os filhos encontrados
+  filhos.forEach(function (filho) {
+    if (filho.classList.contains("hidden")) {
+      filho.classList.remove("hidden");
+      filho.classList.add("showing");
+      setinhas.classList.add("open");
+    } else {
+      filho.classList.remove("showing");
+      filho.classList.add("hidden");
+      setinhas.classList.remove("open");
+    }
+  });
 }
 
 // CHATGPT
