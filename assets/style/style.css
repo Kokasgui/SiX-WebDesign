@@ -309,8 +309,7 @@ details:nth-child(6) {
   margin-bottom: 40px;
 }
 
-details[open] > summary:nth-child(2) p,
-h3 {
+details[open] > summary:nth-child(2) p {
   margin-top: 40px;
 }
 
