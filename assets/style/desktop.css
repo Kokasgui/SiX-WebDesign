@@ -19,6 +19,8 @@
     color: red;
   } */
 
+  /* === COISAS GERAIS === */
+
   main {
     max-width: 900px;
     margin: 0 auto;
@@ -30,8 +32,19 @@
     padding: 0;
     color: black;
   }
+  /* === COISAS ESPECÍFICAS === */
 
-  /* === RESEARCH DETAIL_ESPECIFICIDADES === */
+  p {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .note {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
 
   .container {
     flex-direction: row;
@@ -82,7 +95,7 @@
     font-family: "Oxygen", sans-serif;
   }
 
-  /* FIM_RESEARCH DETAIL_ESPECIFICIDADES*/
+  /* === RESEARCH DETAIL_ESPECIFICIDADES_FIM === */
 
   section article .desktop div:first-of-type {
     width: 30%;
@@ -107,19 +120,7 @@
     justify-content: center;
   }
 
-  /* COISAS ESPECÍFICAS */
-
-  p {
-    font-size: 22px;
-    line-height: 34px;
-  }
-
-  .note {
-    font-size: 22px;
-    line-height: 28px;
-  }
-
-  /* === HERO === */
+  /* === HERO_INICIO=== */
   .hero {
     position: relative;
     height: calc(450px + 10vw);
@@ -148,15 +149,12 @@
     font-size: 76px;
   }
 
-  /* === HERO FIM === */
+  /* === HERO_FIM === */
 
-  /* === MAIN PAGE FEATURE === */
-
-  #img1 {
-    height: 100vh;
-  }
+  /* === MAIN PAGE FEATURE_INICIO === */
 
   #cursor {
+    user-select: none;
     position: absolute;
     z-index: 1;
     width: 600px;
@@ -167,9 +165,23 @@
     cursor: none;
   }
 
+  #feature_main h2 {
+    position: absolute;
+    display: block;
+    color: black;
+    z-index: 1;
+    font-size: 6vh;
+    width: 30%;
+    right: 0;
+    bottom: 15vh;
+    opacity: 0.3;
+  }
+
   #animation {
     display: none;
   }
+
+  /* === MAIN PAGE FEATURE_FIM === */
 
   /* === PARÁGRAFOS === */
   h2 {
@@ -207,14 +219,4 @@
   footer .logo_flex_container img {
     width: 80px;
   }
-
-  /* article {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: flex-start;
-    position: relative;
-    padding: 20px;
-  } */
 }

@@ -59,25 +59,29 @@
       <!-- Hero Section -->
 
       <div id="feature_main">
+        <h2>"Drawing for Social Re-connectivity”</h2>
         <!-- Animation -->
         <div id="animation">
           <img src="assets/images/circle.svg" alt="" />
         </div>
         <!-- Div cursor APENAS APLICADA EM DESKTOP -->
-        <div id="cursor"><img src="assets/images/circle.svg" alt="" /></div>
+        <div id="cursor"><img src="assets/images/circle.svg" /></div>
+        <!-- Picture que troca entre imagem de mobile e imagem de desktop -->
         <picture>
           <source
-            media="(max-width:600px)"
+            media="(max-width:1000px)"
             srcset="assets/images/heros/linhas-2.jpg"
           />
-          <img
-            src="assets/images/heros/linhas-2.jpg"
-            id="img1"
-            alt="Morgan O'Hara"
+          <source
+            media="(min-width:601px)"
+            srcset="assets/images/heros/Hero.jpg"
           />
-          <img src="assets/images/heros/" alt="" />
+          <img
+            src="assets/images/heros/Hero.jpg"
+            alt="Hero Image"
+            width="100%"
+          />
         </picture>
-
         <div id="content_main" class="mobile">
           <p>
             SiX is a research project that explores how digital drawing can help
