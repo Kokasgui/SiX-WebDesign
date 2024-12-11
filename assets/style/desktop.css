@@ -22,7 +22,7 @@
     color: black;
   }
 
-  /* RESEARCH DETAIL_ESPECIFICIDADES*/
+  /* === RESEARCH DETAIL_ESPECIFICIDADES === */
 
   .container {
     flex-direction: row;
@@ -154,6 +154,8 @@
     height: auto;
     border-radius: 50%;
     mix-blend-mode: color-burn;
+    translate: -50% -50%;
+    cursor: none;
   }
 
   #animation {
