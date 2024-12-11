@@ -438,13 +438,24 @@ section article .showing {
 }
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
-.bloco_informativo {
+.container{
   display: flex;
   flex-direction: column;
+  gap:20px;
+  align-items: center;
+}
+
+
+.bloco_informativo {
+  display: flex;
+  flex-direction: column; 
+  /* align-items: flex-start;
+  gap:20px; */
   padding: 0 0 20px;
   margin: 0 0 40px;
   border-radius: 8px;
 }
+
 
 .bloco_informativo figure img {
   width: 100%;
@@ -459,6 +470,12 @@ section article .showing {
   padding: 10px;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
   text-align: center;
+}
+
+.bloco_informativo h2,
+.bloco_informativo p {
+  flex: 1;
+  margin: 0;
 }
 
 .bloco_informativo h2 {
@@ -486,10 +503,10 @@ section article .showing {
   align-items: center;
   flex-wrap: wrap;
   /* ESPAÇO ENTRE AS CAIXAS */
-  gap: 20px;
+  gap: 40px;
   margin: 0 auto;
   min-height: 60vh;
-  padding: 20px;
+  padding: 30px;
 }
 
 .lista_goals ul {
