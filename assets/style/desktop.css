@@ -10,6 +10,15 @@
   }
   /* Fim das badalhoquices */
 
+  /* nav ul {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+    color: red;
+  } */
+
   main {
     max-width: 900px;
     margin: 0 auto;
