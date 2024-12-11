@@ -110,28 +110,39 @@
 
   /* MEMBERS EM LINHA HORIZONTAL */
   
-  .all_members section{
-    /* position: relative; */
+  .all_members {
+     position: relative; 
     display: flex !important;
-   /* flex-direction: row;
-    flex-direction: row; */
     flex-wrap: wrap !important; 
-    /* align-items: center; */
     gap:20px;
+    align-items: center;
+    
   }
   
+
+  .all_members section h2 {
+    flex-basis: 100%; 
+    margin-bottom: 20px; /
+  }
+
   .all_members .member {
-    /* flex: 1 1 calc(20% - 20px);  */
+    flex: 1 1 calc(20% - 20px); 
     max-width: 250px;
     margin: 0;
   }
 
-  .member figure {
+  .member img {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+  /* .member figure {
     display: flex;
     flex-direction: row;
     max-width: 100px;
     margin: 0;
-  } 
+  }  */
   
   /* .member img {
     position: relative;
