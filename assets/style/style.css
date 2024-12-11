@@ -122,6 +122,11 @@ figcaption {
   font-size: 14px;
 }
 
+#cursor {
+  width: 0;
+  height: 0;
+}
+
 /* === HERO INÍCIO === */
 
 .hero {
@@ -187,6 +192,7 @@ figcaption {
 #feature_main {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 #img1 {
@@ -200,7 +206,7 @@ figcaption {
   position: absolute;
   transform-origin: center center;
   top: calc(-30vw + 25vh);
-  transform: scale(50%);
+  transform: scale(40%);
   opacity: 0.3;
 }
 
@@ -230,7 +236,6 @@ figcaption {
   width: 100%;
   height: 100%;
   mix-blend-mode: color-burn;
-  overflow: hidden;
 }
 
 /* target the image inside the transfrom div box */
