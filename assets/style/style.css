@@ -197,11 +197,14 @@ figcaption {
   overflow: hidden;
 }
 
-#img1 {
+#feature_main h2 {
+  display: none;
+}
+
+picture img {
   position: relative;
   display: block;
-  width: 100%;
-  height: 400px;
+  height: auto;
 }
 
 #img2 {
@@ -242,7 +245,6 @@ figcaption {
 
 /* target the image inside the transfrom div box */
 #animation img {
-  user-select: none;
   animation-name: zigzag;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -618,6 +620,7 @@ details[open] .fa-chevron-down {
   margin: 0 auto;
   margin-bottom: 15px;
   border-radius: 50%;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .member figcaption {
@@ -639,7 +642,8 @@ footer img {
   width: 100%;
 }
 footer p {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-family: "Oxanium", sans-serif;
   padding: 0px 20px 20px;
