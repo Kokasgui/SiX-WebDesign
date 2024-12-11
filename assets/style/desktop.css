@@ -114,16 +114,11 @@
      position: relative; 
     display: flex !important;
     flex-wrap: wrap !important; 
-    gap:20px;
-    align-items: center;
+    gap:90px;
+    /* align-items: center; */
     
   }
   
-
-  .all_members section h2 {
-    flex-basis: 100%; 
-    margin-bottom: 20px; /
-  }
 
   .all_members .member {
     flex: 1 1 calc(20% - 20px); 
