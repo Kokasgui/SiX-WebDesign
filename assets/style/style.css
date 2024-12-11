@@ -639,7 +639,8 @@ footer img {
   width: 100%;
 }
 footer p {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-family: "Oxanium", sans-serif;
   padding: 0px 20px 20px;
