@@ -10,6 +10,15 @@
   }
   /* Fim das badalhoquices */
 
+  /* nav ul {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+    color: red;
+  } */
+
   main {
     max-width: 900px;
     margin: 0 auto;
@@ -22,7 +31,7 @@
     color: black;
   }
 
-  /* RESEARCH DETAIL_ESPECIFICIDADES*/
+  /* === RESEARCH DETAIL_ESPECIFICIDADES === */
 
   .container {
     flex-direction: row;
@@ -204,6 +213,8 @@
     height: auto;
     border-radius: 50%;
     mix-blend-mode: color-burn;
+    translate: -50% -50%;
+    cursor: none;
   }
 
   #animation {

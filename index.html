@@ -28,7 +28,30 @@
         <a href="index.html" class="nav_logo"
           ><img src="assets/images/SiX.svg" alt="SiX logo"
         /></a>
-        <a href="nav.html" class="nav_button">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li><a href="about.html">About</a></li>
+          <ul>
+            <li><a href="members.html">Members' Details</a></li>
+            <li>
+              <a href="research_publications.html">Research / Publications</a>
+            </li>
+            <ul>
+              <li><a href="research_detail.html">Research Detail</a></li>
+            </ul>
+          </ul>
+          <li><a href="">Output(s)</a></li>
+          <ul>
+            <li><a href="activities.html">Activities</a></li>
+            <ul>
+              <li><a href="">Workshop Activity Detail</a></li>
+            </ul>
+          </ul>
+        </ul>
+
+        <a href="nav.html" class="nav_button mobile">
           <i class="fa-solid fa-bars"></i>
         </a>
       </nav>
@@ -42,11 +65,19 @@
         </div>
         <!-- Div cursor APENAS APLICADA EM DESKTOP -->
         <div id="cursor"><img src="assets/images/circle.svg" alt="" /></div>
-        <img
-          src="assets/images/heros/linhas-2.jpg"
-          alt="Morgan O'Hara"
-          id="img1"
-        />
+        <picture>
+          <source
+            media="(max-width:600px)"
+            srcset="assets/images/heros/linhas-2.jpg"
+          />
+          <img
+            src="assets/images/heros/linhas-2.jpg"
+            id="img1"
+            alt="Morgan O'Hara"
+          />
+          <img src="assets/images/heros/" alt="" />
+        </picture>
+
         <div id="content_main" class="mobile">
           <p>
             SiX is a research project that explores how digital drawing can help

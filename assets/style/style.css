@@ -84,17 +84,19 @@ p {
 
 strong {
   font-family: "Oxygen", sans-serif;
-  font-size: 16px;
   font-weight: 700;
   color: var(--secondaryColor);
 }
 
 ul {
   font-family: "Oxygen", sans-serif;
-  font-size: 16px;
   line-height: 2rem;
   list-style: circle;
   color: var(--primaryColor);
+}
+
+li {
+  color: black;
 }
 
 .note {
@@ -438,24 +440,22 @@ section article .showing {
 }
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
   align-items: center;
 }
 
-
 .bloco_informativo {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   /* align-items: flex-start;
   gap:20px; */
   padding: 0 0 20px;
   margin: 0 0 40px;
   border-radius: 8px;
 }
-
 
 .bloco_informativo figure img {
   width: 100%;
