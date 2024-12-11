@@ -120,6 +120,118 @@
     justify-content: center;
   }
 
+
+  /* MEMBERS EM LINHA HORIZONTAL */
+  
+  .all_members {
+     position: relative; 
+    display: flex !important;
+    flex-wrap: wrap !important; 
+    gap:90px;
+    /* align-items: center; */
+    
+  }
+  
+
+  .all_members .member {
+    flex: 1 1 calc(20% - 20px); 
+    max-width: 250px;
+    margin: 0;
+  }
+
+  .member img {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+  /* .member figure {
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    margin: 0;
+  }  */
+  
+  /* .member img {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+  
+  .member figcaption {
+    color: black;
+    text-align: center;
+  }
+  
+  .member figcaption p:first-of-type {
+    font-weight: 700;
+  }
+   */
+
+
+
+
+
+  /* MEMBERS EM LINHA HORIZONTAL */
+  
+  .all_members {
+     position: relative; 
+    display: flex !important;
+    flex-wrap: wrap !important; 
+    gap:90px;
+    /* align-items: center; */
+    
+  }
+  
+
+  .all_members .member {
+    flex: 1 1 calc(20% - 20px); 
+    max-width: 250px;
+    margin: 0;
+  }
+
+  .member img {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+  /* .member figure {
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    margin: 0;
+  }  */
+  
+  /* .member img {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+  
+  .member figcaption {
+    color: black;
+    text-align: center;
+  }
+  
+  .member figcaption p:first-of-type {
+    font-weight: 700;
+  }
+   */
+
+
+
+
   /* === HERO_INICIO=== */
   .hero {
     position: relative;
@@ -219,4 +331,14 @@
   footer .logo_flex_container img {
     width: 80px;
   }
+
+  /* article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    padding: 20px;
+  } */
 }
