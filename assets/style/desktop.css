@@ -1,23 +1,47 @@
 /* DESKTOP AAAAAAAAAAAA */
 @media screen and (min-width: 1000px) {
-  /* Limpar badalhoquices */
-  .desktop {
+  nav ul li {
+    position: relative;
     display: block;
+    color: red;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    padding: 10px;
+    margin: 0;
   }
 
-  .mobile {
-    display: none;
+  nav li:hover ul,
+  nav li ul li:hover ul {
+    opacity: 1;
   }
-  /* Fim das badalhoquices */
 
-  /* nav ul {
+  nav ul {
+    box-sizing: border-box;
     display: flex;
     position: relative;
     flex-direction: row;
-    height: 100%;
     width: auto;
     color: red;
-  } */
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li ul {
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  nav li ul li ul {
+    overflow: visible;
+    flex-direction: row-reverse;
+    /* background-color: red; */
+    opacity: 0;
+    /* li {
+      background-color: red;
+    } */
+  }
 
   main {
     max-width: 900px;
@@ -206,13 +230,13 @@
     width: 80px;
   }
 
-  /* article {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: flex-start;
-    position: relative;
-    padding: 20px;
-  } */
+  /* Limpar badalhoquices */
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+  /* Fim das badalhoquices */
 }
