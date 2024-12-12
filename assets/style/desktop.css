@@ -207,6 +207,10 @@
     height: auto;
   }
 
+  .next {
+    right: calc(50% - 450px);
+  }
+
   /* .member figure {
     display: flex;
     flex-direction: row;
