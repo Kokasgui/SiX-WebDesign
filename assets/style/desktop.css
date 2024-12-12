@@ -1,7 +1,12 @@
 /* DESKTOP AAAAAAAAAAAA */
 @media screen and (min-width: 1000px) {
   nav {
-    background-image: linear-gradient(to right, #cccccc, #ffffffff);
+    background-image: linear-gradient(to right, #cccccc, #ffffff00);
+  }
+
+  header .hero,
+  header #feature_main {
+    margin-top: 60px;
   }
 
   nav ul {

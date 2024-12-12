@@ -99,7 +99,7 @@ const moveCursor = (e) => {
   const mouseY = e.clientY;
   const mouseX = e.clientX;
 
-  cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  cursor.style.transform = `translate3d(${mouseX}px, calc(${mouseY}px - 40px), 0)`;
 };
 
 window.addEventListener("mousemove", moveCursor);
