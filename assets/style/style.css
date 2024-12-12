@@ -551,6 +551,10 @@ section article .showing {
   line-height: 2rem;
 }
 
+h2#core-pi-header {
+  margin-top: 60px;
+}
+
 /* === DETAILS BOX_About === */
 
 details {
