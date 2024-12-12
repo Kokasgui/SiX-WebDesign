@@ -40,14 +40,13 @@ header nav {
   position: fixed;
   display: block;
   z-index: 20;
+  & a {
+    text-decoration: none;
+  }
 }
 
 .desktop {
   display: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 a:hover {
