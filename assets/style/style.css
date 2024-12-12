@@ -50,6 +50,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: 700;
+  font-variation-settings: "wgth" 700;
+}
+
 /* === PARÁGRAFOS === */
 
 h2 {
@@ -583,6 +588,7 @@ details[open] > summary:nth-child(2) p {
 
 hr {
   margin: 40px 0;
+  border-style: solid;
 }
 
 summary h2 {
