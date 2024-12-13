@@ -445,29 +445,13 @@ section article .showing {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* RESEARCH PUBLICATIONS FORMATAÇÃO DA LISTA */
+/* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
 .publications_count {
-  display: inline; 
-  font-size: 16px; 
-  font-weight: bold; 
+  display: inline;
+  font-weight: bold;
   color: var(--secondaryColor);
-  margin-bottom: 5px; 
-  text-align: center;
+  /* margin-bottom: 5px; */
 }
-
-.publications_label {
-  font-size: 16px;
-  color: #555; 
-  justify-content: center;
-}
-
-
-
-
-  /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
-
-
-
 
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
