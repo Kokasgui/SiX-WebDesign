@@ -427,7 +427,6 @@ section article .showing {
 .read_more_button {
   position: relative;
   display: inline-block;
-  /* margin: 0 auto; */
   background: white;
   padding: 10px 20px;
   color: var(--secondaryColor);

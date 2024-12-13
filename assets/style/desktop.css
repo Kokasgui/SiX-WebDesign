@@ -9,6 +9,7 @@
     margin-top: 60px;
   }
 
+  /* ===  NAV_INÍCIO === */
   nav ul {
     position: relative;
     overflow: visible;
@@ -84,6 +85,8 @@
       }
     }
   }
+
+  /* ===  NAV_FIM === */
 
   /* === COISAS GERAIS === */
 
@@ -186,7 +189,7 @@
     justify-content: center;
   }
 
-  /* MEMBERS EM LINHA HORIZONTAL */
+  /* === MEMBERS EM LINHA HORIZONTAL === */
 
   .all_members {
     position: relative;
@@ -210,34 +213,6 @@
   .next {
     right: calc(50% - 450px);
   }
-
-  /* .member figure {
-    display: flex;
-    flex-direction: row;
-    max-width: 100px;
-    margin: 0;
-  }  */
-
-  /* .member img {
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    border-radius: 50%;
-  }
-  
-  .member figcaption {
-    color: black;
-    text-align: center;
-  }
-  
-  .member figcaption p:first-of-type {
-    font-weight: 700;
-  }
-   */
 
   /* === HERO_INICIO=== */
   .hero {
@@ -339,6 +314,22 @@
     width: 80px;
   }
 
+  footer p {
+    text-align: center;
+  }
+
+  /* === CAIXAS DESKTOP === */
+
+  .caixa {
+    display: flex;
+  }
+  .caixa i {
+    display: none;
+  }
+  section article .hidden {
+    display: block;
+  }
+
   /* Limpar badalhoquices */
   .desktop {
     display: block;
@@ -347,5 +338,6 @@
   .mobile {
     display: none !important;
   }
+
   /* Fim das badalhoquices */
 }
