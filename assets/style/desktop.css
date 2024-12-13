@@ -322,10 +322,20 @@
 
   .caixa {
     display: flex;
+    column-gap: 20px;
+    margin-bottom: 40px;
   }
   .caixa i {
     display: none;
   }
+
+  .caixa div:first-of-type {
+    width: 30%;
+  }
+  .caixa div:nth-of-type(2) {
+    width: 70%;
+  }
+
   section article .hidden {
     display: block;
   }
