@@ -1,5 +1,15 @@
 /* DESKTOP AAAAAAAAAAAA */
 @media screen and (min-width: 1000px) {
+  /* Limpar badalhoquices */
+  .desktop {
+    display: block !important;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+  /* Fim das badalhoquices */
+
   nav {
     background-image: linear-gradient(to right, #cccccc, #ffffff55);
   }
@@ -339,15 +349,4 @@
   section article .hidden {
     display: block;
   }
-
-  /* Limpar badalhoquices */
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none !important;
-  }
-
-  /* Fim das badalhoquices */
 }
