@@ -445,6 +445,31 @@ section article .showing {
   color: var(--primaryColor);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
+
+/* RESEARCH PUBLICATIONS FORMATAÇÃO DA LISTA */
+.publications_count {
+  display: inline; 
+  font-size: 16px; 
+  font-weight: bold; 
+  color: var(--secondaryColor);
+  margin-bottom: 5px; 
+  text-align: center;
+}
+
+.publications_label {
+  font-size: 16px;
+  color: #555; 
+  justify-content: center;
+}
+
+
+
+
+  /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
+
+
+
+
 /* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
 
 .container {
