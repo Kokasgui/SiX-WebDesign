@@ -19,6 +19,58 @@
     margin-top: 60px;
   }
 
+  img.rabiscos {
+    position: absolute;
+    display: block;
+    width: 15vw;
+    height: 30vw;
+    object-fit: cover;
+  }
+
+  #rab-index-2,
+  #rab-activities-1,
+  #rab-members-1,
+  #rab-research-pub-2 {
+    right: 0;
+    top: 1000px;
+    object-position: left 50%;
+  }
+
+  #rab-index-1,
+  #rab-activities-2,
+  #rab-research-pub-1 {
+    left: 0;
+    top: 2000px;
+    object-position: right 50%;
+  }
+
+  #rab-about-2,
+  #rab-credits-1,
+  #rab-research-1 {
+    left: 0;
+    top: 1000px;
+    object-position: right 50%;
+  }
+
+  #rab-about-1,
+  #rab-credits-2 {
+    right: 0;
+    top: 3000px;
+    object-position: left 50%;
+  }
+
+  #rab-research-2 {
+    right: 0;
+    top: 1700px;
+    object-position: left 50%;
+  }
+
+  #rab-members-2 {
+    left: 0;
+    top: 1700px;
+    object-position: right 50%;
+  }
+
   /* ===  NAV_INÍCIO === */
   nav ul {
     position: relative;
