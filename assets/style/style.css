@@ -88,6 +88,18 @@ p {
 
 /* === COISAS ESPECÍFICAS === */
 
+main a {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primaryColor);
+}
+
+main a:hover {
+  color: var(--secondaryColor);
+}
+
 strong {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;

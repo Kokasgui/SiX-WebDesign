@@ -80,8 +80,7 @@
     width: 90px;
   }
 
-  nav a.current-page,
-  nav li.current-page a {
+  nav a.current-page {
     color: var(--primaryColor);
   }
 
@@ -183,7 +182,8 @@
   }
   /* === COISAS ESPECÍFICAS === */
 
-  p {
+  p,
+  main a {
     font-size: 22px;
     line-height: 34px;
   }
