@@ -319,6 +319,10 @@
 
   /* === MEMBERS EM LINHA HORIZONTAL === */
 
+  h2#core-pi-header {
+    margin-top: 80px;
+  }
+
   .all_members {
     position: relative;
     display: flex !important;
