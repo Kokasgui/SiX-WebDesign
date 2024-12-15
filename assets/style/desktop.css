@@ -72,7 +72,7 @@
   /* ===  NAV_INÍCIO === */
 
   nav {
-    background-image: linear-gradient(to right, #cccccc, #ffffff55);
+    background-image: linear-gradient(to right, #cccccc, #ffffffcc);
     height: 80px;
   }
 
@@ -319,7 +319,7 @@
 
   /* === MEMBERS EM LINHA HORIZONTAL === */
 
-  h2#core-pi-header {
+  h2#no-hero-header {
     margin-top: 80px;
   }
 
