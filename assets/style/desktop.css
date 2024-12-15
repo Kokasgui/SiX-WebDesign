@@ -15,6 +15,7 @@
     margin-top: 80px;
   }
 
+  /* Rabiscos Início */
   img.rabiscos {
     position: absolute;
     display: block;
@@ -66,6 +67,7 @@
     top: 1700px;
     object-position: right 50%;
   }
+  /* Rabiscos Fim */
 
   /* ===  NAV_INÍCIO === */
 
@@ -76,6 +78,15 @@
 
   .nav_logo {
     width: 90px;
+  }
+
+  nav a.current-page,
+  nav li.current-page a {
+    color: var(--primaryColor);
+  }
+
+  nav a:hover {
+    color: var(--secondaryColor);
   }
 
   nav ul {
