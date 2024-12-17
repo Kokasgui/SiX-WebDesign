@@ -1,284 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="SiX, drawing" />
-    <meta
-      name="description"
-      content="Reserach_publication page of SiX project"
-    />
-    <title>Research/Publications</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="stylesheet" href="assets/style/desktop.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
-    <!-- Isto define as cores da página -->
-    <style>
-      html {
-        --primaryColor: #e0446f;
-        --secondaryColor: #3453d6;
-      }
-    </style>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="index.html" class="nav_logo"
-          ><img src="assets/images/logos/SiX.svg" alt="SiX logo"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="SiX, drawing" />
+  <meta name="description" content="Reserach_publication page of SiX project" />
+  <title>Research/Publications</title>
+  <link rel="stylesheet" href="assets/style/style.css" />
+  <link rel="stylesheet" href="assets/style/desktop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <!-- Isto define as cores da página -->
+  <style>
+    html {
+      --primaryColor: #e0446f;
+      --secondaryColor: #3453d6;
+    }
+  </style>
+</head>
 
-        <ul class="desktop">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="credits.html">Credits</a></li>
-          <li>
-            <a class="current-page" href="about.html">About</a>
-            <ul>
-              <li><a href="members.html">Members' Details</a></li>
-              <li>
-                <a class="current-page" href="research_publications.html"
-                  >Research / Publications</a
-                >
-                <ul>
-                  <li><a href="research_detail.html">Research Detail</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Output(s)</a>
-            <ul>
-              <li>
-                <a href="activities.html">Activities</a>
-                <ul>
-                  <li><a href="">Workshop Activity Detail</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="nav_logo"><img src="assets/images/logos/SiX.svg" alt="SiX logo" /></a>
 
-        <a href="nav.html" class="nav_button mobile">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </nav>
+      <ul class="desktop">
+        <li><a href="/">Home</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li>
+          <a class="current-page" href="about.html">About</a>
+          <ul>
+            <li><a href="members.html">Members' Details</a></li>
+            <li>
+              <a class="current-page" href="research_publications.html">Research / Publications</a>
+              <ul>
+                <li><a href="research_detail.html">Research Detail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Output(s)</a>
+          <ul>
+            <li>
+              <a href="activities.html">Activities</a>
+              <ul>
+                <li><a href="">Workshop Activity Detail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-      <!-- Hero Section -->
-      <section class="hero">
-        <img src="assets/images/heros/linhas-3_crop.jpg" alt="Morgan O'Hara" />
-        <h1 class="hero-text">
-          Research / Publications <span class="subtitle">(Past & Present)</span>
-        </h1>
-      </section>
-    </header>
-    <main>
-      <!-- Secção 1_INTRODUCTION -->
-      <section>
-        <p>
-          The SiX Research Group is devoted to
-          <strong
-            >advancing communication and accessibility for individuals with
-            Locked-in Syndrome (LIS).</strong
-          >
-          The team consists of researchers and graduate students who explore the
-          intersection of design, technology, and healthcare to develop
-          innovative solutions that enhance the quality of life for individuals
-          with LIS. Below are highlights of completed and ongoing research
-          projects, showcasing the team's contributions to the field.
-        </p>
-      </section>
-      <div id="publications_container">
-        <p>
-          The publications produced by the SiX research group and its members
-          include:
-        </p>
-        <!-- ul list HERE -->
-        <ul id="publications_list">
-          <li class="publications_list_item">
-            <!-- <strong>Book Chapters:</strong> 3 -->
-            <span class="publications_count">3</span>
-            <span class="publications_label">Book Chapters</span>
-          </li>
-          <li class="publications_list_item">
-            <!-- <strong>Journal Articles:</strong> 6 -->
-            <span class="publications_count">6</span>
-            <span class="publications_label">Journal Articles</span>
-          </li>
-          <li class="publications_list_item">
-            <!-- <strong>Articles in Proceedings:</strong> 12 -->
-            <span class="publications_count">12</span>
-            <span class="publications_label">Articles in Proceedings</span>
-          </li>
-          <li class="publications_list_item">
-            <!-- <strong>Communications:</strong> 9 -->
-            <span class="publications_count">9</span>
-            <span class="publications_label">Communications</span>
-          </li>
-        </ul>
-      </div>
-      <!-- Secção 2_SELECTED PUBLICATION - 1 Articles -->
-      <section>
-        <h2>Selected Publications</h2>
-        <h3>Articles in Proceedings:</h3>
-        <!-- CAROUSEL ARTICLE 1- SE FOR PRECISO APAGAR COMEÇA AQUI!! -->
-        <div class="carousel-container">
-          <div class="mySlides">
-            <p>
-              Drawing as a Language for Cognitive Enhancement: Exploring
-              Inclusive and Immersive Environments for Patients with Partial to
-              Complete Locked-In Syndrome.
-            </p>
-            <p>
-              In Proceedings for Design 4 Health 2024 International Conference.
-              Sheffield, UK.Penedos-Santiago, E., Simões, S., Giesteira, B., &
-              Amado, P. (2024).
-            </p>
-            <a
-              href="https://sigarra.up.pt/fbaup/pt/web_page.inicial"
-              class="carrossel_button"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
+      <a href="nav.html" class="nav_button mobile">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </nav>
 
-          <div class="mySlides">
-            <p>
-              Drawing for Social Re-connectivity through Collaborative and
-              Digital Environments. Preliminary Drawing Activities.
-            </p>
-            <p>
-              In LNNS book series SPRINGER, Proceedings for ICITED 24
-              International Conference in Information Technology & Education.
-              Recife, Brasil. Penedos-Santiago, E., Simões, S., Amado, P., &
-              Giesteira, B. (2024).
-            </p>
-            <a
-              href="https://sigarra.up.pt/fbaup/pt/web_page.inicial"
-              class="carrossel_button"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-
-          <div class="mySlides">
-            <p>
-              Interface design guidelines for low literature users: a literature
-              review. In Proceedings of the 2022 6th International Conference on
-              Education and E-Learning ICEEL.
-            </p>
-            <p>
-              Yamanashi, Japan. Guimarães, L.,Martins, N., Pereira, L.,
-              Penedos-Santiago, E., & Brandão, D. (2023).
-            </p>
-            <a
-              href="https://sigarra.up.pt/fbaup/pt/web_page.inicial"
-              class="carrossel_button"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-
-          <div class="mySlides">
-            <p>
-              Health and Design at Service of a Refugee Camp in Iraq. In D.
-              Raposo, N. Martins, & D. Brandão (Eds.), Human Dynamics and Design
-              for the Development of Contemporary Societies.
-            </p>
-            <p>
-              AHFE (2022) International Conference. AHFE Open Access, vol 25.
-              AHFE International, USA. Camacho, L., Penedos-Santiago, E., &
-              Ferreira, E. (2022).
-            </p>
-            <a
-              href="https://sigarra.up.pt/fbaup/pt/web_page.inicial"
-              class="carrossel_button"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-
-        <section>
-          <h3>Book Chapters:</h3>
-
-          <div class="mySlides">
-            <p>
-              Designing for People with Dementia: A Portuguese Case Study. In M.
-              Houben, R. Brankaert, N. Hendriks, A. Wilkinson, & K. Morrissey,
-              (eds) Dementia Lab 2022: The Residue of Design.
-            </p>
-            <p>
-              D-Lab 2022. Design For Inclusion, vol 3. Springer, Cham. Lima,
-              C.R., & Penedos- -Santiago, E. (2023).
-            </p>
-            <a
-              href="https://sigarra.up.pt/fbaup/pt/web_page.inicial"
-              class="carrossel_button"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </section>
-        <br />
-        <a class="read_more_button" href="">READ MORE</a>
-      </section>
-      <!-- Secção 3_NOTE SECTION -->
-      <section>
-        <p class="note">
-          This webpage is currently under development. The project list is
-          incomplete and will be updated with hyperlinks and additional details
-          in early 2025.
-        </p>
-      </section>
-      <img
-        class="desktop rabiscos"
-        src="assets/images/rabiscos/rabisco-2.svg"
-        alt="Rabisco"
-        id="rab-research-1"
-      />
-      <img
-        class="desktop rabiscos"
-        src="assets/images/rabiscos/rabisco-1.svg"
-        alt="Rabisco"
-        id="rab-research-2"
-      />
-    </main>
-    <footer>
-      <div class="logo_flex_container">
-        <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
-        <img
-          src="assets/images/footer/lusofona.svg"
-          alt="Universidade Lusófona Logo"
-        />
-        <img src="assets/images/footer/i2ads-white.svg" alt="i2ADS Logo" />
-        <img src="assets/images/footer/id+white-alt.svg" alt="ID+ Logo" />
-        <img src="assets/images/footer/apela 25.png" alt="APELA Logo" />
-        <img src="assets/images/footer/aditgames.png" alt="ADITGameS Logo" />
-        <img src="assets/images/footer/i3s.png" alt="i3S Logo" />
-        <img
-          src="assets/images/footer/fraunhofer.svg"
-          alt="Fraunhofer Portugal Logo"
-        />
-        <img src="assets/images/footer/fct-white.svg" alt="FCT Logo" />
-      </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="assets/images/heros/linhas-3_crop.jpg" alt="Morgan O'Hara" />
+      <h1 class="hero-text">
+        Research / Publications <span class="subtitle">(Past & Present)</span>
+      </h1>
+    </section>
+  </header>
+  <main>
+    <!-- Secção 1_INTRODUCTION -->
+    <section>
       <p>
-        Project 2022.08322.PTDC funded by national funds through the FCT -
-        Fundação para a Ciência e a Tecnologia, I.P.
-        <a href="http://doi.org/10.54499/2022.08322.PTDC?"
-          >DOI 10.54499/2022.08322.PTDC.</a
-        >
+        The SiX Research Group is devoted to
+        <strong>advancing communication and accessibility for individuals with
+          Locked-in Syndrome (LIS).</strong>
+        The team consists of researchers and graduate students who explore the
+        intersection of design, technology, and healthcare to develop
+        innovative solutions that enhance the quality of life for individuals
+        with LIS. Below are highlights of completed and ongoing research
+        projects, showcasing the team's contributions to the field.
       </p>
-    </footer>
-    <script src="assets/script/script.js"></script>
-  </body>
+    </section>
+    <div id="publications_container">
+      <p>
+        The publications produced by the SiX research group and its members
+        include:
+      </p>
+      <!-- ul list HERE -->
+      <ul id="publications_list">
+        <li class="publications_list_item">
+          <!-- <strong>Book Chapters:</strong> 3 -->
+          <span class="publications_count">3</span>
+          <span class="publications_label">Book Chapters</span>
+        </li>
+        <li class="publications_list_item">
+          <!-- <strong>Journal Articles:</strong> 6 -->
+          <span class="publications_count">6</span>
+          <span class="publications_label">Journal Articles</span>
+        </li>
+        <li class="publications_list_item">
+          <!-- <strong>Articles in Proceedings:</strong> 12 -->
+          <span class="publications_count">12</span>
+          <span class="publications_label">Articles in Proceedings</span>
+        </li>
+        <li class="publications_list_item">
+          <!-- <strong>Communications:</strong> 9 -->
+          <span class="publications_count">9</span>
+          <span class="publications_label">Communications</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Secção 2_SELECTED PUBLICATION - 1 Articles -->
+    <section>
+      <h2>Selected Publications</h2>
+      <h3>Articles in Proceedings:</h3>
+      <!-- CAROUSEL ARTICLE 1- SE FOR PRECISO APAGAR COMEÇA AQUI!! -->
+      <div class="carousel-container">
+        <div class="mySlides">
+          <p>
+            Drawing as a Language for Cognitive Enhancement: Exploring
+            Inclusive and Immersive Environments for Patients with Partial to
+            Complete Locked-In Syndrome.
+          </p>
+          <p>
+            In Proceedings for Design 4 Health 2024 International Conference.
+            Sheffield, UK.Penedos-Santiago, E., Simões, S., Giesteira, B., &
+            Amado, P. (2024).
+          </p>
+          <a href="https://sigarra.up.pt/fbaup/pt/web_page.inicial" class="carrossel_button" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="mySlides">
+          <p>
+            Drawing for Social Re-connectivity through Collaborative and
+            Digital Environments. Preliminary Drawing Activities.
+          </p>
+          <p>
+            In LNNS book series SPRINGER, Proceedings for ICITED 24
+            International Conference in Information Technology & Education.
+            Recife, Brasil. Penedos-Santiago, E., Simões, S., Amado, P., &
+            Giesteira, B. (2024).
+          </p>
+          <a href="https://sigarra.up.pt/fbaup/pt/web_page.inicial" class="carrossel_button" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="mySlides">
+          <p>
+            Interface design guidelines for low literature users: a literature
+            review. In Proceedings of the 2022 6th International Conference on
+            Education and E-Learning ICEEL.
+          </p>
+          <p>
+            Yamanashi, Japan. Guimarães, L.,Martins, N., Pereira, L.,
+            Penedos-Santiago, E., & Brandão, D. (2023).
+          </p>
+          <a href="https://sigarra.up.pt/fbaup/pt/web_page.inicial" class="carrossel_button" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="mySlides">
+          <p>
+            Health and Design at Service of a Refugee Camp in Iraq. In D.
+            Raposo, N. Martins, & D. Brandão (Eds.), Human Dynamics and Design
+            for the Development of Contemporary Societies.
+          </p>
+          <p>
+            AHFE (2022) International Conference. AHFE Open Access, vol 25.
+            AHFE International, USA. Camacho, L., Penedos-Santiago, E., &
+            Ferreira, E. (2022).
+          </p>
+          <a href="https://sigarra.up.pt/fbaup/pt/web_page.inicial" class="carrossel_button" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      <section>
+        <h3>Book Chapters:</h3>
+
+        <div class="mySlides">
+          <p>
+            Designing for People with Dementia: A Portuguese Case Study. In M.
+            Houben, R. Brankaert, N. Hendriks, A. Wilkinson, & K. Morrissey,
+            (eds) Dementia Lab 2022: The Residue of Design.
+          </p>
+          <p>
+            D-Lab 2022. Design For Inclusion, vol 3. Springer, Cham. Lima,
+            C.R., & Penedos- -Santiago, E. (2023).
+          </p>
+          <a href="https://sigarra.up.pt/fbaup/pt/web_page.inicial" class="carrossel_button" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </section>
+      <br />
+      <a class="read_more_button" href="">READ MORE</a>
+    </section>
+    <!-- Secção 3_NOTE SECTION -->
+    <section>
+      <p class="note">
+        This webpage is currently under development. The project list is
+        incomplete and will be updated with hyperlinks and additional details
+        in early 2025.
+      </p>
+    </section>
+    <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-2.svg" alt="Rabisco" id="rab-research-1" />
+    <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-1.svg" alt="Rabisco" id="rab-research-2" />
+  </main>
+  <footer>
+    <div class="logo_flex_container">
+      <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
+      <img src="assets/images/footer/lusofona.svg" alt="Universidade Lusófona Logo" />
+      <img src="assets/images/footer/i2ads-white.svg" alt="i2ADS Logo" />
+      <img src="assets/images/footer/id+white-alt.svg" alt="ID+ Logo" />
+      <img src="assets/images/footer/apela 25.png" alt="APELA Logo" />
+      <img src="assets/images/footer/aditgames.png" alt="ADITGameS Logo" />
+      <img src="assets/images/footer/i3s.png" alt="i3S Logo" />
+      <img src="assets/images/footer/fraunhofer.svg" alt="Fraunhofer Portugal Logo" />
+      <img src="assets/images/footer/fct-white.svg" alt="FCT Logo" />
+    </div>
+    <p>
+      Project 2022.08322.PTDC funded by national funds through the FCT -
+      Fundação para a Ciência e a Tecnologia, I.P.
+      <a href="http://doi.org/10.54499/2022.08322.PTDC?">DOI 10.54499/2022.08322.PTDC.</a>
+    </p>
+  </footer>
+  <script src="assets/script/script.js"></script>
+</body>
+
 </html>
