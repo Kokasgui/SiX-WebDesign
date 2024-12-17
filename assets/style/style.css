@@ -249,7 +249,7 @@ picture img {
   line-height: 28px;
 }
 
-/* === MAIN PAGE ANIMATION */
+/* == Main page animation == */
 /* "Caixa" onde se insere a animação */
 #animation {
   user-select: none;
@@ -370,7 +370,7 @@ nav#nav_page ul a {
   font-weight: 700;
 }
 
-/* SiX LOGO */
+/* SiX Logo */
 .nav_logo {
   display: block;
   position: fixed;
@@ -382,7 +382,7 @@ nav#nav_page ul a {
 
 /* === NAV FIM === */
 
-/* Para fazer as caixinhas */
+/* === CAIXAS ACORDEAO_INICIO === */
 section article {
   background-color: var(--secondaryColor);
   color: white;
@@ -418,7 +418,7 @@ section article .showing {
   margin-top: 40px;
 }
 
-/* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
+/* Estado inicial do ícone do acordeao */
 .fa-chevron-down {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -431,12 +431,13 @@ section article .showing {
   font-size: 25px;
 }
 
-/* ÍCONE COM ACORDEÃO ABERTO */
+/* ícone com acordeao aberto */
 .fa-chevron-down.open {
   transform: rotate(180deg);
 }
+/* === CAIXAS ACORDEAO_FIM === */
 
-/* BOTÃO READ MORE */
+/* === BOTÃO_READ MORE === */
 .read_more_button {
   position: relative;
   display: inline-block;
@@ -452,7 +453,7 @@ section article .showing {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* COMPORTAMENTO COM HOVER */
+/* comportamento com hover */
 .read_more_button:hover {
   /* background-color: rgb(254, 174, 124);  */
   color: var(--primaryColor);
@@ -467,8 +468,7 @@ section article .showing {
   /* margin-bottom: 5px; */
 }
 
-/* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
-
+/* === BLOCOS INFORMATIVOS_RESEARCH DETAIL_INICIO === */
 .container {
   display: flex;
   flex-direction: column;
@@ -523,16 +523,15 @@ section article .showing {
   font-family: "Oxygen", sans-serif;
 }
 
-/* === FIM/BLOCOS INFORMATIVOS_Research Detail === */
+/* === BLOCOS INFORMATIVOS_RESEARCH DETAIL_FIM === */
 
-/* LISTA_GOALS */
+/* === LISTA GOALS_ RESEARCH DETAILS_INICIO === */
 .lista_goals {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* ESPAÇO ENTRE AS CAIXAS */
-  gap: 40px;
+  gap: 40px; /* Espaço entre as caixas*/
   margin: 0 auto;
   min-height: 60vh;
   padding: 30px;
@@ -556,7 +555,6 @@ section article .showing {
   width: 250px;
   height: 250px;
   margin-bottom: 20px;
-  /* padding: 15px;  */
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -581,8 +579,9 @@ h2#no-hero-header {
   margin-top: 60px;
 }
 
-/* === DETAILS BOX_About === */
+/* === LISTA GOALS_RESEARCH DETAILS_FIM === */
 
+/* === DETAILS BOX_ABOUT_INICIO === */
 details {
   display: block;
   width: 100%;
@@ -596,9 +595,8 @@ details:nth-child(6) {
   margin-bottom: 40px;
 }
 
-/* COMPORTAMENTO COM HOVER */
+/* Comportamento com hover*/
 .read_more_button:hover {
-  /* background-color: rgb(254, 174, 124);  */
   color: var(--primaryColor);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
@@ -629,15 +627,16 @@ details[open] .fa-chevron-down {
   display: none; /* Esconde o input */
 }
 
-/* === DETAILS IMGS_About === */
+/* === DETAILS BOX_ABOUT_FIM === */
 
+/* === DETAILS IMGS_ABOUT === */
 .details_img {
   display: block;
   width: calc(100% + 40px);
   margin: 0 -20px;
 }
 
-/* === IMAGENS CIRCULARES_Members' Detail === */
+/* === IMAGENS CIRCULARES_MEMBER´S DETAILS === */
 .member {
   margin: 0 0 50px 0;
   padding: 0;
@@ -699,7 +698,8 @@ footer p a {
   padding-top: 40px;
 }
 
-/* === INICIO CARROSEL_CHATGPT === */
+/* === CARROSEL_INICIO === */
+/* === NOTA: Este carrosel foi criado com ajuda da ferramente CHATGPT === */
 .carousel-container {
   position: relative;
   display: flex;
@@ -711,7 +711,7 @@ footer p a {
   scrollbar-width: none;
 }
 
-/* ICON CARROSEL  */
+/* Icon Carrosel  */
 /* a "caixa" que envolve o icon */
 .carrossel_button {
   position: relative;
@@ -726,7 +726,7 @@ footer p a {
   color: black;
 }
 
-/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) (dizer ao Gui para aplicar no icon da nav) */
+/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) */
 .carrossel_button i {
   position: absolute;
   top: 50%;
@@ -751,7 +751,7 @@ footer p a {
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
 }
 
-/* TRATAMENTO DE TEXTO CARROSEL */
+/* Tratamento do texto do carrosel*/
 .mySlides h2 {
   color: white;
 }
@@ -788,3 +788,5 @@ footer p a {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* === CARROSEL_FIM === */

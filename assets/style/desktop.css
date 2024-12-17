@@ -15,7 +15,7 @@
     margin-top: 80px;
   }
 
-  /* Rabiscos Início */
+  /* === RABISCOS_INÍCIO === */
   img.rabiscos {
     position: absolute;
     display: block;
@@ -67,7 +67,7 @@
     top: 1700px;
     object-position: right 50%;
   }
-  /* Rabiscos Fim */
+  /* === RABISCOS_FIM === */
 
   /* ===  NAV_INÍCIO === */
 
