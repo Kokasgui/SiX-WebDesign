@@ -1,4 +1,8 @@
-/* DESKTOP AAAAAAAAAAAA */
+/* SiX Project | LDC | Web Design | FBAUP 2024/2025 */
+/* Beatriz Gonçalves | Guilherme Costa | Mariana Ferreira */
+/* Folha CSS para a versão desktop */
+
+/* Media Querie */
 @media screen and (min-width: 1000px) {
   /* Limpar badalhoquices */
   .desktop {
@@ -11,7 +15,6 @@
   /* Fim das badalhoquices */
 
   /* === COISAS GERAIS === */
-
   main {
     max-width: 900px;
     margin: 0 auto;
