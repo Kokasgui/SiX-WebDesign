@@ -10,9 +10,45 @@
   }
   /* Fim das badalhoquices */
 
+  /* === COISAS GERAIS === */
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section article {
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+
   header .hero,
   header #feature_main {
     margin-top: 80px;
+  }
+
+  /* === COISAS ESPECÍFICAS === */
+  p,
+  main a {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .note {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* == Botão_Read More == */
+  .read_more_button {
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    border: 1px black solid;
   }
 
   /* === RABISCOS_INÍCIO === */
@@ -167,32 +203,6 @@
 
   /* ===  NAV_FIM === */
 
-  /* === COISAS GERAIS === */
-
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  section article {
-    background: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-  }
-  /* === COISAS ESPECÍFICAS === */
-
-  p,
-  main a {
-    font-size: 22px;
-    line-height: 34px;
-  }
-
-  .note {
-    font-size: 22px;
-    line-height: 28px;
-  }
-
   /* RESEARCH/PUBLICATIONS LISTA DE PUBLICATIONS*/
   #publications_container {
     display: grid;
@@ -302,7 +312,7 @@
     width: 70%;
   }
 
-  /* LISTA RESEARCH DETAIL */
+  /* === LISTA RESEARCH DETAIL === */
   .lista_goals {
     min-height: unset;
   }
@@ -346,7 +356,7 @@
     right: calc(50% - 450px);
   }
 
-  /* === HERO_INICIO=== */
+  /* === HERO_INICIO === */
   .hero {
     position: relative;
     height: calc(450px + 10vw);

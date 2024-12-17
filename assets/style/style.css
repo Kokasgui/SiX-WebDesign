@@ -1,5 +1,6 @@
 /* SiX Project | LDC | Web Design | FBAUP 2024/2025 */
 /* Beatriz Gonçalves | Guilherme Costa | Mariana Ferreira */
+/* Folha CSS para a versão mobile */
 
 /* === FONTES === */
 
@@ -24,7 +25,6 @@
 }
 
 /* === COISAS GERAIS === */
-
 html,
 body {
   margin: 0;
@@ -56,6 +56,12 @@ a:hover {
 }
 
 /* === PARÁGRAFOS === */
+p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 h2 {
   font-family: "Oxanium", sans-serif;
@@ -79,15 +85,7 @@ h4 {
   margin: 0;
 }
 
-p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* === COISAS ESPECÍFICAS === */
-
 main a {
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
@@ -140,6 +138,27 @@ figcaption {
   z-index: 1;
   font-family: "Oxygen", sans-serif;
   font-size: 14px;
+}
+
+/* == Botão_Read More == */
+.read_more_button {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 10px 20px;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* comportamento com hover */
+.read_more_button:hover {
+  color: var(--primaryColor);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #cursor {
@@ -437,35 +456,11 @@ section article .showing {
 }
 /* === CAIXAS ACORDEAO_FIM === */
 
-/* === BOTÃO_READ MORE === */
-.read_more_button {
-  position: relative;
-  display: inline-block;
-  background: white;
-  padding: 10px 20px;
-  color: var(--secondaryColor);
-  font-size: 20px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* comportamento com hover */
-.read_more_button:hover {
-  /* background-color: rgb(254, 174, 124);  */
-  color: var(--primaryColor);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-
 /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
 .publications_count {
   display: inline;
   font-weight: bold;
   color: var(--secondaryColor);
-  /* margin-bottom: 5px; */
 }
 
 /* === BLOCOS INFORMATIVOS_RESEARCH DETAIL_INICIO === */
@@ -593,12 +588,6 @@ details {
 }
 details:nth-child(6) {
   margin-bottom: 40px;
-}
-
-/* Comportamento com hover*/
-.read_more_button:hover {
-  color: var(--primaryColor);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 details[open] > summary:nth-child(2) p {
