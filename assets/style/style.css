@@ -492,8 +492,9 @@ section article .showing {
 .bloco_informativo figure figcaption {
   position: relative;
   padding: 10px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+  background: linear-gradient(to right, rgb(1, 32, 171), rgba(255, 0, 0, 0));
   text-align: center;
+
 }
 
 .bloco_informativo h2,
@@ -512,7 +513,7 @@ section article .showing {
 
 .bloco_informativo p {
   margin: 0 20px;
-  font-size: 16px;
+  font-size: 20px !important;
   line-height: 1.6;
   text-align: left;
   font-family: "Oxygen", sans-serif;

@@ -256,6 +256,8 @@
   /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
   .container {
     flex-direction: row;
+    align-items: flex-start; 
+    padding-top: 40px;
     flex-wrap: wrap;
     gap: 40px;
   }
