@@ -254,12 +254,12 @@ picture img {
 
 #content_main {
   display: block;
-  position: relative; /* Position the background text */
+  position: relative;
   background: rgba(52, 83, 214, 0.8);
   z-index: 1;
   color: white;
-  width: calc(100% - 40px); /* Full width */
-  padding: 20px; /* Some padding */
+  width: calc(100% - 40px); /* largura máxima */
+  padding: 20px;
 }
 
 #content_main p {
@@ -378,6 +378,10 @@ nav#nav_page > ul {
 
 nav#nav_page ul li {
   margin-bottom: 18px;
+}
+
+nav ul li + ul a {
+  text-transform: lowercase;
 }
 
 ::marker {
@@ -651,6 +655,11 @@ details[open] .fa-chevron-down {
 
 .member figcaption p:first-of-type {
   font-weight: 700;
+}
+
+/* === INSTITUIÇÕES === */
+.institutions > p > strong:nth-child(2) {
+  color: rgb(86, 86, 86);
 }
 
 /* === FOOTER === */
