@@ -1,5 +1,6 @@
 /* SiX Project | LDC | Web Design | FBAUP 2024/2025 */
 /* Beatriz Gonçalves | Guilherme Costa | Mariana Ferreira */
+/* Folha CSS para a versão mobile */
 
 /* === FONTES === */
 
@@ -24,7 +25,6 @@
 }
 
 /* === COISAS GERAIS === */
-
 html,
 body {
   margin: 0;
@@ -42,6 +42,7 @@ header nav {
   z-index: 20;
   & a {
     text-decoration: none;
+    color: black;
   }
 }
 
@@ -55,6 +56,12 @@ a:hover {
 }
 
 /* === PARÁGRAFOS === */
+p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 h2 {
   font-family: "Oxanium", sans-serif;
@@ -78,14 +85,18 @@ h4 {
   margin: 0;
 }
 
-p {
+/* === COISAS ESPECÍFICAS === */
+main a {
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: var(--primaryColor);
 }
 
-/* === COISAS ESPECÍFICAS === */
+main a:hover {
+  color: var(--secondaryColor);
+}
 
 strong {
   font-family: "Oxygen", sans-serif;
@@ -127,6 +138,27 @@ figcaption {
   z-index: 1;
   font-family: "Oxygen", sans-serif;
   font-size: 14px;
+}
+
+/* == Botão_Read More == */
+.read_more_button {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 10px 20px;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* comportamento com hover */
+.read_more_button:hover {
+  color: var(--primaryColor);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #cursor {
@@ -236,7 +268,7 @@ picture img {
   line-height: 28px;
 }
 
-/* === MAIN PAGE ANIMATION */
+/* == Main page animation == */
 /* "Caixa" onde se insere a animação */
 #animation {
   user-select: none;
@@ -291,7 +323,8 @@ nav {
   top: 0;
   right: 0;
   width: 100%;
-  background-image: linear-gradient(to right, #cccccc, #ffffff00);
+  /* background-image: linear-gradient(to right, #cccccc, #ffffff00); VERSÃO QUE ESTÁ NO FIGMA */
+  background-image: linear-gradient(to right, #cccccc, #ffffffcc);
 }
 
 i.fa-xmark {
@@ -356,7 +389,7 @@ nav#nav_page ul a {
   font-weight: 700;
 }
 
-/* SiX LOGO */
+/* SiX Logo */
 .nav_logo {
   display: block;
   position: fixed;
@@ -368,7 +401,7 @@ nav#nav_page ul a {
 
 /* === NAV FIM === */
 
-/* Para fazer as caixinhas */
+/* === CAIXAS ACORDEAO_INICIO === */
 section article {
   background-color: var(--secondaryColor);
   color: white;
@@ -404,7 +437,7 @@ section article .showing {
   margin-top: 40px;
 }
 
-/* ESTADO INICIAL DO ÍCONE DO ACORDEÃO */
+/* Estado inicial do ícone do acordeao */
 .fa-chevron-down {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -417,60 +450,20 @@ section article .showing {
   font-size: 25px;
 }
 
-/* ÍCONE COM ACORDEÃO ABERTO */
+/* ícone com acordeao aberto */
 .fa-chevron-down.open {
   transform: rotate(180deg);
 }
+/* === CAIXAS ACORDEAO_FIM === */
 
-/* BOTÃO READ MORE */
-.read_more_button {
-  position: relative;
-  display: inline-block;
-  background: white;
-  padding: 10px 20px;
-  color: var(--secondaryColor);
-  font-size: 20px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* COMPORTAMENTO COM HOVER */
-.read_more_button:hover {
-  /* background-color: rgb(254, 174, 124);  */
-  color: var(--primaryColor);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* RESEARCH PUBLICATIONS FORMATAÇÃO DA LISTA */
+/* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
 .publications_count {
-  display: inline; 
-  font-size: 16px; 
-  font-weight: bold; 
+  display: inline;
+  font-weight: bold;
   color: var(--secondaryColor);
-  margin-bottom: 5px; 
-  text-align: center;
 }
 
-.publications_label {
-  font-size: 16px;
-  color: #555; 
-  justify-content: center;
-}
-
-
-
-
-  /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
-
-
-
-
-/* === INICIO/BLOCOS INFORMATIVOS_RESEARCH DETAIL === */
-
+/* === BLOCOS INFORMATIVOS_RESEARCH DETAIL_INICIO === */
 .container {
   display: flex;
   flex-direction: column;
@@ -525,16 +518,15 @@ section article .showing {
   font-family: "Oxygen", sans-serif;
 }
 
-/* === FIM/BLOCOS INFORMATIVOS_Research Detail === */
+/* === BLOCOS INFORMATIVOS_RESEARCH DETAIL_FIM === */
 
-/* LISTA_GOALS */
+/* === LISTA GOALS_ RESEARCH DETAILS_INICIO === */
 .lista_goals {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* ESPAÇO ENTRE AS CAIXAS */
-  gap: 40px;
+  gap: 40px; /* Espaço entre as caixas*/
   margin: 0 auto;
   min-height: 60vh;
   padding: 30px;
@@ -558,7 +550,6 @@ section article .showing {
   width: 250px;
   height: 250px;
   margin-bottom: 20px;
-  /* padding: 15px;  */
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -579,12 +570,13 @@ section article .showing {
   line-height: 2rem;
 }
 
-h2#core-pi-header {
+h2#no-hero-header {
   margin-top: 60px;
 }
 
-/* === DETAILS BOX_About === */
+/* === LISTA GOALS_RESEARCH DETAILS_FIM === */
 
+/* === DETAILS BOX_ABOUT_INICIO === */
 details {
   display: block;
   width: 100%;
@@ -596,13 +588,6 @@ details {
 }
 details:nth-child(6) {
   margin-bottom: 40px;
-}
-
-/* COMPORTAMENTO COM HOVER */
-.read_more_button:hover {
-  /* background-color: rgb(254, 174, 124);  */
-  color: var(--primaryColor);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 details[open] > summary:nth-child(2) p {
@@ -631,15 +616,16 @@ details[open] .fa-chevron-down {
   display: none; /* Esconde o input */
 }
 
-/* === DETAILS IMGS_About === */
+/* === DETAILS BOX_ABOUT_FIM === */
 
+/* === DETAILS IMGS_ABOUT === */
 .details_img {
   display: block;
   width: calc(100% + 40px);
   margin: 0 -20px;
 }
 
-/* === IMAGENS CIRCULARES_Members' Detail === */
+/* === IMAGENS CIRCULARES_MEMBER´S DETAILS === */
 .member {
   margin: 0 0 50px 0;
   padding: 0;
@@ -701,7 +687,8 @@ footer p a {
   padding-top: 40px;
 }
 
-/* === INICIO CARROSEL_CHATGPT === */
+/* === CARROSEL_INICIO === */
+/* === NOTA: Este carrosel foi criado com ajuda da ferramente CHATGPT === */
 .carousel-container {
   position: relative;
   display: flex;
@@ -713,7 +700,7 @@ footer p a {
   scrollbar-width: none;
 }
 
-/* ICON CARROSEL  */
+/* Icon Carrosel  */
 /* a "caixa" que envolve o icon */
 .carrossel_button {
   position: relative;
@@ -728,7 +715,7 @@ footer p a {
   color: black;
 }
 
-/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) (dizer ao Gui para aplicar no icon da nav) */
+/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) */
 .carrossel_button i {
   position: absolute;
   top: 50%;
@@ -753,7 +740,7 @@ footer p a {
   scroll-snap-align: start; /* Faz com que cada slide "pare" no início ao ser rolado */
 }
 
-/* TRATAMENTO DE TEXTO CARROSEL */
+/* Tratamento do texto do carrosel*/
 .mySlides h2 {
   color: white;
 }
@@ -790,3 +777,5 @@ footer p a {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* === CARROSEL_FIM === */

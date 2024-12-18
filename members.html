@@ -16,7 +16,7 @@
     <style>
       html {
         --primaryColor: #e0446f;
-        --secondaryColor: #dd9d00;
+        --secondaryColor: #3453d6;
       }
     </style>
   </head>
@@ -24,17 +24,19 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" class="nav_logo"
+        <a href="/" class="nav_logo"
           ><img src="assets/images/logos/SiX.svg" alt="SiX logo"
         /></a>
 
         <ul class="desktop">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="credits.html">Credits</a></li>
           <li>
-            <a href="about.html">About</a>
+            <a class="current-page" href="about.html">About</a>
             <ul>
-              <li><a href="members.html">Members' Details</a></li>
+              <li>
+                <a class="current-page" href="members.html">Members' Details</a>
+              </li>
               <li>
                 <a href="research_publications.html">Research / Publications</a>
                 <ul>
@@ -63,7 +65,7 @@
     </header>
     <main>
       <!-- Secção 1_ CIRCULAR IMAGES -->
-      <h2 id="core-pi-header">Core PI</h2>
+      <h2 id="no-hero-header">Principal Investigator</h2>
       <section>
         <!-- Core PI -->
 
@@ -170,6 +172,18 @@
           </figcaption>
         </figure>
       </section>
+      <img
+        class="desktop rabiscos"
+        src="assets/images/rabiscos/rabisco-1.svg"
+        alt="Rabisco"
+        id="rab-members-1"
+      />
+      <img
+        class="desktop rabiscos"
+        src="assets/images/rabiscos/rabisco-3.svg"
+        alt="Rabisco"
+        id="rab-members-2"
+      />
     </main>
     <footer>
       <div class="logo_flex_container">

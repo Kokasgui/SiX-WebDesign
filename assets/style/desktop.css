@@ -1,4 +1,8 @@
-/* DESKTOP AAAAAAAAAAAA */
+/* SiX Project | LDC | Web Design | FBAUP 2024/2025 */
+/* Beatriz Gonçalves | Guilherme Costa | Mariana Ferreira */
+/* Folha CSS para a versão desktop */
+
+/* Media Querie */
 @media screen and (min-width: 1000px) {
   /* Limpar badalhoquices */
   .desktop {
@@ -10,34 +14,138 @@
   }
   /* Fim das badalhoquices */
 
-  nav {
-    background-image: linear-gradient(to right, #cccccc, #ffffff55);
+  /* === COISAS GERAIS === */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section article {
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: black;
   }
 
   header .hero,
   header #feature_main {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
+  /* === COISAS ESPECÍFICAS === */
+  p,
+  main a {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .note {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* == Botão_Read More == */
+  .read_more_button {
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    border: 1px black solid;
+  }
+
+  /* === RABISCOS_INÍCIO === */
+  img.rabiscos {
+    position: absolute;
+    display: block;
+    width: 15vw;
+    height: 30vw;
+    object-fit: cover;
+    z-index: -5;
+  }
+
+  #rab-index-2,
+  #rab-activities-1,
+  #rab-members-1,
+  #rab-research-pub-2 {
+    right: 0;
+    top: 1000px;
+    object-position: left 50%;
+  }
+
+  #rab-index-1,
+  #rab-activities-2,
+  #rab-research-pub-1 {
+    left: 0;
+    top: 2000px;
+    object-position: right 50%;
+  }
+
+  #rab-about-2,
+  #rab-credits-1,
+  #rab-research-1 {
+    left: 0;
+    top: 1000px;
+    object-position: right 50%;
+  }
+
+  #rab-about-1,
+  #rab-credits-2 {
+    right: 0;
+    top: 3000px;
+    object-position: left 50%;
+  }
+
+  #rab-research-2 {
+    right: 0;
+    top: 1700px;
+    object-position: left 50%;
+  }
+
+  #rab-members-2 {
+    left: 0;
+    top: 1700px;
+    object-position: right 50%;
+  }
+  /* === RABISCOS_FIM === */
+
   /* ===  NAV_INÍCIO === */
+
+  nav {
+    background-image: linear-gradient(to right, #cccccc, #ffffffcc);
+    height: 80px;
+  }
+
+  .nav_logo {
+    width: 90px;
+  }
+
+  nav a.current-page {
+    color: var(--primaryColor);
+  }
+
+  nav a:hover {
+    color: var(--secondaryColor);
+  }
+
   nav ul {
     position: relative;
     overflow: visible;
     display: inline-block;
-    /* margin-left: 100px; */
-    /* width: 100%; */
     padding: 0;
-    margin: 0;
-    margin-left: calc(100% - 680px);
-    font-size: 20px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-left: calc(100% - 730px);
+    margin-right: 10px;
+    font-size: 18px;
     line-height: 1em;
 
     li {
       display: inline-block;
       padding: 10px;
       /* background-color: aquamarine; */
-      width: 150px;
-      height: 40px;
+      width: 160px;
+      height: 60px;
       margin-right: -5px;
 
       & a {
@@ -48,6 +156,7 @@
         font-family: "Oxanium", sans-serif;
         font-variation-settings: "wght" 700;
         text-transform: uppercase;
+        align-content: center;
       }
 
       &:hover ul {
@@ -62,9 +171,9 @@
         position: absolute;
         display: none;
         background-color: rgba(255, 255, 255, 0.8);
-        padding: 0;
+        padding: 0 10px 0 0;
         width: 25%;
-        top: 40px;
+        top: 60px;
         margin-top: 20px;
         margin-left: -10px;
 
@@ -84,7 +193,7 @@
             padding: 0;
             width: 100%;
             margin-left: calc(-100% - 10px);
-            margin-top: -40px;
+            margin-top: -60px;
 
             li {
               position: relative;
@@ -98,44 +207,19 @@
 
   /* ===  NAV_FIM === */
 
-  /* === COISAS GERAIS === */
-
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  section article {
-    background: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-  }
-  /* === COISAS ESPECÍFICAS === */
-
-  p {
-    font-size: 22px;
-    line-height: 34px;
-  }
-
-  .note {
-    font-size: 22px;
-    line-height: 28px;
-  }
-
-  /* RESEARCH/PUBLICATIONS LISTA DE PUBLICATIONS*/
+  /* === LISTA DE PUBLICATIONS_RESEARCH/PUBLICATIONS_INICIO === */
   #publications_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: start;
   }
-
+  /* 
   #publications_container p {
     grid-column: 1;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 34px;
-  }
+  } */
 
   #publications_list {
     grid-column: 2;
@@ -147,32 +231,29 @@
   }
 
   .publications_list_item {
+    height: 5rem;
     background: rgb(185, 185, 185);
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    color: black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
 
-  /* TESTE HIERARQUIA NUMERO TEXTO */
+  /* == Teste hierarquia numero/texto == */
   .publications_count {
     display: block;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    text-align: center;
+    color: var(--secondaryColor);
+    margin: 5px 0;
   }
 
   .publications_label {
     font-size: 16px;
     color: #555;
-    justify-content: center;
   }
+  /* === LISTA DE PUBLICATIONS_RESEARCH/PUBLICATIONS_FIM === */
 
   /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
-
   .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -232,7 +313,7 @@
     width: 70%;
   }
 
-  /* LISTA RESEARCH DETAIL */
+  /* === LISTA RESEARCH DETAIL === */
   .lista_goals {
     min-height: unset;
   }
@@ -248,6 +329,10 @@
   }
 
   /* === MEMBERS EM LINHA HORIZONTAL === */
+
+  h2#no-hero-header {
+    margin-top: 80px;
+  }
 
   .all_members {
     position: relative;
@@ -272,7 +357,7 @@
     right: calc(50% - 450px);
   }
 
-  /* === HERO_INICIO=== */
+  /* === HERO_INICIO === */
   .hero {
     position: relative;
     height: calc(450px + 10vw);
