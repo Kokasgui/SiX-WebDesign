@@ -254,12 +254,12 @@ picture img {
 
 #content_main {
   display: block;
-  position: relative; /* Position the background text */
+  position: relative;
   background: rgba(52, 83, 214, 0.8);
   z-index: 1;
   color: white;
-  width: calc(100% - 40px); /* Full width */
-  padding: 20px; /* Some padding */
+  width: calc(100% - 40px); /* largura máxima */
+  padding: 20px;
 }
 
 #content_main p {
