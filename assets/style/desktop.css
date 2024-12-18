@@ -214,15 +214,8 @@
     gap: 20px;
     align-items: start;
   }
-  /* 
-  #publications_container p {
-    grid-column: 1;
-    font-size: 20px;
-    line-height: 34px;
-  } */
 
   #publications_list {
-    grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;

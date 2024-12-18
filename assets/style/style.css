@@ -652,6 +652,11 @@ details[open] .fa-chevron-down {
   font-weight: 700;
 }
 
+/* === INSTITUIÇÕES === */
+.institutions > p > strong:nth-child(2) {
+  color: rgb(86, 86, 86);
+}
+
 /* === FOOTER === */
 footer {
   margin-top: 40px;
