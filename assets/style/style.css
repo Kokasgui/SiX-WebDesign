@@ -380,6 +380,10 @@ nav#nav_page ul li {
   margin-bottom: 18px;
 }
 
+nav ul li + ul a {
+  text-transform: lowercase;
+}
+
 ::marker {
   content: "";
 }
