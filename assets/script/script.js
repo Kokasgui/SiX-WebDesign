@@ -1,3 +1,5 @@
+// ===== CAIXAS ACORDEÃO =====
+
 // Muda a classe e mostra/esconde o texto dos acordeões. Gerado por CHATGPT
 document.addEventListener("DOMContentLoaded", function () {
   // Encontrar todas as setas e adicionar o ouvinte de evento de clique
@@ -31,6 +33,8 @@ function openCloseArticle(event) {
   });
 }
 
+// ===== CARROSSEL =====
+
 // CHATGPT
 let currentIndex = 0;
 
@@ -54,6 +58,8 @@ function changeSlide(direction) {
     behavior: "smooth",
   });
 }
+
+// ===== ANIMAÇÃO HOME PAGE =====
 
 const cursor = document.querySelector("#cursor");
 const moveCursor = (e) => {
