@@ -55,45 +55,6 @@ function changeSlide(direction) {
   });
 }
 
-// // CAROUSEL
-// document.addEventListener("DOMContentLoaded", function () {
-//   let slides = document.getElementsByClassName("mySlides");
-
-//   // Esconde todos os slides primeiro
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-
-//   // Mostra o primeiro slide
-//   if (slides.length > 0) {
-//     slides[0].style.display = "block";
-//   }
-// });
-
-// let slideIndex = 1;
-
-// function changeSlide(n) {
-//   let slides = document.getElementsByClassName("mySlides");
-
-//   slideIndex += n;
-
-//   // Ajusta o índice se passar dos limites
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (slideIndex < 1) {
-//     slideIndex = slides.length;
-//   }
-
-//   // Esconde todos os slides
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-
-//   // Mostra o slide atual
-//   slides[slideIndex - 1].style.display = "block";
-// }
-
 const cursor = document.querySelector("#cursor");
 const moveCursor = (e) => {
   const mouseY = e.clientY;
