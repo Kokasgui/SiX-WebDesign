@@ -449,7 +449,7 @@ section article .showing {
   margin-top: 40px;
 }
 
-/* Estado inicial do ícone do acordeao */
+/* Estado inicial do ícone do acordeão */
 .fa-chevron-down {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -730,7 +730,7 @@ footer p a {
   color: black;
 }
 
-/* Mantem o icon sempre centrado acompanhando a mudança de tamanho do botao. da mesma forma tb o aumenta (scale) */
+/* Mantém o icon sempre centrado acompanhando a mudança de tamanho do botão. Da mesma forma tb o aumenta (scale) */
 .carrossel_button i {
   position: absolute;
   top: 50%;
