@@ -254,12 +254,12 @@ picture img {
 
 #content_main {
   display: block;
-  position: relative; /* Position the background text */
+  position: relative;
   background: rgba(52, 83, 214, 0.8);
   z-index: 1;
   color: white;
-  width: calc(100% - 40px); /* Full width */
-  padding: 20px; /* Some padding */
+  width: calc(100% - 40px); /* largura máxima */
+  padding: 20px;
 }
 
 #content_main p {
@@ -380,6 +380,10 @@ nav#nav_page ul li {
   margin-bottom: 18px;
 }
 
+nav ul li + ul a {
+  text-transform: lowercase;
+}
+
 ::marker {
   content: "";
 }
@@ -492,8 +496,9 @@ section article .showing {
 .bloco_informativo figure figcaption {
   position: relative;
   padding: 10px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+  background: linear-gradient(to right, rgb(1, 32, 171), rgba(255, 0, 0, 0));
   text-align: center;
+
 }
 
 .bloco_informativo h2,
@@ -512,7 +517,7 @@ section article .showing {
 
 .bloco_informativo p {
   margin: 0 20px;
-  font-size: 16px;
+  font-size: 20px !important;
   line-height: 1.6;
   text-align: left;
   font-family: "Oxygen", sans-serif;
@@ -650,6 +655,11 @@ details[open] .fa-chevron-down {
 
 .member figcaption p:first-of-type {
   font-weight: 700;
+}
+
+/* === INSTITUIÇÕES === */
+.institutions > p > strong:nth-child(2) {
+  color: rgb(86, 86, 86);
 }
 
 /* === FOOTER === */
