@@ -21,10 +21,10 @@
 
 <body>
   <header>
-    <!-- Insert nav  -->
+
+    <!-- NAVEGAÇÃO (PARA DESKTOP) -->
     <nav>
       <a href="/" class="nav_logo"><img src="assets/images/logos/SiX.svg" alt="SiX logo" /></a>
-
       <ul class="desktop">
         <li><a href="/">Home</a></li>
         <li><a href="credits.html">Credits</a></li>
@@ -53,34 +53,36 @@
         </li>
       </ul>
 
+      <!-- BOTÃO NAVEGAÇÃO (PARA MOBILE) -->
       <a href="nav.html" class="nav_button mobile">
         <i class="fa-solid fa-bars"></i>
       </a>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero">
       <img src="assets/images/heros/linhas-3_crop.jpg" alt="Linhas" />
       <h1 class="hero-text">SiX: Activities Overview</h1>
     </section>
   </header>
   <main>
-    <!-- Secção 1_INTRODUCTION -->
+
+    <!-- Secção 0 - Introdução -->
+    <p>
+      The SiX Research Project is dedicated to enhancing communication and
+      accessibility for individuals with Locked-in Syndrome (LIS). Through
+      collaborative efforts, the project explores digital drawing as a
+      communication tool, involving patients, caregivers, healthcare
+      professionals, researchers, and students.
+    </p>
+
+    <!-- Secção 2 - BOXES SECTION -->
     <section>
-      <p>
-        The SiX Research Project is dedicated to enhancing communication and
-        accessibility for individuals with Locked-in Syndrome (LIS). Through
-        collaborative efforts, the project explores digital drawing as a
-        communication tool, involving patients, caregivers, healthcare
-        professionals, researchers, and students.
-      </p>
-    </section>
-    <!-- Secção 2_BOXES SECTION - 3 Articles-->
-    <section>
+
+      <!-- Artigo 1 - Exploratory phase -->
       <article>
         <div class="caixa">
           <div>
-            <!-- BOX 1_Exploratory Box -->
             <h3>Exploratory phase</h3>
             <p>
               Led by Bruno Giesteira, this phase focuses on understanding the
@@ -89,6 +91,8 @@
             </p>
             <a class="desktop read_more_button" href="">READ MORE</a>
           </div>
+
+          <!-- Texto para mostrar/esconder -->
           <div class="hidden">
             <h4>Observational Fieldwork</h4>
             <p>
@@ -121,7 +125,8 @@
           <i class="fa-solid fa-chevron-down" onclick="changeEvents()"></i>
         </div>
       </article>
-      <!-- BOX 2_Development Box -->
+
+      <!-- Artigo 1.2 - Development and Testing Phase -->
       <article>
         <div class="caixa">
           <div>
@@ -133,6 +138,8 @@
             </p>
             <a class="desktop read_more_button" href="">READ MORE</a>
           </div>
+
+          <!-- Texto para mostrar/esconder -->
           <div class="hidden">
             <h4>Persona Development</h4>
             <p>
@@ -161,7 +168,8 @@
           <i class="fa-solid fa-chevron-down" onclick="changeEvents()"></i>
         </div>
       </article>
-      <!-- BOX 3_Dissemination Box -->
+
+      <!-- Artigo 1.3 - Dissemination Phase -->
       <article>
         <div class="caixa">
           <div>
@@ -172,6 +180,8 @@
             </p>
             <a class="desktop read_more_button" href="">READ MORE</a>
           </div>
+
+          <!-- Texto para mostrar/esconder -->
           <div class="hidden">
             <h4>Publications and Conferences</h4>
             <p>
@@ -197,9 +207,13 @@
         </div>
       </article>
     </section>
+
+    <!-- Rabiscos -->
     <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-1.svg" alt="Rabisco" id="rab-activities-1">
     <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-2.svg" alt="Rabisco" id="rab-activities-2">
   </main>
+
+  <!-- Rodapé com logos -->
   <footer>
     <div class="logo_flex_container">
       <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
@@ -218,6 +232,8 @@
       <a href="http://doi.org/10.54499/2022.08322.PTDC?">DOI 10.54499/2022.08322.PTDC.</a>
     </p>
   </footer>
+
+  <!-- JavaScript -->
   <script src="assets/script/script.js"></script>
 </body>
 

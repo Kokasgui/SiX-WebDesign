@@ -21,9 +21,10 @@
 
 <body>
   <header>
+
+    <!-- NAVEGAÇÃO (PARA DESKTOP) -->
     <nav>
       <a href="/" class="nav_logo"><img src="assets/images/logos/SiX.svg" alt="SiX logo" /></a>
-
       <ul class="desktop">
         <li><a class="current-page" href="/">Home</a></li>
         <li><a href="credits.html">Credits</a></li>
@@ -52,20 +53,22 @@
         </li>
       </ul>
 
+      <!-- BOTÃO NAVEGAÇÃO (PARA MOBILE) -->
       <a href="nav.html" class="nav_button mobile">
         <i class="fa-solid fa-bars"></i>
       </a>
     </nav>
 
-    <!-- Hero Section -->
-
+    <!-- HERO -->
     <div id="feature_main">
       <h2>"Drawing for Social Re-connectivity”</h2>
+
       <!-- Animation -->
       <div id="animation">
         <img src="assets/images/circle.svg" alt="" />
       </div>
-      <!-- Div cursor APENAS APLICADA EM DESKTOP -->
+
+      <!-- Div cursor (PARA DESKTOP) -->
       <div id="cursor"><img src="assets/images/circle.svg" /></div>
       <!-- Picture que troca entre imagem de mobile e imagem de desktop -->
       <picture>
@@ -73,6 +76,8 @@
         <source media="(min-width:601px)" srcset="assets/images/heros/Hero.jpg" />
         <img src="assets/images/heros/Hero.jpg" alt="Hero Image" width="100%" />
       </picture>
+
+      <!-- Secção 0 - Introdução (PARA MOBILE) -->
       <div id="content_main" class="mobile">
         <p>
           SiX is a research project that explores how digital drawing can help
@@ -88,6 +93,8 @@
     </div>
   </header>
   <main>
+
+    <!-- Secção 0 - Introdução (PARA DESKTOP) -->
     <div id="content_main_desktop" class="desktop">
       <p>
         SiX is a research project that explores how digital drawing can help
@@ -99,9 +106,11 @@
       </p>
     </div>
 
-    <!-- Output Section - 2 Articles-->
+    <!-- Secção 1 - OUTPUTS -->
     <section>
       <h2>Outputs</h2>
+
+      <!-- Artigo 1.1 - Events / Activities -->
       <article>
         <div class="caixa">
           <div>
@@ -113,6 +122,8 @@
             </p>
             <a class="desktop read_more_button" href="">READ MORE</a>
           </div>
+
+          <!-- Texto para mostrar/esconder -->
           <div class="hidden">
             <h4>Understanding LIS and its impact</h4>
             <p>
@@ -138,6 +149,7 @@
         </div>
       </article>
 
+      <!-- Artigo 1.2 - Research / Publications -->
       <article>
         <div class="caixa">
           <div>
@@ -153,6 +165,8 @@
             </p>
             <a class="desktop read_more_button" href="">READ MORE</a>
           </div>
+
+          <!-- Texto para mostrar/esconder -->
           <div class="hidden">
             <h4>Scientific papers</h4>
             <p>
@@ -184,7 +198,8 @@
         </div>
       </article>
     </section>
-    <!-- Note Section -->
+
+    <!-- Nota -->
     <section>
       <p class="note">
         This content was synthesized from the original project grant proposal
@@ -192,10 +207,13 @@
         edited on October 26, 2024, using NotebookLM by Google.
       </p>
     </section>
+
+    <!-- Rabiscos -->
     <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-1.svg" alt="Rabisco" id="rab-index-1">
     <img class="desktop rabiscos" src="assets/images/rabiscos/rabisco-2.svg" alt="Rabisco" id="rab-index-2">
   </main>
-  <!-- FOOTER SECTION -->
+
+  <!-- Rodapé com logos -->
   <footer>
     <div class="logo_flex_container">
       <img src="assets/images/footer/fbaup-white.svg" alt="FBAUP Logo" />
@@ -214,6 +232,8 @@
       <a href="http://doi.org/10.54499/2022.08322.PTDC?" target="_blank">DOI 10.54499/2022.08322.PTDC.</a>
     </p>
   </footer>
+
+  <!-- JavaScript -->
   <script src="assets/script/script.js"></script>
 </body>
 
