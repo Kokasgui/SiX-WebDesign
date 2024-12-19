@@ -115,6 +115,7 @@ li {
   color: black;
 }
 
+/* Parágrafos Note */
 .note {
   font-family: "Oxanium", sans-serif;
   font-size: 16px;
@@ -146,13 +147,21 @@ figcaption {
   display: inline-block;
   background: white;
   padding: 10px 20px;
+  border: 1px solid black;
   color: var(--secondaryColor);
   font-size: 20px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
   text-align: center;
   border-radius: 10px;
+  left: 50%;
+  translate: -50% 0;
   margin-top: 20px;
+}
+
+/* Os botões que estão dentro de articles não têm border (porque estão num fundo colorido) */
+article .read_more_button {
+  border: none;
 }
 
 /* comportamento com hover */
@@ -181,14 +190,6 @@ figcaption {
   object-position: 10% center;
 }
 
-.hero-text {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  z-index: 1;
-  margin: 0 20% 30px 20px;
-}
-
 .hero h1 {
   font-family: "Oxanium", sans-serif;
   font-size: 36px;
@@ -200,12 +201,21 @@ figcaption {
   text-transform: uppercase;
 }
 
-.hero .hero-text h1 {
-  color: white;
-}
-
 .subtitle {
   font-size: 28px;
+}
+
+/* Hero do Research Details (o que tem imagem e figcaption) */
+.hero-text {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  z-index: 1;
+  margin: 0 20% 30px 20px;
+}
+
+.hero .hero-text h1 {
+  color: white;
 }
 
 .hero-text figcaption {
@@ -213,7 +223,7 @@ figcaption {
   margin: -30px 0 0;
 }
 
-/* Gradiente para hero Research Detais*/
+/* Gradiente para hero Research Detais */
 .hero-grad::after {
   content: ""; /* Necessário para criar o gradiente como camada adicional */
   position: absolute;
@@ -244,6 +254,7 @@ picture img {
   height: auto;
 }
 
+/* Logo SiX sobre o hero na Home */
 #img2 {
   position: absolute;
   transform-origin: center center;
@@ -252,6 +263,7 @@ picture img {
   opacity: 0.3;
 }
 
+/* Moldura azul do texto introdutório na Home */
 #content_main {
   display: block;
   position: relative;
@@ -268,7 +280,7 @@ picture img {
   line-height: 28px;
 }
 
-/* == Main page animation == */
+/* ----- ANIMAÇÃO ----- */
 /* "Caixa" onde se insere a animação */
 #animation {
   user-select: none;
@@ -324,9 +336,10 @@ nav {
   right: 0;
   width: 100%;
   /* background-image: linear-gradient(to right, #cccccc, #ffffff00); VERSÃO QUE ESTÁ NO FIGMA */
-  background-image: linear-gradient(to right, #cccccc, #ffffffcc);
+  background: linear-gradient(to right, #cccccc, #ffffffcc);
 }
 
+/* Botão fechar */
 i.fa-xmark {
   display: block;
 }
@@ -349,24 +362,19 @@ nav .nav_button {
   font-size: 24px;
 }
 
-nav#nav_page div {
+nav#nav_page {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background: white;
   display: block;
   position: fixed;
   top: 0;
 }
 
-nav#nav_page div ul {
+nav#nav_page ul {
   display: block;
   position: relative;
   margin-top: 0;
-}
-
-nav#nav_page ul {
-  display: none;
-  position: relative;
   padding-left: 20px;
   font-size: 24px;
   text-transform: uppercase;
@@ -454,7 +462,7 @@ section article .showing {
   font-size: 25px;
 }
 
-/* ícone com acordeao aberto */
+/* ícone com acordeão aberto */
 .fa-chevron-down.open {
   transform: rotate(180deg);
 }
@@ -478,8 +486,6 @@ section article .showing {
 .bloco_informativo {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start;
-  gap:20px; */
   padding: 0 0 20px;
   margin: 0 0 40px;
   border-radius: 8px;
@@ -498,7 +504,6 @@ section article .showing {
   padding: 10px;
   background: linear-gradient(to right, rgb(1, 32, 171), rgba(255, 0, 0, 0));
   text-align: center;
-
 }
 
 .bloco_informativo h2,
@@ -623,14 +628,14 @@ details[open] .fa-chevron-down {
 
 /* === DETAILS BOX_ABOUT_FIM === */
 
-/* === DETAILS IMGS_ABOUT === */
+/* === DETAILS BOX IMGS_ABOUT === */
 .details_img {
   display: block;
   width: calc(100% + 40px);
   margin: 0 -20px;
 }
 
-/* === IMAGENS CIRCULARES_MEMBER´S DETAILS === */
+/* === IMAGENS CIRCULARES_MEMBER'S DETAILS === */
 .member {
   margin: 0 0 50px 0;
   padding: 0;
@@ -771,7 +776,7 @@ footer p a {
 .prev,
 .next {
   position: absolute;
-  transform: translateY(-140%);
+  transform: translateY(-145%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 24px;

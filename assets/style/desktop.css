@@ -51,7 +51,6 @@
     font-weight: bold;
     text-align: center;
     align-content: center;
-    border: 1px black solid;
   }
 
   /* === RABISCOS_INÍCIO === */
@@ -247,7 +246,7 @@
   /* === RESEARCH DETAIL_ESPECIFICIDADES_INICIO === */
   .container {
     flex-direction: row;
-    align-items: flex-start; 
+    align-items: flex-start;
     padding-top: 40px;
     flex-wrap: wrap;
     gap: 40px;
@@ -255,7 +254,6 @@
 
   .bloco_informativo {
     flex: 1;
-    /* max-width: 45%; */
     background-color: var(--secondaryColor);
   }
 
@@ -317,7 +315,7 @@
     justify-content: center;
   }
 
-  /* === MEMBERS EM LINHA HORIZONTAL === */
+  /* === MEMBERS EM LINHA HORIZONTAL (no Members' Details) === */
   h2#no-hero-header {
     margin-top: 80px;
   }
@@ -327,7 +325,6 @@
     display: flex !important;
     flex-wrap: wrap !important;
     column-gap: 90px;
-    /* align-items: center; */
   }
 
   .all_members .member {
@@ -339,6 +336,12 @@
   .member img {
     width: 100%;
     height: auto;
+  }
+
+  /* === BOTÕES CARROSSEL === */
+  .prev,
+  .next {
+    transform: translateY(-138%);
   }
 
   .next {
@@ -409,7 +412,6 @@
   h2 {
     font-size: 64px;
     margin-top: 60px;
-    /* line-height: 80px; */
   }
 
   h3 {
@@ -419,7 +421,6 @@
 
   h4 {
     font-size: 30px;
-    /* line-height: 38px; */
   }
 
   #content_main {
@@ -436,6 +437,7 @@
     position: relative;
     display: flex;
     padding: 20px 20px 0;
+    column-gap: calc(1.5% + 10px);
   }
 
   footer .logo_flex_container img {
