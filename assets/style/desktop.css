@@ -51,6 +51,10 @@
     align-content: center;
   }
 
+  article .read_more_button {
+    border: 1px solid black;
+  }
+
   /* === RABISCOS_INÍCIO === */
   img.rabiscos {
     position: absolute;
