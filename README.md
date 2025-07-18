@@ -1,5 +1,5 @@
-# Protótipo Website Si.X
-Este é o repositório de todo o protótipo de website para o projeto de investigação Si.X, realizado por Beatriz Gonçalves, Guilherme Costa e Mariana Ferreira, no âmbito da unidade curricular "Web Design". Propusemo-nos a programar um website que conjugasse a expressividade do desenho, ferramenta essencial para o projeto, com o caráter científico deste, por atuar principalamente na área da saúde mental.
+# Protótipo Website S.iX
+Este é o repositório de todo o protótipo de website para o projeto de investigação S.iX, realizado por Beatriz Gonçalves, Guilherme Costa e Mariana Ferreira, no âmbito da unidade curricular "Web Design". Propusemo-nos a programar um website que conjugasse a expressividade do desenho, ferramenta essencial para o projeto, com o caráter científico deste, por atuar principalamente na área da saúde mental.
 
 ## Créditos
 **Prototipagem em Figma:** Beatriz Gonçalves, Guilherme Costa, Mariana Ferreira
