@@ -23,7 +23,7 @@ Este é o repositório de todo o protótipo de website para o projeto de investi
 **Agradecimentos especiais:** Rui Barbosa
 
 
-*Este projeto contou com a utilização de ferramentas de Inteligência Artificial, como o [ChatGPT](https://chatgpt.com) da OpenAI, para auxiliar na construção e verificação de adicionais de código.*
+*Este projeto contou com a utilização de ferramentas de Inteligência Artificial, como o [ChatGPT](https://chatgpt.com) da OpenAI, para auxiliar na construção e verificação adicionais de código.*
 
 ---
 
